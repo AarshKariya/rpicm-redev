@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Quattrocento } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/Header";
+// import Header from "@/components/header/Header";
 import HamburgerMenu from "@/components/hamburgerMenu/HamburgerMenu";
 
-const quattrocento = Quattrocento({
+const raleway = Raleway({
   weight: ["400", "700"],
   preload: true,
   subsets: ["latin"],
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={quattrocento.className}>{children}</body>
+      <body className={raleway.className}>{children}</body>
     </html>
   );
 }
