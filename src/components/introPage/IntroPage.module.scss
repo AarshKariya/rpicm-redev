@@ -1,0 +1,125 @@
+// .redBackground {
+//   background-color: red;
+//   color: white;
+//   padding: 20px;
+// }
+
+// .flexColumn {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .question > p {
+//   margin-bottom: 20px; /* Spacing between question and list */
+//   font-size: 40px;
+//   color: #f9f4f0;
+//   margin-top: 130px;
+// }
+
+// .sentence {
+//   margin-left: 20px; /* Indentation for sentences */
+// }
+
+// /* Styling for the first paragraph */
+// .redBackground p:first-child {
+//   max-width: 580px;
+//   margin-top: 106px;
+//   margin-left: 98px;
+// }
+
+// /* Media query for responsiveness */
+// @media screen and (max-width: 768px) {
+//   .redBackground p:first-child {
+//     max-width: 100%; /* Adjusts width to full for smaller screens */
+//     margin-top: 20px; /* Change margin top for smaller screens */
+//     margin-left: 20px; /* Adjust margin left for smaller screens */
+//   }
+// }
+
+.redBackground {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  position: relative; /* Needed for absolute positioning */
+  height: 622px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  margin-bottom: 20px; /* Spacing between question and list */
+  position: relative; /* Needed for absolute positioning */
+}
+
+.sentence {
+  margin-left: 20px; /* Indentation for sentences */
+}
+
+/* Styling for the first paragraph */
+.redBackground > .introText {
+  max-width: 580px;
+  margin-top: 106px;
+  margin-left: 98px;
+}
+
+/* Styling for "Why RPICM" section */
+.question > .introQuestion {
+  margin-top: 130px; /* Specific margin-top for "Why RPICM" */
+  font-size: 40px;
+  margin-left: 98px;
+}
+
+/* Styling for the list */
+.listContainer {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  width: 297px;
+  height: 108px;
+  display: flex;
+  align-items: center;
+}
+
+.listContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+.listContainer ul li {
+  margin-bottom: 5px;
+}
+
+/* Styling for the line */
+.line {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 282px;
+  height: 1px;
+  background-color: #fdfeff;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .redBackground p:first-child {
+    max-width: 100%; /* Adjusts width to full for smaller screens */
+    margin-top: 20px; /* Change margin top for smaller screens */
+    margin-left: 20px; /* Adjust margin left for smaller screens */
+  }
+
+  .listContainer {
+    position: static; /* Reset positioning for smaller screens */
+    width: auto; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    display: block; /* Adjust display for smaller screens */
+  }
+
+  .line {
+    display: none; /* Hide the line on smaller screens */
+  }
+}
