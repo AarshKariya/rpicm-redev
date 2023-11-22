@@ -1,0 +1,53 @@
+/* styles/guestLectures.module.scss */
+
+.guestLecturesPage {
+  padding: 20px;
+}
+
+.pageTitle {
+  margin-bottom: 70px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pictureStack {
+  display: flex;
+  position: relative;
+}
+
+.pictureContainer {
+  cursor: pointer;
+  transition: margin-left 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.picture {
+  border-radius: 8px;
+  transition: filter 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blur {
+  filter: blur(4px); /* Add blur effect to non-focused images */
+}
+
+.details {
+  margin-left: 20px;
+}
+
+.detailsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detailsDescription {
+  font-size: 16px;
+  line-height: 1.5;
+}

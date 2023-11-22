@@ -1,0 +1,58 @@
+/* footer.module.scss */
+
+.footer {
+  display: flex;
+  height: 386px;
+  width: 100%;
+  background-color: red; /* Added red background */
+  flex-direction: row; /* Change flex direction to row */
+  justify-content: space-between; /* Distribute columns evenly */
+  align-items: flex-end; /* Align columns to the bottom */
+  padding: 0 20px; /* Adjust padding as needed */
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change to a single column layout on smaller screens */
+    height: auto; /* Adjust height to fit content */
+    align-items: stretch; /* Stretch columns vertically */
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column-reverse; /* Reverse column direction */
+  align-items: flex-start;
+  padding: 20px;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Add spacing between columns */
+  }
+}
+
+.column-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjust spacing between title and items */
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px; /* Reduce spacing for smaller screens */
+  }
+}
+
+.column-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column-item {
+  font-size: 14px;
+  margin-bottom: 8px;
+  margin-top: auto; /* Pushes the items to the bottom */
+
+  @media (max-width: 768px) {
+    margin-bottom: 5px; /* Adjust spacing for smaller screens */
+  }
+}

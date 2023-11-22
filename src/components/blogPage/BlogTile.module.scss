@@ -1,0 +1,37 @@
+/* styles/blogs.module.scss */
+
+.blogsPage {
+  padding: 20px;
+}
+
+.pageTitle {
+  margin-bottom: 70px;
+}
+
+.tilesContainer {
+  display: flex;
+  overflow-x: auto;
+}
+
+.blogTile {
+  width: 474px;
+  height: 374px;
+  margin-right: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* Additional styling for title, description, Read More, tag, etc. */
+
+  //   .readMoreButton {
+  //     /* Style for the Read More button */
+  //   }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
