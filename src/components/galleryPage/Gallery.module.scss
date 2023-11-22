@@ -1,0 +1,107 @@
+// .gallery-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 20px;
+//   height: 622px; /* Or 100vh for full page height */
+//   margin: 104px 112px; /* Margin for top, bottom, left, and right */
+// }
+
+// .row {
+//   display: flex;
+//   justify-content: space-around;
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }
+
+// .gallery-image {
+//   width: 100px;
+//   height: 100px;
+//   /* Adjust image styles as needed */
+// }
+
+// .view-gallery {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 150px;
+//   height: 100px;
+//   background-color: #f0f0f0;
+//   color: #333;
+//   font-size: 18px;
+//   /* Additional styles for the "View Gallery" element */
+// }
+
+// /* Media query for responsiveness */
+// @media screen and (max-width: 768px) {
+//   .gallery-container {
+//     height: auto;
+//     margin: 60px 20px; /* Adjusted margin for smaller screens */
+//   }
+
+//   .gallery-image {
+//     /* Adjust image styles for smaller screens */
+//     width: 80px;
+//     height: 80px;
+//   }
+// }
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 622px; /* Or 100vh for full page height */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 112px;
+  margin-right: 112px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around; /* Changed to space-around */
+  margin-top: 104px;
+  margin-bottom: 104px;
+}
+
+.gallery-image {
+  width: 100px;
+  height: 100px;
+  /* Adjust image styles as needed */
+}
+
+.view-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 18px;
+  /* Additional styles for the "View Gallery" element */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .gallery-container {
+    height: auto; /* Adjust height for smaller screens */
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px; /* Adjust margin top for smaller screens */
+    margin-bottom: 60px; /* Adjust margin bottom for smaller screens */
+  }
+
+  .gallery-image {
+    /* Adjust image styles for smaller screens */
+    width: 80px;
+    height: 80px;
+  }
+}
