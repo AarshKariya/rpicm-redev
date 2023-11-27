@@ -1,0 +1,28 @@
+.courseEnquiryForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.divider {
+  width: 146px;
+  height: 1px;
+  background-color: #000;
+}
+
+.stepIndicator {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}

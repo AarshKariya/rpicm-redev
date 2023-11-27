@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
-// import Header from "@/components/header/Header";
 import HamburgerMenu from "@/components/hamburgerMenu/HamburgerMenu";
 
 const raleway = Raleway({

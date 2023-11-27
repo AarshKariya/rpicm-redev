@@ -17,6 +17,9 @@ const NavLinks: React.FC = () => {
       <NextLink href="/blogs">
         <span className={styles.tabLink}>Blog</span>
       </NextLink>
+      <NextLink href="/enquiry">
+        <span className={styles.tabLink}>Enquiry</span>
+      </NextLink>
     </div>
   );
 };
