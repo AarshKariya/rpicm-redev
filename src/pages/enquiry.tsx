@@ -5,7 +5,7 @@ import CourseEnquiryForm from "@/components/courseEnquiryForm/CourseEnquiryForm"
 const EnquiryPage = () => {
   return (
     <div>
-      <h1>Course Enquiry</h1>
+      {/* <h1>Course Enquiry</h1> */}
       <CourseEnquiryForm currentStep={1} />
     </div>
   );
