@@ -1,0 +1,124 @@
+.aboutUs {
+  padding: 20px;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .history {
+    margin-top: 40px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .historyContent {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      .historyText {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .historyImage {
+        flex: 1;
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .today {
+    margin-top: 40px;
+
+    .todayContent {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      .todayImages {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+
+        .todayImage {
+          flex: 1;
+          margin-right: 10px;
+          text-align: center;
+        }
+      }
+
+      .todayText {
+        flex: 2;
+
+        p {
+          /* Styling for the text */
+        }
+      }
+    }
+  }
+
+  .professionals {
+    margin-top: 40px;
+    width: 564px;
+
+    .professionalsContent {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      .professionalsText {
+        flex: 1;
+
+        p {
+          /* Styling for the text */
+        }
+      }
+    }
+  }
+
+  .tiles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .tile {
+      width: 385px;
+      height: 292px;
+      background-color: #f9f4f0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      color: black; /* Title text color */
+
+      .tileContent {
+        padding: 20px;
+
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          transition: color 0.3s; /* Smooth color transition for title */
+        }
+
+        p {
+          transition: color 0.3s; /* Smooth color transition for text */
+        }
+      }
+
+      &:hover {
+        background-color: #253149; /* Entire tile background color on hover */
+
+        .tileContent {
+          h2,
+          p {
+            color: white; /* Text color on hover */
+          }
+        }
+      }
+    }
+  }
+}
