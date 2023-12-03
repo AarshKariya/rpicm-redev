@@ -1,0 +1,67 @@
+// GenericBlog.module.scss
+
+$mobileWidth: 768px; // Change to your desired mobile width
+
+.blogContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .blogImage {
+    /* Styles for the blog image */
+    width: 100%;
+    height: 400px; /* Adjust as per your design */
+    // background: url("/public/blogBgImage.svg") center/cover no-repeat;
+  }
+
+  .blogTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    z-index: 1;
+
+    h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  }
+
+  .blogContent {
+    padding: 20px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    /* Media queries for mobile view */
+    .blogTitle {
+      /* Adjustments for mobile */
+    }
+
+    .blogContent {
+      /* Adjustments for mobile */
+    }
+  }
+}

@@ -77,53 +77,6 @@ $mobileWidth: 375px; // iPhone 11 width
     }
   }
 
-  // .twoColumnContainer {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin-top: 40px; /* Adjust spacing between columns */
-  //   @media (max-width: $mobileWidth) {
-  //     flex-direction: column; /* Switch to column layout on mobile */
-  //   }
-  // }
-
-  // .column {
-  //   flex: 1;
-  //   padding: 20px;
-
-  //   h3 {
-  //     font-size: 18px;
-  //     margin-bottom: 10px;
-  //   }
-
-  //   .inputField {
-  //     width: 100%;
-  //     padding: 10px;
-  //     font-size: 16px;
-  //     margin-bottom: 15px;
-  //     border: 1px solid #ccc;
-  //     border-radius: 5px;
-
-  //     &::placeholder {
-  //       color: #999;
-  //     }
-  //   }
-
-  //   .horizontalOptions {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     align-items: center;
-  //     gap: 10px;
-
-  //     input[type="checkbox"] {
-  //       margin-right: 10px;
-  //     }
-
-  //     label {
-  //       font-size: 16px;
-  //     }
-  //   }
-  // }
-
   .stepsContainer {
     display: flex;
     max-width: 100%;
