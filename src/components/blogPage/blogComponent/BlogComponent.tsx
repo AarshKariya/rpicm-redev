@@ -3,7 +3,6 @@ import styles from "./BlogComponent.module.scss";
 import Image from "next/image";
 
 const BlogComponent = () => {
-  // Sample data for the blog post
   const blogData = {
     heading: "Blog > Management",
     title: "What is Business Management? How Strategy in Business helps?",
@@ -21,35 +20,34 @@ const BlogComponent = () => {
 
   return (
     <div className={styles.blogContainer}>
-      <div className={styles.blogImage}>
-        <Image
-          src="/blogBgImage.svg"
-          alt="Blog Image"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-      <motion.div
-        className={styles.blogTitle}
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h4>{blogData.category}</h4>
-        <h1>{blogData.title}</h1>
-        <p>{blogData.updatedAt}</p>
-      </motion.div>
-      <motion.div
-        className={styles.blogContent}
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
+      <div className={styles.blogHeader}>
         <h2>{blogData.heading}</h2>
-        <p>{blogData.content}</p>
-        <p>{blogData.content}</p>
-        <p>{blogData.content}</p>
-      </motion.div>
+      </div>
+      <div className={styles.blogContent}>
+        <div className={styles.blogImage}>
+          <Image
+            src="/blogBgImage.svg"
+            alt="Blog Image"
+            layout="fill"
+            objectFit="cover"
+          />
+          <div className={styles.imageOverlay}>
+            <h4>{blogData.category}</h4>
+            <h1>{blogData.title}</h1>
+            <p>{blogData.updatedAt}</p>
+          </div>
+        </div>
+        <motion.div
+          className={styles.blogText}
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <p>{blogData.content}</p>
+          <p>{blogData.content}</p>
+          <p>{blogData.content}</p>
+        </motion.div>
+      </div>
     </div>
   );
 };

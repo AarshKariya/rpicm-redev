@@ -1,5 +1,3 @@
-// GenericBlog.module.scss
-
 $mobileWidth: 768px; // Change to your desired mobile width
 
 .blogContainer {
@@ -7,61 +5,108 @@ $mobileWidth: 768px; // Change to your desired mobile width
   width: 100%;
   overflow: hidden;
 
-  .blogImage {
-    /* Styles for the blog image */
-    width: 100%;
-    height: 400px; /* Adjust as per your design */
-    // background: url("/public/blogBgImage.svg") center/cover no-repeat;
-  }
-
-  .blogTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #000;
-    z-index: 1;
-
-    h4 {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin: 10px 0;
-    }
-
-    p {
-      font-size: 14px;
-      opacity: 0.8;
+  .blogHeader {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
     }
   }
 
   .blogContent {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 574px;
+    margin: 0 auto;
 
-    h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
+    .blogImage {
+      position: relative;
+      width: 100vw;
+      height: 400px;
+      overflow: hidden;
+      /* Other styles for the blog image */
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .imageOverlay {
+        width: 316px; /* Set width of the overlay */
+        height: 251px; /* Set height of the overlay */
+        color: #000; /* Text color */
+        padding: 20px; /* Padding for text */
+        position: absolute; /* Position within the container */
+        top: 50%; /* Align from top */
+        transform: translateY(-50%); /* Center vertically */
+        left: 180px; /* Position to the left */
+
+        h4 {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+
+        h1 {
+          font-size: 36px;
+          margin: 10px 0;
+        }
+
+        p {
+          font-size: 14px;
+          opacity: 0.8;
+        }
+      }
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-  }
-
-  @media (max-width: $mobileWidth) {
-    /* Media queries for mobile view */
     .blogTitle {
-      /* Adjustments for mobile */
+      text-align: left;
+      margin-top: 20px;
+
+      h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 14px;
+        opacity: 0.8;
+      }
     }
 
-    .blogContent {
-      /* Adjustments for mobile */
+    .blogText {
+      text-align: left;
+      margin-top: 20px;
+      left: 180px;
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: $mobileWidth) {
+      .blogImage {
+        height: 250px;
+      }
+
+      .blogTitle {
+        h1 {
+          font-size: 30px;
+        }
+      }
+
+      .blogText {
+        p {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
