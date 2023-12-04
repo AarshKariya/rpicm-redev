@@ -1,10 +1,9 @@
-// components/BlogTile.js
-
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./BlogTile.module.scss";
+import { NextPage } from "next";
 
-const BlogTile = () => {
+const BlogTile: NextPage = () => {
   return (
     <motion.div
       whileHover={{

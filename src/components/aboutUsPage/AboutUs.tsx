@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./AboutUs.module.scss";
+import { NextPage } from "next";
 
-const AboutUs = () => {
+const AboutUs: NextPage = () => {
   return (
     <div className={styles.aboutUs}>
       <h1>About Us</h1>

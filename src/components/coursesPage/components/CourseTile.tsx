@@ -1,7 +1,6 @@
-// components/CourseTile.js
-
 import React from "react";
 import styles from "../CoursesPage.module.scss";
+import { NextPage } from "next";
 
 const CourseTile = ({ title, courses = [] }: any) => {
   return (

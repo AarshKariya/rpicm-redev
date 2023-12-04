@@ -15,7 +15,6 @@ $mobileWidth: 375px; // iPhone 11 width
     width: 100%;
     height: 1px;
     background-color: #000;
-    margin-top: 70px; /* Margin top of 70px */
   }
 
   .paymentDetails {
@@ -164,6 +163,11 @@ $mobileWidth: 375px; // iPhone 11 width
     .table {
       border-collapse: collapse;
       width: 100%;
+
+      .personalInformationTitle {
+        font-size: 18px;
+        font-weight: 600;
+      }
 
       td {
         padding: 8px 0;
