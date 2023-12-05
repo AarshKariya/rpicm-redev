@@ -7,6 +7,13 @@ import FileInput from "../FileInput/FileInput";
 import MultiSelectSection from "./components/MultiSelectSection/MultiSelectSection";
 import { rowsData } from "./helpers/multiSelectRowsData";
 import RadioButtonSection from "./components/RadioButtonSection/RadioButtonSection";
+import {
+  categoryOptions,
+  employmentStatus,
+  genderOptions,
+} from "./helpers/radioButtonSectionData";
+import WindowWidthLine from "../WindowWidthLine/WindowWidthLine";
+import Nationality from "./components/Nationality/Nationality";
 
 const ApplicationFormContainer: React.FC = () => {
   const handleGenderChange = (value: string) => {
@@ -52,43 +59,26 @@ const ApplicationFormContainer: React.FC = () => {
 
           <RadioButtonSection
             title="Gender"
-            options={[
-              { value: "male", label: "Male" },
-              { value: "female", label: "Female" },
-            ]}
+            options={genderOptions}
             onChange={handleGenderChange}
           />
           <RadioButtonSection
             title="Category"
-            options={[
-              { value: "gen", label: "GEN" },
-              { value: "sebc", label: "SEBC/OBC" },
-              { value: "sc", label: "SC" },
-              { value: "st", label: "ST" },
-              { value: "ph", label: "PH" },
-              { value: "other", label: "OTHER" },
-            ]}
+            options={categoryOptions}
             onChange={handleCategoryChange}
           />
 
-          <tr>
-            <td>Nationality</td>
-            <td>{/* Dropdown options for countries */}</td>
-          </tr>
-          {/* ... Other form inputs ... */}
+          <Nationality />
 
           <RadioButtonSection
             title="Employment Status"
-            options={[
-              { value: "working", label: "Working" },
-              { value: "student", label: "Student" },
-            ]}
+            options={employmentStatus}
             onChange={handleCategoryChange}
           />
         </tbody>
       </motion.table>
 
-      <div className={styles.windowWidthLine}></div>
+      <WindowWidthLine />
 
       <FileInput label="UG Degree" id="fileInput" />
       <FileInput label="PG Degree" id="pgFileInput" />
