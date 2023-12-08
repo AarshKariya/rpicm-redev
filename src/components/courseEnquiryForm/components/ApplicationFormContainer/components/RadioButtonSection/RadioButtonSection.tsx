@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../../CourseEnquiryForm.module.scss";
+import styles from "./RadioButtonSection.module.scss";
 
 type RadioButtonSectionProps = {
   title: string;
@@ -13,7 +13,7 @@ const RadioButtonSection: React.FC<RadioButtonSectionProps> = ({
   onChange,
 }) => {
   return (
-    <>
+    <div className={styles.radioButtonSection}>
       <div className={styles.leftColumn}>{title}</div>
       <div className={styles.rightColumn}>
         {options.map((option, index) => (
@@ -28,7 +28,7 @@ const RadioButtonSection: React.FC<RadioButtonSectionProps> = ({
           </label>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
