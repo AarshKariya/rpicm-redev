@@ -11,7 +11,7 @@ const Nationality: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.nationality}>
       <div className={styles.leftColumn}>Nationality</div>
       <div className={styles.rightColumn}>
         <select
