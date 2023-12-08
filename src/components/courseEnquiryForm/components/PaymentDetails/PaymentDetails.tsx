@@ -25,18 +25,41 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
   handleButtonClick,
   isFormValid,
 }) => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <div className={styles.paymentDetails}>
+    <motion.div
+      className={styles.paymentDetails}
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       <div className={styles.column}>
-        <div className={styles.paymentDetailsTitle}>PAYMENT DETAILS</div>
-        <div className={styles.paymentDetailsSubTitle}>
+        <motion.div
+          className={styles.paymentDetailsTitle}
+          variants={itemVariants}
+        >
+          PAYMENT DETAILS
+        </motion.div>
+        <motion.div
+          className={styles.paymentDetailsSubTitle}
+          variants={itemVariants}
+        >
           Application fee: 2000/-
-        </div>
-        <div className={styles.row}>
+        </motion.div>
+        <motion.div className={styles.row} variants={itemVariants}>
           <div className={styles.paymentDetailsInfo}>Date:</div>
           <input type="date" value={date} onChange={handleDateChange} />
-        </div>
-        <div className={styles.row}>
+        </motion.div>
+        <motion.div className={styles.row} variants={itemVariants}>
           <div className={styles.paymentDetailsInfo}>Place:</div>
           <input
             type="text"
@@ -44,24 +67,25 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
             onChange={handlePlaceChange}
             placeholder="Enter place"
           />
-        </div>
-        <div className={styles.row}>
+        </motion.div>
+        <motion.div className={styles.row} variants={itemVariants}>
           <CheckboxInput
             value=""
             label="*I hereby declare that the information given above are true, and correct to the best of my knowledge"
             isChecked={isChecked}
             onChange={handleCheckBoxChange}
           />
-        </div>
-        <button
+        </motion.div>
+        <motion.button
           onClick={handleButtonClick}
           disabled={!isFormValid}
           className={styles.saveButton}
+          variants={itemVariants}
         >
           Save and Continue
-        </button>
+        </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
