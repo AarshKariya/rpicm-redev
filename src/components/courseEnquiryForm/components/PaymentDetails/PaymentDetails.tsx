@@ -28,14 +28,16 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
   return (
     <div className={styles.paymentDetails}>
       <div className={styles.column}>
-        <h3>PAYMENT DETAILS</h3>
-        <p>Application fee: 2000/-</p>
+        <div className={styles.paymentDetailsTitle}>PAYMENT DETAILS</div>
+        <div className={styles.paymentDetailsSubTitle}>
+          Application fee: 2000/-
+        </div>
         <div className={styles.row}>
-          <h4>Date</h4>
+          <div className={styles.paymentDetailsInfo}>Date:</div>
           <input type="date" value={date} onChange={handleDateChange} />
         </div>
         <div className={styles.row}>
-          <h4>Place</h4>
+          <div className={styles.paymentDetailsInfo}>Place:</div>
           <input
             type="text"
             value={place}

@@ -12,7 +12,6 @@ import {
   employmentStatus,
   genderOptions,
 } from "./helpers/radioButtonSectionData";
-import WindowWidthLine from "../WindowWidthLine/WindowWidthLine";
 import Nationality from "./components/Nationality/Nationality";
 
 const ApplicationFormContainer: React.FC = () => {
@@ -26,7 +25,6 @@ const ApplicationFormContainer: React.FC = () => {
 
   return (
     <motion.div
-      // className={styles.table}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
