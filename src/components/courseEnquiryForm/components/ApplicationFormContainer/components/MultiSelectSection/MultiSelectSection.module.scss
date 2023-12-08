@@ -17,6 +17,7 @@ $quatro: "Quattrocento", sans-serif;
     &:first-child {
       margin-top: 78px;
       margin-bottom: 54px;
+      color: #253149;
     }
 
     .title {
@@ -24,6 +25,7 @@ $quatro: "Quattrocento", sans-serif;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
+      color: #253149;
 
       @media screen and (max-width: 768px) {
         min-width: auto;
@@ -39,6 +41,7 @@ $quatro: "Quattrocento", sans-serif;
       font-style: normal;
       font-weight: 400;
       align-items: center;
+      color: #253149;
 
       @media screen and (max-width: 768px) {
         flex-direction: column;

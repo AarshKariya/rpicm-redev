@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.formInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .leftColumn {
+    width: 100%;
+    color: #253149;
+    font-family: $raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .rightColumn {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .inputField {
+    width: 100%;
+    max-width: 516px;
+    height: 48px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    box-sizing: border-box;
+  }
+}

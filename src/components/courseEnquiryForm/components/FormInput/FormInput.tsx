@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../CourseEnquiryForm.module.scss";
+import styles from "./FormInput.module.scss";
 
 type FormInputProps = {
   label: string;
@@ -15,7 +15,7 @@ const FormInput: React.FC<FormInputProps> = ({
   placeholder,
 }) => {
   return (
-    <>
+    <div className={styles.formInput}>
       <div className={styles.leftColumn}>{label}</div>
       <div className={styles.rightColumn}>
         <input
@@ -26,7 +26,7 @@ const FormInput: React.FC<FormInputProps> = ({
           className={styles.inputField}
         />
       </div>
-    </>
+    </div>
   );
 };
 
