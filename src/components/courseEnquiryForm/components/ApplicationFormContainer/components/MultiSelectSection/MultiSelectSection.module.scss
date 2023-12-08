@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.multiSelectSection {
+  display: flex;
+  flex-direction: column;
+  font-family: $raleway;
+
+  > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+
+    &:first-child {
+      margin-top: 78px;
+      margin-bottom: 54px;
+    }
+
+    .title {
+      min-width: 224px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+
+      @media screen and (max-width: 768px) {
+        min-width: auto;
+        margin-right: 20px;
+      }
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 76px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      align-items: center;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import CheckboxInput from "../../../CheckboxInput/CheckboxInput";
+import styles from "./MultiSelectSection.module.scss";
 
 type RowData = {
   title: string;
@@ -15,11 +16,11 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
   rowsData,
 }) => {
   return (
-    <>
+    <div className={styles.multiSelectSection}>
       {rowsData.map((row, rowIndex) => (
         <div key={rowIndex}>
-          <div>{row.title}</div>
-          <div>
+          <div className={styles.title}>{row.title}</div>
+          <div className={styles.options}>
             {row.options.map((option, optionIndex) => (
               <CheckboxInput
                 key={optionIndex}
@@ -27,12 +28,13 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
                 label={option.label}
                 isChecked={false}
                 onChange={() => row.onChange(option.value)}
+                className={styles.checkboxInput}
               />
             ))}
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

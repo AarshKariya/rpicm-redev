@@ -5,6 +5,7 @@ type CheckboxInputProps = {
   label: string;
   isChecked: boolean;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: any;
 };
 
 const CheckboxInput: React.FC<CheckboxInputProps> = ({
@@ -12,6 +13,7 @@ const CheckboxInput: React.FC<CheckboxInputProps> = ({
   label,
   isChecked,
   onChange,
+  className,
 }) => {
   return (
     <label>
@@ -20,6 +22,7 @@ const CheckboxInput: React.FC<CheckboxInputProps> = ({
         value={value}
         checked={isChecked}
         onChange={onChange}
+        className={className}
       />
       {label}
     </label>
