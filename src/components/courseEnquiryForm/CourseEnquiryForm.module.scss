@@ -26,6 +26,15 @@ $quatro: "Quattrocento", sans-serif;
     margin-left: -98px;
   }
 
+  .personalInfo {
+    color: #253149;
+    font-family: $raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 58px;
+  }
+
   .paymentDetails {
     display: flex;
     justify-content: space-between;

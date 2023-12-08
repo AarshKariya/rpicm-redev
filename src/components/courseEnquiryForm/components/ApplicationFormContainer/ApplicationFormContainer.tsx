@@ -31,7 +31,7 @@ const ApplicationFormContainer: React.FC = () => {
     >
       <MultiSelectSection rowsData={rowsData} />
 
-      <div>PERSONAL INFORMATION</div>
+      <div className={styles.personalInfo}>PERSONAL INFORMATION</div>
 
       <FormInput
         label="Name of Candidate"
