@@ -17,20 +17,20 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
   return (
     <>
       {rowsData.map((row, rowIndex) => (
-        <tr key={rowIndex}>
-          <td>{row.title}</td>
-          <td>
+        <div key={rowIndex}>
+          <div>{row.title}</div>
+          <div>
             {row.options.map((option, optionIndex) => (
               <CheckboxInput
                 key={optionIndex}
                 value={option.value}
                 label={option.label}
-                isChecked={false} // Set the checked state based on your logic
+                isChecked={false}
                 onChange={() => row.onChange(option.value)}
               />
             ))}
-          </td>
-        </tr>
+          </div>
+        </div>
       ))}
     </>
   );

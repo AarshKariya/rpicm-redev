@@ -11,9 +11,9 @@ const Nationality: React.FC = () => {
   };
 
   return (
-    <tr>
-      <td>Nationality</td>
-      <td>
+    <div>
+      <div className={styles.leftColumn}>Nationality</div>
+      <div className={styles.rightColumn}>
         <select
           value={selectedCountry}
           onChange={handleCountryChange}
@@ -26,8 +26,8 @@ const Nationality: React.FC = () => {
             </option>
           ))}
         </select>
-      </td>
-    </tr>
+      </div>
+    </div>
   );
 };
 

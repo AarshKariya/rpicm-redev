@@ -15,9 +15,9 @@ const FormInput: React.FC<FormInputProps> = ({
   placeholder,
 }) => {
   return (
-    <tr>
-      <td>{label}</td>
-      <td>
+    <>
+      <div className={styles.leftColumn}>{label}</div>
+      <div className={styles.rightColumn}>
         <input
           type="text"
           value={value}
@@ -25,8 +25,8 @@ const FormInput: React.FC<FormInputProps> = ({
           placeholder={placeholder}
           className={styles.inputField}
         />
-      </td>
-    </tr>
+      </div>
+    </>
   );
 };
 

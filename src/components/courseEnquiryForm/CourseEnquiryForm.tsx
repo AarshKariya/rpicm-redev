@@ -8,6 +8,7 @@ import StepsContainer from "./components/StepContainer/StepsContainer";
 import WindowWidthLine from "./components/WindowWidthLine/WindowWidthLine";
 import ApplicationFormContainer from "./components/ApplicationFormContainer/ApplicationFormContainer";
 import PaymentDetails from "./components/PaymentDetails/PaymentDetails";
+import FileInputsSection from "./components/FileInputSection/FileInputSection";
 
 const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
@@ -37,10 +38,12 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
 
   return (
     <div className={styles.courseEnquiryForm}>
-      <h1 className={styles.heading}>Course Enquiry Form</h1>
+      <div className={styles.heading}>Course Enquiry Form</div>
       <StepsContainer />
       <WindowWidthLine />
       <ApplicationFormContainer />
+      <WindowWidthLine />
+      <FileInputsSection />
       <WindowWidthLine />
       <PaymentDetails
         date={date}

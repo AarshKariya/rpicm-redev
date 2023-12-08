@@ -19,7 +19,7 @@ const Step: React.FC<StepProps> = ({
   return (
     <div className={`${styles.step} ${isActive ? styles.currentStep : ""}`}>
       <span className={styles.stepNumber}>{stepNumber}.</span>
-      <h2>{title}</h2>
+      <div className={styles.stepTitle}>{title}</div>
       {isActive && children}
     </div>
   );

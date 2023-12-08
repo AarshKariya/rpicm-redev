@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../CourseEnquiryForm.module.scss";
+import styles from "../../../../CourseEnquiryForm.module.scss";
 
 type FileInputProps = {
   label: string;

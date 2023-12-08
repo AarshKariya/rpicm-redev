@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../../../../CourseEnquiryForm.module.scss";
 
 type RadioButtonSectionProps = {
   title: string;
@@ -13,22 +14,20 @@ const RadioButtonSection: React.FC<RadioButtonSectionProps> = ({
 }) => {
   return (
     <>
-      <tr>
-        <td>{title}</td>
-        <td>
-          {options.map((option, index) => (
-            <label key={index}>
-              <input
-                type="radio"
-                name={title.toLowerCase().replace(" ", "-")}
-                value={option.value}
-                onChange={() => onChange(option.value)}
-              />
-              {option.label}
-            </label>
-          ))}
-        </td>
-      </tr>
+      <div className={styles.leftColumn}>{title}</div>
+      <div className={styles.rightColumn}>
+        {options.map((option, index) => (
+          <label key={index}>
+            <input
+              type="radio"
+              name={title.toLowerCase().replace(" ", "-")}
+              value={option.value}
+              onChange={() => onChange(option.value)}
+            />
+            {option.label}
+          </label>
+        ))}
+      </div>
     </>
   );
 };
