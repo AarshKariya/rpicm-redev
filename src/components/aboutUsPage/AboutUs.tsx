@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./AboutUs.module.scss";
 import NavigationBar from "../navigationBar/NavigationBar";
+import { NextPage } from "next";
 
-const AboutUs = () => {
+const AboutUs: NextPage = () => {
   return (
     <div>
       <NavigationBar isOnLandingPage={false} />

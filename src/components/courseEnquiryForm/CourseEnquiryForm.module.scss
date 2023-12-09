@@ -1,21 +1,38 @@
-// CourseEnquiryForm.module.scss
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
 
-$mobileWidth: 375px; // iPhone 11 width
+$mobileWidth: 375px;
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
 
 .courseEnquiryForm {
-  padding-top: 130px;
   text-align: left;
+  padding: 100px 98px;
 
   .heading {
-    margin-bottom: 60px;
-    font-size: 40px; /* Adjust the font size of the title */
+    margin-bottom: 76px;
+    font-size: 40px;
+    font-family: $quatro;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2px;
   }
 
   .windowWidthLine {
-    width: 100%;
+    width: calc(100% + 196px);
     height: 1px;
-    background-color: #000;
-    margin-top: 70px; /* Margin top of 70px */
+    background-color: #f9f4f0;
+    margin-left: -98px;
+  }
+
+  .personalInfo {
+    color: #253149;
+    font-family: $raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 58px;
   }
 
   .paymentDetails {
@@ -28,50 +45,71 @@ $mobileWidth: 375px; // iPhone 11 width
       flex: 1;
       text-align: left;
 
-      h3 {
-        margin-bottom: 10px;
+      .paymentDetailsTitle {
+        margin-bottom: 40px;
+        margin-top: 90px;
+        font-family: $raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
       }
 
-      p {
-        margin: 5px 0;
+      .paymentDetailsSubTitle {
+        margin-bottom: 60px;
+        font-family: $raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
       }
 
       .row {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        font-family: $raleway;
 
-        h4 {
+        .paymentDetailsInfo {
           margin-right: 10px;
+          min-width: 120px;
         }
 
         input[type="date"],
         input[type="text"] {
-          width: 100%;
-          padding: 5px;
+          width: 24%;
+          padding: 14px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
         }
 
         input[type="checkbox"] {
           margin-right: 5px;
+          margin-top: 90px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
         }
       }
 
       .saveButton {
-        padding: 10px 20px;
-        background-color: #55aacc;
-        color: white;
+        padding: 14px 72px;
+        color: #253149;
+        background-color: #fff;
         cursor: pointer;
-        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.39);
         transition: background-color 0.3s ease;
-        border: none;
+        margin-top: 70px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
 
         &:disabled {
-          background-color: #ccc;
           cursor: not-allowed;
         }
 
         &:hover:enabled {
-          background-color: #3d8eb9;
+          background-color: #c1121f;
+          color: white;
         }
       }
     }
@@ -83,22 +121,23 @@ $mobileWidth: 375px; // iPhone 11 width
 
     .step {
       position: relative;
-      margin-right: 50px;
       display: flex;
       align-items: center;
+      margin-bottom: 54px;
 
       &:last-child {
         margin-right: 0;
       }
 
-      h2 {
-        font-size: 14px; /* Adjust the font size of the steps */
-        margin-left: 20px;
+      .stepTitle {
+        font-size: 14px;
+        margin-left: 4px;
+        font-family: $raleway;
       }
 
       .stepNumber {
-        font-size: 14px; /* Adjust the font size of the step numbers */
-        margin-right: 10px;
+        font-size: 14px;
+        font-family: $raleway;
       }
 
       &.currentStep {
@@ -124,32 +163,36 @@ $mobileWidth: 375px; // iPhone 11 width
 
     .column {
       flex: 1;
-      text-align: center;
+      text-align: left;
     }
 
     h3 {
       margin: 0;
+      font-family: $raleway;
+      font-weight: 400;
+      font-size: 18px;
+      color: #253149;
     }
 
     .fileInputBox {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.39);
+      padding: 6px;
       display: flex;
       align-items: center;
+      width: 100%;
+
+      max-width: 516px;
     }
 
     .fileInputLabel {
-      padding: 10px 20px;
-      background-color: #55aacc;
-      color: white;
+      padding: 6px 46px;
+      border: 1px solid rgba(0, 0, 0, 0.39);
+      background: #f9f4f0;
+      color: #253149;
+      font-family: $raleway;
+      font-size: 16px;
       cursor: pointer;
-      border-radius: 5px;
       transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: #3d8eb9;
-      }
     }
 
     .fileInput {
@@ -157,72 +200,11 @@ $mobileWidth: 375px; // iPhone 11 width
     }
   }
 
-  .tableStructure {
-    padding: 20px;
-    text-align: left;
-
-    .table {
-      border-collapse: collapse;
-      width: 100%;
-
-      td {
-        padding: 8px 0;
-        text-align: left;
-      }
-
-      td:first-child {
-        font-weight: bold;
-        width: 150px; // Adjust the width as needed
-      }
-    }
-
-    input[type="checkbox"] {
-      margin-right: 5px;
-    }
-
-    .inputField,
-    .selectField {
-      width: 100%;
-      padding: 8px;
-      font-size: 16px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-
-      &::placeholder {
-        color: #999;
-      }
-    }
-
-    @media (max-width: $mobileWidth) {
-      .table {
-        display: block;
-
-        td {
-          display: block;
-          width: 100%;
-          padding: 8px 0;
-          border: none;
-        }
-
-        td:first-child {
-          font-weight: bold;
-        }
-      }
-
-      .inputField,
-      .selectField {
-        width: 100%;
-      }
-    }
-  }
-
   .divider {
     width: 146px;
     height: 1px;
-    background-color: #000;
-    margin: 20px 0;
-    align-self: center;
+    background: rgba(0, 0, 0, 0.16);
+    margin: 8px 28px;
 
     @media (max-width: $mobileWidth) {
       width: calc(
@@ -230,5 +212,8 @@ $mobileWidth: 375px; // iPhone 11 width
       ); /* Adjust the width to ensure visibility on mobile */
       margin: 20px 20px; /* Add margin for spacing on mobile screens */
     }
+  }
+
+  .appFormContainer {
   }
 }

@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import styles from "./BlogComponent.module.scss";
 import Image from "next/image";
+import { NextPage } from "next";
 
-const BlogComponent = () => {
+const BlogComponent: NextPage = () => {
   const blogData = {
     heading: "Blog > Management",
     title: "What is Business Management? How Strategy in Business helps?",

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.radioButtonSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust spacing between RadioButtonSections if needed */
+
+  .leftColumn {
+    width: 48.5%; /* Width of the titles */
+    color: #253149;
+    font-family: $raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .rightColumn {
+    display: flex;
+    margin-left: 20px; /* Adjust the space between title and radio buttons */
+
+    label {
+      color: #253149;
+      font-family: $raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px; /* Adjust space between radio button and label */
+      /* Additional styling for radio buttons if needed */
+    }
+  }
+}

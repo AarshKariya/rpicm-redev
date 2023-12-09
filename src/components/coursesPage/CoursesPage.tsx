@@ -1,8 +1,9 @@
 import React from "react";
 import CourseTile from "./components/CourseTile";
 import styles from "./CoursesPage.module.scss";
+import { NextPage } from "next";
 
-const Courses = () => {
+const Courses: NextPage = () => {
   return (
     <div className={styles.coursesPage}>
       <h1 className={styles.sectionTitle}>Courses</h1>

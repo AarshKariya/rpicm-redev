@@ -1,5 +1,6 @@
 // Footer.js
 
+import { NextPage } from "next";
 import styles from "./FooterPage.module.scss";
 
 const FooterColumn = ({ title, items }: any) => {
@@ -17,7 +18,7 @@ const FooterColumn = ({ title, items }: any) => {
   );
 };
 
-const Footer = () => {
+const Footer: NextPage = () => {
   const aboutItems = ["Blog", "Gallery"];
   const coursesItems = [
     "Communication",

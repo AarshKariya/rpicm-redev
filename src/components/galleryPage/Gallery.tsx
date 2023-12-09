@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import styles from "./Gallery.module.scss"; // Import the SCSS file
+import { NextPage } from "next";
 
-const Gallery: React.FC = () => {
+const Gallery: NextPage = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

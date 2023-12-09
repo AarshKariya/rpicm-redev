@@ -1,18 +1,31 @@
-// pages/blogs.js
-
 import React from "react";
 import BlogTile from "./BlogTile";
 import styles from "./BlogTile.module.scss";
+import { NextPage } from "next";
 
-const Blogs = () => {
+const config = [
+  {
+    id: 1,
+    blogTag: "COMMUNICATION",
+    blogTitle: "What's happening these days?",
+    blogShortDesc: "This is what's been happening.",
+    blogRedirect: "someURL",
+  },
+  {
+    id: 2,
+    blogTag: "TECHNOLOGY",
+    blogTitle: "Latest Technological Advancements",
+    blogShortDesc: "Exploring the latest in technology.",
+    blogRedirect: "anotherURL",
+  },
+];
+
+const Blogs: NextPage = () => {
   return (
     <div className={styles.blogsPage}>
-      <h1 className={styles.pageTitle}>Blogs</h1>
+      <div className={styles.pageTitle}>Blogs</div>
       <div className={styles.tilesContainer}>
-        <BlogTile />
-        <BlogTile />
-        <BlogTile />
-        {/* Add more BlogTiles */}
+        <BlogTile config={config} />
       </div>
     </div>
   );
