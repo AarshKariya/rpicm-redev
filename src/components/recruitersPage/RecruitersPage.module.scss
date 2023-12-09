@@ -12,8 +12,11 @@
 
 .logo {
   width: calc(100% / 6);
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
+}
+
+.withMargin {
   margin-right: 120px;
 }
 

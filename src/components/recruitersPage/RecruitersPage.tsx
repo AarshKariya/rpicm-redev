@@ -26,7 +26,7 @@ const RecruitersPage: NextPage = () => {
             key={index}
             src={logo}
             alt={`Logo ${index + 1}`}
-            className={styles.logo}
+            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -39,7 +39,7 @@ const RecruitersPage: NextPage = () => {
             key={index + 6}
             src={logo}
             alt={`Logo ${index + 7}`}
-            className={styles.logo}
+            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
