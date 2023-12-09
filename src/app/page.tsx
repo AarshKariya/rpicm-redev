@@ -3,11 +3,12 @@ import LandingPage from "@/components/landingPage/LandingPage";
 import styles from "./page.module.scss";
 import RecruitersPage from "@/components/recruitersPage/RecruitersPage";
 import IntroPage from "@/components/introPage/IntroPage";
-import Gallery from "@/components/galleryPage/Gallery";
+import Gallery from "@/components/gallerySection/Gallery";
 import Blogs from "@/components/blogPage/Blogs";
 import Courses from "@/components/coursesSection/CoursesSection";
 import GuestLectures from "@/components/guestLectures/GuestLectures";
 import Footer from "@/components/footer/FooterPage";
+import GallerySection from "@/components/gallerySection/GallerySection";
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
       <RecruitersPage />
       <IntroPage />
       <Gallery />
-      <Blogs />
+      {/* <GallerySection /> */}
       <Courses />
       <GuestLectures />
+      <Blogs />
       <Footer />
     </main>
   );

@@ -21,13 +21,44 @@ const BlogTile: NextPage<BlogTileProps> = ({ config }) => {
   };
 
   return (
-    <>
-      {config.map((blog) => (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.1,
+            delayChildren: 0.3, // Delay the animation initially
+          },
+        },
+        hidden: {
+          opacity: 0,
+        },
+      }}
+      className={styles.blogTileContainer}
+    >
+      {config?.map((blog) => (
         <motion.div
           key={blog?.id}
+          variants={{
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: {
+                x: { type: "spring", stiffness: 120, duration: 0.5 },
+                opacity: { duration: 0.3 },
+              },
+            },
+            hidden: { opacity: 0, x: -50 },
+          }}
           whileHover={{
             backgroundColor: "#253149",
-            color: "#FFFFFF",
+            color: "#fff",
+            transition: {
+              duration: 0.3,
+              ease: "easeInOut",
+            },
           }}
           className={styles.blogTile}
         >
@@ -45,7 +76,7 @@ const BlogTile: NextPage<BlogTileProps> = ({ config }) => {
           </div>
         </motion.div>
       ))}
-    </>
+    </motion.div>
   );
 };
 
