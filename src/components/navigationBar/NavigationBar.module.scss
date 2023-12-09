@@ -1,4 +1,8 @@
-/* styles/NavigationBar.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
 
 .navBar {
   position: absolute;
@@ -9,22 +13,16 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  //   background-color: rgba(
-  //     255,
-  //     255,
-  //     255,
-  //     0.7
-  //   ); /* Adjust background color and opacity */
-  width: 90%; /* Adjust the width */
+  width: 90%;
   transition: top 0.3s;
 }
 
 .logo {
-  margin-right: auto; /* Pushes the logo/image to the left */
+  margin-right: auto;
 }
 
-.addBackground{
-  background-color: #C1121F;
+.addBackground {
+  background-color: #c1121f;
   padding: 25px 10px;
   margin-top: -30px;
 }
@@ -32,7 +30,7 @@
 .tabs {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Aligns the links to the right */
+  justify-content: flex-end;
 }
 
 .tabLink {
@@ -40,16 +38,17 @@
   color: #f9f4f0;
   margin-left: 76px;
   border-bottom: none;
-  cursor: pointer; /* Add a cursor to indicate these are links */
-  display: inline-block; /* Ensure the styles are applied properly */
-  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-family: $raleway;
+
   &:hover {
-    color: #C1121F
+    color: #c1121f;
   }
- 
 }
-.tabLinkOnOtherScreens{
-  color: #C1121F;
+.tabLinkOnOtherScreens {
+  color: #c1121f;
   &:hover {
     color: black;
   }

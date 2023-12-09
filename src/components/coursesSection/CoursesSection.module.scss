@@ -5,7 +5,7 @@ $raleway: "Raleway", sans-serif;
 $quatro: "Quattrocento", sans-serif;
 
 .coursesPage {
-  padding: 0 5%; // Adjust padding for responsiveness
+  padding: 0 5%;
 }
 
 .sectionTitle {
@@ -46,14 +46,14 @@ $quatro: "Quattrocento", sans-serif;
 .tilesContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem; // Adjust gap using relative units
+  gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
 .courseTile {
-  width: calc(50% - 1rem); // Adjust width using relative units
-  padding: 2rem; // Adjust padding using relative units
-  border-radius: 1rem; // Adjust border-radius using relative units
+  width: calc(50% - 1rem);
+  padding: 2rem;
+  border-radius: 1rem;
   background: #f9f4f0;
   box-sizing: border-box;
   display: flex;
@@ -63,8 +63,8 @@ $quatro: "Quattrocento", sans-serif;
   margin-bottom: 1.5rem;
 
   .tileTitle {
-    margin-bottom: 3rem; // Adjust margin using relative units
-    font-size: 1.5rem; // Adjust font size using relative units
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #253149;
     font-family: $raleway;
@@ -77,9 +77,9 @@ $quatro: "Quattrocento", sans-serif;
   }
 
   li {
-    font-size: 1.2rem; // Adjust font size using relative units
+    font-size: 1.2rem;
     line-height: 1.5;
-    margin-bottom: 1.5rem; // Adjust margin using relative units
+    margin-bottom: 1.5rem;
     font-family: $raleway;
     font-weight: 400;
     color: #253149;

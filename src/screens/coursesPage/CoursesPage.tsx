@@ -2,24 +2,23 @@ import { FC } from "react";
 
 import CourseCardTile from "@/components/courseCardTile/CourseCardTile";
 import NavigationBar from "@/components/navigationBar/NavigationBar";
-import styles from './CoursesPage.module.scss'
+import styles from "./CoursesPage.module.scss";
 
 import { CourseConfig } from "@/types/courses.types";
 
 interface CoursesPageProps {
-    coursesData: CourseConfig[];
+  coursesData: CourseConfig[];
 }
-
 
 const CoursesPage: FC<CoursesPageProps> = ({ coursesData }) => {
-    return (
-        <>
-            <NavigationBar isOnLandingPage={false} />
-            <div className={styles.coursesPage}>
-                <h1>Courses</h1>
-                <CourseCardTile courseConfigs={coursesData} />
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <NavigationBar isOnLandingPage={false} />
+      <div className={styles.coursesPage}>
+        <div className={styles.coursesPageTitle}>Courses</div>
+        <CourseCardTile courseConfigs={coursesData} />
+      </div>
+    </>
+  );
+};
 export default CoursesPage;

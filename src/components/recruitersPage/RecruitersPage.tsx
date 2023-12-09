@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./RecruitersPage.module.scss";
+import { NextPage } from "next";
 
 const logos = [
   "/zydusHospital.svg",
@@ -16,7 +17,7 @@ const logos = [
   "/lgElectronics.svg",
 ];
 
-const RecruitersPage: React.FC = () => {
+const RecruitersPage: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
