@@ -5,7 +5,7 @@ import RecruitersPage from "@/components/recruitersPage/RecruitersPage";
 import IntroPage from "@/components/introPage/IntroPage";
 import Gallery from "@/components/galleryPage/Gallery";
 import Blogs from "@/components/blogPage/Blogs";
-import Courses from "@/components/coursesPage/CoursesPage";
+import Courses from "@/components/coursesSection/CoursesSection";
 import GuestLectures from "@/components/guestLectures/GuestLectures";
 import Footer from "@/components/footer/FooterPage";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../CoursesPage.module.scss";
+import styles from "../CoursesSection.module.scss";
 import { NextPage } from "next";
 
 const CourseTile = ({ title, courses = [] }: any) => {

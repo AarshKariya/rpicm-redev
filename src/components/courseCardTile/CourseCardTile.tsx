@@ -1,17 +1,10 @@
 import { FC, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import cx from "classnames";
 
-interface Course {
-  title: string;
-  description: string;
-  showArrow?: boolean | null;
-  id: string;
-}
-
-interface CourseConfig {
-  courseType: string;
-  courseItems: Course[];
-}
+import { CourseConfig } from "@/types/courses.types";
+import styles from "./CourseCardTile.module.scss"
 
 interface CourseCardTileProps {
   courseConfigs: CourseConfig[];
@@ -27,35 +20,27 @@ const CourseCardTile: FC<CourseCardTileProps> = ({ courseConfigs }) => {
   return (
     <div>
       {courseConfigs?.map((config, index) => (
-        <div key={index}>
-          <div>{config?.courseType}</div>
-          <div style={{ display: "flex", overflowX: "auto" }}>
+        <div key={index} className={styles.courses} >
+          <div className={styles.coursesType}>{config?.courseType}</div>
+          <div className={styles.coursesRow}>
             {config?.courseItems.map((course, idx) => (
               <motion.div
                 key={course?.id}
-                className={`course-card ${index % 2 === 0 ? "even" : ""}`}
+                className={cx(styles.courseCard, {
+                  [styles.evenRowCard]: index % 2 === 0,
+                })}
                 onHoverStart={() => handleHover(course?.id)}
                 onHoverEnd={() => handleHover(null)}
-                style={{
-                  width: "360px",
-                  height: "360px",
-                  marginRight: "20px",
-                  padding: "20px",
-                  border: "1px solid #ccc",
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                  flexShrink: 0,
-                  position: "relative",
-                  overflow: "hidden",
-                }}
+                whileHover={{ scale: 1.0001, color: 'white' }}
+
               >
                 <div>
-                  <div>{course?.title}</div>
+                  <div >{course?.title}</div>
                   {course?.showArrow && <div>&#8599;</div>}
                 </div>
                 <div>{course?.description}</div>
                 <motion.div
-                  className="hover-background"
+                  className={styles.hoverBackground}
                   initial={{ height: 0, top: 0 }}
                   animate={
                     hoveredIndex === course?.id
@@ -63,20 +48,18 @@ const CourseCardTile: FC<CourseCardTileProps> = ({ courseConfigs }) => {
                       : { height: 0, top: 0 }
                   }
                   exit={{ height: 0, top: 0 }}
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    backgroundColor: "#253149",
-                    borderRadius: "8px",
-                    zIndex: -1,
-                  }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
                 />
               </motion.div>
             ))}
           </div>
+          <Image
+            src="/nextArrow.svg"
+            alt="arrow"
+            width={35}
+            height={35}
+            className={styles.nextArrow}
+          />
         </div>
       ))}
     </div>
