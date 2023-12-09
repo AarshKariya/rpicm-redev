@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
+import cx from "classnames";
+
+import { FC,ReactElement } from "react";
+
 import styles from "./NavigationBar.module.scss";
 import NavLinks from "./navLinks/NavLinks";
 import RpicmLogo from "./rpicmLogo/RpicmLogo";
-import { motion } from "framer-motion";
 
-const NavigationBar: React.FC = () => {
+type NavigationBarProps = {
+  isOnLandingPage: boolean;
+}
+
+const NavigationBar:FC<NavigationBarProps> = ({isOnLandingPage}):ReactElement => {
   return (
     <motion.nav
       variants={{
@@ -15,8 +23,8 @@ const NavigationBar: React.FC = () => {
       transition={{ duration: 0.5, delay: 0.25 }}
       className={styles.navBar}
     >
-      <RpicmLogo />
-      <NavLinks />
+      <RpicmLogo isOnLandingPage={isOnLandingPage}/>
+      <NavLinks isOnLandingPage={isOnLandingPage}/>
     </motion.nav>
   );
 };

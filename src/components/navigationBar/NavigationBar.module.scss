@@ -3,7 +3,7 @@
 .navBar {
   position: absolute;
   top: 20px;
-  left: 6%;
+  left: 3%;
   transform: translateX(-50%);
   z-index: 1;
   display: flex;
@@ -23,15 +23,34 @@
   margin-right: auto; /* Pushes the logo/image to the left */
 }
 
+.addBackground{
+  background-color: #C1121F;
+  padding: 25px 10px;
+  margin-top: -30px;
+}
+
 .tabs {
   display: flex;
+  align-items: center;
   justify-content: flex-end; /* Aligns the links to the right */
 }
 
 .tabLink {
-  text-decoration: none;
   font-size: 18px;
   color: #f9f4f0;
   margin-left: 76px;
   border-bottom: none;
+  cursor: pointer; /* Add a cursor to indicate these are links */
+  display: inline-block; /* Ensure the styles are applied properly */
+  text-decoration: none; /* Remove underline */
+  &:hover {
+    color: #C1121F
+  }
+ 
+}
+.tabLinkOnOtherScreens{
+  color: #C1121F;
+  &:hover {
+    color: black;
+  }
 }
