@@ -1,25 +1,42 @@
-/* footer.module.scss */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
 
 .footer {
   display: flex;
   height: 386px;
   width: 100%;
-  background-color: #C1121F; /* Added C1121F background */
-  flex-direction: row; /* Change flex direction to row */
-  justify-content: space-between; /* Distribute columns evenly */
-  align-items: flex-end; /* Align columns to the bottom */
-  padding: 0 20px; /* Adjust padding as needed */
+  background-color: #c1121f;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px;
+
+  @media (max-width: 1200px) {
+    padding: 0 15px;
+  }
 
   @media (max-width: 768px) {
-    flex-direction: column; /* Change to a single column layout on smaller screens */
-    height: auto; /* Adjust height to fit content */
-    align-items: stretch; /* Stretch columns vertically */
+    flex-direction: column;
+    height: auto;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
   }
 }
 
 .column {
   display: flex;
-  flex-direction: column-reverse; /* Reverse column direction */
+  flex-direction: column;
   align-items: flex-start;
   padding: 20px;
   flex: 1;
@@ -27,17 +44,26 @@
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 20px; /* Add spacing between columns */
+    margin-bottom: 20px;
+    padding: 20px 10px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px;
   }
 }
 
 .column-title {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px; /* Adjust spacing between title and items */
+  margin-bottom: 20px;
+  color: white;
+  font-family: $raleway;
+  font-style: normal;
+  font-weight: 600;
 
   @media (max-width: 768px) {
-    margin-bottom: 10px; /* Reduce spacing for smaller screens */
+    margin-bottom: 10px;
   }
 }
 
@@ -49,10 +75,19 @@
 
 .column-item {
   font-size: 14px;
-  margin-bottom: 8px;
-  margin-top: auto; /* Pushes the items to the bottom */
+  margin-bottom: 20px;
+  margin-top: auto;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: $raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
 
   @media (max-width: 768px) {
-    margin-bottom: 5px; /* Adjust spacing for smaller screens */
+    margin-bottom: 5px;
   }
 }
