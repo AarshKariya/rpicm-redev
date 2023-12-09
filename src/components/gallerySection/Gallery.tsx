@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "./Gallery.module.scss"; // Import the SCSS file
+import styles from "./Gallery.module.scss";
 import { NextPage } from "next";
 
 const Gallery: NextPage = () => {
@@ -29,7 +29,7 @@ const Gallery: NextPage = () => {
 
   return (
     <motion.div
-      className={styles.galleryContainer} // Use the class from the SCSS file
+      className={styles.galleryContainer}
       variants={containerVariants}
       initial="hidden"
       animate="visible"

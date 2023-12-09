@@ -47,13 +47,19 @@
 //   }
 // }
 
-.gallery-container {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$mobileWidth: 375px;
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.galleryContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  height: 622px; /* Or 100vh for full page height */
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 112px;
@@ -62,26 +68,34 @@
 
 .row {
   display: flex;
-  justify-content: space-around; /* Changed to space-around */
+  justify-content: center; /* Changed to space-around */
   margin-top: 104px;
-  margin-bottom: 104px;
+  margin-bottom: 72px;
 }
 
-.gallery-image {
-  width: 100px;
-  height: 100px;
+.galleryImage {
+  margin: 0 20px; /* Increase the margin between images */
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto;
 }
 
-.view-gallery {
+.viewGallery {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 100px;
-  background-color: #f0f0f0;
-  color: #333;
-  font-size: 18px;
-  /* Additional styles for the "View Gallery" element */
+  width: 256px;
+  background-color: #fff;
+  color: #474747;
+  font-family: $raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.row + .row {
+  margin-top: 0;
 }
 
 /* Media query for responsiveness */
