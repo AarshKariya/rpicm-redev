@@ -1,44 +1,74 @@
-/* styles/courses.module.scss */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
 
 .coursesPage {
-  padding: 20px;
+  padding: 0 5%; // Adjust padding for responsiveness
 }
 
 .sectionTitle {
-  margin-top: 120px;
-  font-size: 32px;
-  font-weight: bold;
+  margin-top: 2rem; // Adjust margin using relative units
+  margin-bottom: 3rem;
+  color: #253149;
+  font-family: $quatro;
+  font-size: 2rem; // Adjust font size using relative units
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.1rem; // Adjust letter spacing using relative units
+
+  @media (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 468px) {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 1.1rem;
+  }
 }
 
 .tilesContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.horizontalTiles {
-  display: flex;
-  gap: 20px;
+  gap: 1.5rem; // Adjust gap using relative units
+  margin-top: 1.5rem;
 }
 
 .courseTile {
-  width: 360px;
-  height: 506px;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  width: calc(50% - 1rem); // Adjust width using relative units
+  padding: 2rem; // Adjust padding using relative units
+  border-radius: 1rem; // Adjust border-radius using relative units
+  background: #f9f4f0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   cursor: pointer;
   transition: transform 0.3s ease;
+  margin-bottom: 1.5rem;
 
-  h2 {
-    margin-bottom: 15px;
-    font-size: 24px;
+  .tileTitle {
+    margin-bottom: 3rem; // Adjust margin using relative units
+    font-size: 1.5rem; // Adjust font size using relative units
     font-weight: bold;
+    color: #253149;
+    font-family: $raleway;
   }
 
   ul {
@@ -48,29 +78,17 @@
   }
 
   li {
-    font-size: 18px;
+    font-size: 1.2rem; // Adjust font size using relative units
     line-height: 1.5;
-    margin-bottom: 8px;
-  }
-}
-
-@media (max-width: 768px) {
-  .sectionTitle {
-    left: 20px;
-    margin-top: 60px;
+    margin-bottom: 1.5rem; // Adjust margin using relative units
+    font-family: $raleway;
+    font-weight: 400;
+    color: #253149;
   }
 
-  .tilesContainer {
-    justify-content: center;
-  }
-
-  .horizontalTiles {
-    flex-direction: column;
-  }
-
-  .courseTile {
-    width: calc(50% - 10px);
+  @media (max-width: 768px) {
+    width: 100%;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 }

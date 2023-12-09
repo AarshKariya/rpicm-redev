@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import cx from "classnames";
-
-import { FC, ReactElement } from "react";
+import { ReactElement } from "react";
 
 import styles from "./NavigationBar.module.scss";
 import NavLinks from "./navLinks/NavLinks";
