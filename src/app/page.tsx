@@ -19,9 +19,9 @@ export default function Home() {
       <IntroPage />
       <Gallery />
       {/* <GallerySection /> */}
-      <Blogs />
       <Courses />
       <GuestLectures />
+      <Blogs />
       <Footer />
     </main>
   );

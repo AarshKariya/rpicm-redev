@@ -7,15 +7,33 @@ const config = [
   {
     id: 1,
     blogTag: "COMMUNICATION",
-    blogTitle: "What's happening these days?",
-    blogShortDesc: "This is what's been happening.",
+    blogTitle: "Lorem ipsum dolor sit amet consectetur. ",
+    blogShortDesc:
+      "Lorem ipsum dolor sit amet consectetur. At pulvinar viverra tortor consectetur. Est sed mattis porttitor in id dui fringilla fringilla sollicitudin.",
     blogRedirect: "someURL",
   },
   {
     id: 2,
     blogTag: "TECHNOLOGY",
-    blogTitle: "Latest Technological Advancements",
-    blogShortDesc: "Exploring the latest in technology.",
+    blogTitle: "Lorem ipsum dolor sit amet consectetur. ",
+    blogShortDesc:
+      "Lorem ipsum dolor sit amet consectetur. At pulvinar viverra tortor consectetur. Est sed mattis porttitor in id dui fringilla fringilla sollicitudin.",
+    blogRedirect: "anotherURL",
+  },
+  {
+    id: 3,
+    blogTag: "TECHNOLOGY",
+    blogTitle: "Lorem ipsum dolor sit amet consectetur. ",
+    blogShortDesc:
+      "Lorem ipsum dolor sit amet consectetur. At pulvinar viverra tortor consectetur. Est sed mattis porttitor in id dui fringilla fringilla sollicitudin.",
+    blogRedirect: "anotherURL",
+  },
+  {
+    id: 4,
+    blogTag: "TECHNOLOGY",
+    blogTitle: "Lorem ipsum dolor sit amet consectetur. ",
+    blogShortDesc:
+      "Lorem ipsum dolor sit amet consectetur. At pulvinar viverra tortor consectetur. Est sed mattis porttitor in id dui fringilla fringilla sollicitudin.",
     blogRedirect: "anotherURL",
   },
 ];
@@ -25,7 +43,9 @@ const Blogs: NextPage = () => {
     <div className={styles.blogsPage}>
       <div className={styles.pageTitle}>Blogs</div>
       <div className={styles.tilesContainer}>
-        <BlogTile config={config} />
+        <div className={styles.tilesWrapper}>
+          <BlogTile config={config} />
+        </div>
       </div>
     </div>
   );

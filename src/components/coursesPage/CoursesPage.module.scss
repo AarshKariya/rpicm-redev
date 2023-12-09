@@ -9,15 +9,14 @@ $quatro: "Quattrocento", sans-serif;
 }
 
 .sectionTitle {
-  margin-top: 2rem; // Adjust margin using relative units
+  margin-top: 2rem;
   margin-bottom: 3rem;
   color: #253149;
   font-family: $quatro;
-  font-size: 2rem; // Adjust font size using relative units
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.1rem; // Adjust letter spacing using relative units
 
   @media (max-width: 1200px) {
     font-size: 1.8rem;
