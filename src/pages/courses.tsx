@@ -1,4 +1,4 @@
-import CourseCardTile from "@/components/courseCardTile/CourseCardTile";
+import CoursesPage from "@/screens/coursesPage/CoursesPage";
 
 const generateUniqueId = () => {
   return Math.random().toString(36).substr(2, 9); // Generate a random unique ID
@@ -102,13 +102,10 @@ const coursesData = [
   },
 ];
 
-const CoursesPage = () => {
+const Courses = () => {
   return (
-    <div>
-      <h1>My Courses</h1>
-      <CourseCardTile courseConfigs={coursesData} />
-    </div>
+    <CoursesPage coursesData={coursesData} />
   );
 };
 
-export default CoursesPage;
+export default Courses;

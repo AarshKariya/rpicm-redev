@@ -1,54 +1,63 @@
-.tile-container {
-  margin-top: 20px;
-}
+.courses {
+  .coursesType {
+    margin: 30px 0;
 
-.course-type {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.tile-container {
-  display: flex;
-  overflow-x: auto;
-}
-
-.course-card {
-  width: 360px;
-  height: 360px;
-  margin-right: 20px;
-  padding: 36px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
-  position: relative; /* Add this line to set position */
-  transition: transform 0.3s ease, border 0.3s ease; /* Added border transition */
-
-  &:hover {
-    transform: scale(1.05);
-    border: 1px solid #ccc; /* Retain border on hover */
   }
-}
 
-.card-container {
-  overflow: hidden;
-  border-radius: 8px; /* Maintain border radius */
-}
+  .coursesRow {
+    display: flex;
+    overflow-x: auto;
 
-.hover-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Update height to cover the entire card */
-  background-color: #253149;
-  border-radius: inherit; /* Inherit border radius from the card */
-  z-index: -1;
-  transition: height 0.4s ease-in-out;
-  opacity: 0; /* Initial opacity set to 0 */
-}
+    /* For WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 0.5em;
+      /* Set the width of the scrollbar */
+    }
 
-.course-card:hover .hover-background {
-  opacity: 1; /* Show the hover effect only on hover */
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      /* Set the color of the thumb */
+    }
+
+    /* For Firefox */
+    scrollbar-width: thin;
+    /* Set the width of the scrollbar in Firefox */
+    scrollbar-color: transparent transparent;
+    /* Set the color of the thumb in Firefox */
+
+    .courseCard {
+      width: 360px;
+      height: 360px;
+      margin-right: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+
+      .hoverBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #253149;
+        border-radius: 8px;
+        z-index: -1;
+      }
+
+    }
+
+    .evenRowCard {
+      background-color: #F9F4F0;
+    }
+
+
+  }
+
+  .nextArrow {
+    float: right;
+    margin-right: 2rem;
+  }
 }

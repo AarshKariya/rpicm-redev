@@ -1,6 +1,6 @@
 import React from "react";
 import CourseTile from "./components/CourseTile";
-import styles from "./CoursesPage.module.scss";
+import styles from "./CoursesSection.module.scss";
 import { NextPage } from "next";
 import { courseConfig } from "./helpers/courseConfig";
 
