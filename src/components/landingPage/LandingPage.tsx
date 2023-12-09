@@ -7,7 +7,7 @@ import NavigationBar from "../navigationBar/NavigationBar";
 const LandingPage: React.FC = () => {
   return (
     <div className={styles.container}>
-      <NavigationBar />
+      <NavigationBar isOnLandingPage={true}/>
       <ImageComponent />
       <ImageText />
     </div>

@@ -1,121 +1,149 @@
-.aboutUs {
-  padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
+.aboutUsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Raleway !important;
 
-  .history {
-    margin-top: 40px;
 
-    h2 {
+  .aboutUs {
+    margin-top: 150px;
+    width: 100%;
+    /* Set a reasonable width for your content */
+    max-width: 70%;
+    /* Set a max-width if needed */
+    font-weight: 500;
+    line-height: 167.4%;
+
+    h1 {
       font-size: 2rem;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      font-family: Quattrocento !important;
+
     }
 
-    .historyContent {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
+    .history {
+      margin-top: 40px;
 
-      .historyText {
-        flex: 1;
-        margin-right: 20px;
+
+      h2 {
+        font-size: 1.5rem;
+        font-family: Quattrocento !important;
+
       }
 
-      .historyImage {
-        flex: 1;
-        text-align: center;
-        padding-top: 20px;
-      }
-    }
-  }
-
-  .today {
-    margin-top: 40px;
-
-    .todayContent {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-
-      .todayImages {
+      .historyContent {
         display: flex;
         justify-content: space-between;
-        margin-right: 20px;
+        align-items: center;
 
-        .todayImage {
-          flex: 1;
-          margin-right: 10px;
+        .historyText {
+          width: 40%;
+        }
+
+
+        .historyImage {
           text-align: center;
-        }
-      }
-
-      .todayText {
-        flex: 2;
-
-        p {
-          /* Styling for the text */
+          padding-top: 20px;
         }
       }
     }
-  }
 
-  .professionals {
-    margin-top: 40px;
-    width: 564px;
+    .today {
+      margin-top: 40px;
 
-    .professionalsContent {
+      .todayContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .todayImages {
+          display: flex;
+          flex-direction: column;
+
+          .todayImage2 {
+            margin-left: 100px;
+            margin-top: 50px;
+            text-align: center;
+          }
+        }
+
+        .todayText {
+          width: 40%;
+
+          p {
+            /* Styling for the text */
+          }
+        }
+      }
+    }
+
+    .professionals {
+      margin-top: 40px;
+      width: 564px;
+
+      .professionalsContent {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .professionalsText {
+          width: 90%;
+
+          p {
+            /* Styling for the text */
+          }
+        }
+      }
+    }
+
+    .tiles {
       display: flex;
-      flex-direction: row;
-      align-items: flex-start;
+      margin-top: 40px;
 
-      .professionalsText {
-        flex: 1;
+      .tile {
+        width: 385px;
+        height: 292px;
+        background-color: #f9f4f0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        color: black;
+        margin-right: 36px;
+        /* Title text color */
 
-        p {
-          /* Styling for the text */
-        }
-      }
-    }
-  }
-
-  .tiles {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-
-    .tile {
-      width: 385px;
-      height: 292px;
-      background-color: #f9f4f0;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 20px;
-      color: black; /* Title text color */
-
-      .tileContent {
-        padding: 20px;
-
-        h2 {
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-          transition: color 0.3s; /* Smooth color transition for title */
-        }
-
-        p {
-          transition: color 0.3s; /* Smooth color transition for text */
-        }
-      }
-
-      &:hover {
-        background-color: #253149; /* Entire tile background color on hover */
 
         .tileContent {
-          h2,
+          padding: 20px;
+
+          h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+            /* Smooth color transition for title */
+          }
+
           p {
-            color: white; /* Text color on hover */
+            transition: color 0.3s;
+            /* Smooth color transition for text */
+          }
+        }
+
+        &:hover {
+          background-color: #253149;
+          /* Entire tile background color on hover */
+
+          .tileContent {
+
+            h2,
+            p {
+              color: white;
+              /* Text color on hover */
+            }
           }
         }
       }
