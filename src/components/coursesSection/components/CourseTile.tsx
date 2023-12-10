@@ -18,7 +18,7 @@ type CourseTileProps = {
 const CourseTile: NextPage<CourseTileProps> = ({
   title,
   courses = [],
-  index
+  index,
 }: any) => {
   const hasCourseItems = courses && courses?.length > 0;
   // const isTwoRows = index === 1 || index === 2;
@@ -30,7 +30,17 @@ const CourseTile: NextPage<CourseTileProps> = ({
         gridRow: index === 2 || index === 3 ? "span 1" : "span 3",
       }}
     >
-     {title && <div className={styles.tileTitle}>{title}</div>}
+      {title && (
+        <div
+          className={
+            hasCourseItems
+              ? styles.tileTitle
+              : styles.tileTitleWithoutCourseItems
+          }
+        >
+          {title}
+        </div>
+      )}
       {hasCourseItems && (
         <ul className={styles.courseList}>
           {courses.map((course: CourseItem, index: number) => (

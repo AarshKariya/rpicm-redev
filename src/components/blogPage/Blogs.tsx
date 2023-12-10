@@ -38,10 +38,14 @@ const config = [
   },
 ];
 
-const Blogs: NextPage = () => {
+type BlogsProps = {
+  blogsSliderHeading?: string | null;
+};
+
+const Blogs: NextPage<BlogsProps> = ({ blogsSliderHeading }) => {
   return (
     <div className={styles.blogsPage}>
-      <div className={styles.pageTitle}>Blogs</div>
+      <div className={styles.pageTitle}>{blogsSliderHeading ?? "Blogs"}</div>
       <div className={styles.tilesContainer}>
         <div className={styles.tilesWrapper}>
           <BlogTile config={config} />

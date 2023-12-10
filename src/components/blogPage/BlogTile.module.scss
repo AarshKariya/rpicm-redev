@@ -58,20 +58,29 @@ $quatro: "Quattrocento", sans-serif;
   background-color: #f9f4f0;
 
   .tag {
-    font-weight: bold;
-    // color: #253149;
     margin-bottom: 20px;
+    font-family: $raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.9%;
   }
 
   .title {
+    font-family: $raleway;
     font-size: 24px;
-    font-weight: bold;
-    // color: #253149;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.9%;
     margin-bottom: 12px;
   }
 
   .description {
-    // color: #253149;
+    font-family: $raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 141.9%;
     margin-bottom: 46px;
   }
 
@@ -79,7 +88,11 @@ $quatro: "Quattrocento", sans-serif;
     display: flex;
     align-items: center;
     .readMoreText {
-      // color: #253149;
+      font-family: $raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 141.9%;
       cursor: pointer;
     }
 
