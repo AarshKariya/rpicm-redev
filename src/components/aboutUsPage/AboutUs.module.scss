@@ -96,7 +96,6 @@ margin-bottom: 200px;
 
       .tile {
         width: 385px;
-        height: 292px;
         background-color: #f9f4f0;
         border-radius: 8px;
         overflow: hidden;
@@ -105,11 +104,11 @@ margin-bottom: 200px;
         margin-right: 36px;
 
         .tileContent {
-          padding: 20px;
+          padding: 58px 28px 58px 48px;
 
           .tilesHeading {
             font-size: 1.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 40px;
             transition: color 0.3s;
           }
 
