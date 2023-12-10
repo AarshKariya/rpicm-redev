@@ -5,6 +5,7 @@ import HistorySecondRow from "./components/historySecondRow/HistorySecondRow";
 import HistoryThirdRow from "./components/historyThirdRow/HistoryThirdRow";
 import AboutUsTiles from "./components/aboutUsTiles/AboutUsTiles";
 import HeadingAndFirstRow from "./components/headingAndFirstRow/HeadingAndFirstRow";
+import Footer from "../footer/FooterPage";
 
 const AboutUs: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutUs: NextPage = () => {
           <AboutUsTiles />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

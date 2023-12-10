@@ -10,12 +10,15 @@ $quatro: "Quattrocento", sans-serif;
   align-items: center;
   min-height: 100vh;
   font-family: $raleway;
+line-height: 144.9%;
+font-weight: 400;
+letter-spacing: 1px;
+margin-bottom: 200px;
 
   .aboutUs {
-    margin-top: 150px;
+    margin-top: 200px;
     width: 100%;
-    max-width: 70%;
-    font-weight: 500;
+    max-width: 80%;
 
     .aboutUsHeading {
       font-size: 2rem;
@@ -75,7 +78,6 @@ $quatro: "Quattrocento", sans-serif;
 
     .professionals {
       margin-top: 40px;
-      width: 564px;
 
       .professionalsContent {
         display: flex;
@@ -83,14 +85,14 @@ $quatro: "Quattrocento", sans-serif;
         align-items: flex-start;
 
         .professionalsText {
-          width: 90%;
+          width: 50%;
         }
       }
     }
 
     .tiles {
       display: flex;
-      margin-top: 40px;
+      margin-top: 60px;
 
       .tile {
         width: 385px;

@@ -2,7 +2,7 @@ import CourseEnquiryForm from "@/components/courseEnquiryForm/CourseEnquiryForm"
 
 const EnquiryPage = () => {
   return (
-    <div>
+    <div style={{overflowX:'hidden', margin:'-8px'}}>
       <CourseEnquiryForm currentStep={1} />
     </div>
   );

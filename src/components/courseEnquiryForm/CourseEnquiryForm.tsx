@@ -9,6 +9,8 @@ import WindowWidthLine from "./components/WindowWidthLine/WindowWidthLine";
 import ApplicationFormContainer from "./components/ApplicationFormContainer/ApplicationFormContainer";
 import PaymentDetails from "./components/PaymentDetails/PaymentDetails";
 import FileInputsSection from "./components/FileInputSection/FileInputSection";
+import NavigationBar from "../navigationBar/NavigationBar";
+import Footer from "../footer/FooterPage";
 
 const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
@@ -37,25 +39,29 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   };
 
   return (
-    <div className={styles.courseEnquiryForm}>
-      <div className={styles.heading}>Course Enquiry Form</div>
-      <StepsContainer />
-      <WindowWidthLine />
-      <ApplicationFormContainer />
-      <WindowWidthLine />
-      <FileInputsSection />
-      <WindowWidthLine />
-      <PaymentDetails
-        date={date}
-        place={place}
-        handleDateChange={handleDateChange}
-        handlePlaceChange={handlePlaceChange}
-        isChecked={isChecked}
-        handleCheckBoxChange={handleCheckBoxChange}
-        handleButtonClick={handleButtonClick}
-        isFormValid={isFormValid}
-      />
-    </div>
+    <>
+      <NavigationBar isOnLandingPage={false} />
+      <div className={styles.courseEnquiryForm}>
+        <div className={styles.heading}>Course Enquiry Form</div>
+        <StepsContainer />
+        <WindowWidthLine />
+        <ApplicationFormContainer />
+        <WindowWidthLine />
+        <FileInputsSection />
+        <WindowWidthLine />
+        <PaymentDetails
+          date={date}
+          place={place}
+          handleDateChange={handleDateChange}
+          handlePlaceChange={handlePlaceChange}
+          isChecked={isChecked}
+          handleCheckBoxChange={handleCheckBoxChange}
+          handleButtonClick={handleButtonClick}
+          isFormValid={isFormValid}
+        />
+      </div>
+      <Footer />
+    </>
   );
 };
 

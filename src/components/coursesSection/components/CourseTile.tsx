@@ -12,19 +12,25 @@ type CourseItem = {
 type CourseTileProps = {
   title?: string;
   courses?: CourseItem[];
+  index?: number;
 };
 
 const CourseTile: NextPage<CourseTileProps> = ({
   title,
   courses = [],
+  index
 }: any) => {
   const hasCourseItems = courses && courses?.length > 0;
+  // const isTwoRows = index === 1 || index === 2;
   return (
     <div
       className={styles.courseTile}
-      style={{ height: hasCourseItems ? "auto" : "fit-content" }}
+      style={{
+        height: hasCourseItems ? "auto" : "fit-content",
+        gridRow: index === 2 || index === 3 ? "span 1" : "span 3",
+      }}
     >
-      <div className={styles.tileTitle}>{title}</div>
+     {title && <div className={styles.tileTitle}>{title}</div>}
       {hasCourseItems && (
         <ul className={styles.courseList}>
           {courses.map((course: CourseItem, index: number) => (
