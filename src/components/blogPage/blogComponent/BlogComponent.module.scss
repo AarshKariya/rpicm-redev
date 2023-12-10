@@ -1,4 +1,10 @@
-$mobileWidth: 768px; // Change to your desired mobile width
+$mobileWidth: 768px;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
 
 .blogContainer {
   position: relative;
@@ -6,88 +12,109 @@ $mobileWidth: 768px; // Change to your desired mobile width
   overflow: hidden;
 
   .blogHeader {
-    h2 {
+    display: flex;
+    // align-items: center;
+    margin-bottom: 44px;
+    padding: 148px 0px 44px 108px;
+
+    .blogHeading {
       font-size: 24px;
-      margin-bottom: 20px;
+      color: #253149;
+      font-family: $quatro;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -2px;
+    }
+
+    .blogArrow {
+      margin-left: 8px;
+      flex-shrink: 0;
+      align-self: center;
+      margin-top: 8px;
+    }
+
+    .blogType {
+      margin-left: 8px;
+      color: #253149;
+      font-family: $raleway;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -1.2px;
+      align-self: flex-end;
+      margin-bottom: 4px;
     }
   }
 
   .blogContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 574px;
-    margin: 0 auto;
+    align-items: flex-start;
+    max-width: 774px;
+    margin: 0;
 
     .blogImage {
       position: relative;
       width: 100vw;
       height: 400px;
       overflow: hidden;
-      /* Other styles for the blog image */
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
 
       .imageOverlay {
-        width: 316px; /* Set width of the overlay */
-        height: 251px; /* Set height of the overlay */
-        color: #000; /* Text color */
-        padding: 20px; /* Padding for text */
-        position: absolute; /* Position within the container */
-        top: 50%; /* Align from top */
-        transform: translateY(-50%); /* Center vertically */
-        left: 180px; /* Position to the left */
+        width: 316px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 180px;
 
-        h4 {
-          font-size: 16px;
+        .blogTypeHeading {
           margin-bottom: 5px;
+          color: #253149;
+          font-family: $raleway;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 141.9%;
         }
 
-        h1 {
-          font-size: 36px;
-          margin: 10px 0;
+        .blogHeading {
+          margin: 22px 0;
+          color: #253149;
+          font-family: $quatro;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -2.8px;
         }
 
-        p {
-          font-size: 14px;
-          opacity: 0.8;
+        .blogUpdatedAt {
+          color: #253149;
+          font-family: $raleway;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 141.9%;
         }
-      }
-    }
-
-    .blogTitle {
-      text-align: left;
-      margin-top: 20px;
-
-      h4 {
-        font-size: 16px;
-        margin-bottom: 5px;
-      }
-
-      h1 {
-        font-size: 36px;
-        margin: 10px 0;
-      }
-
-      p {
-        font-size: 14px;
-        opacity: 0.8;
       }
     }
 
     .blogText {
-      text-align: left;
       margin-top: 20px;
-      left: 180px;
+      padding-left: 200px;
+      margin-bottom: 300px;
 
-      p {
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 15px;
+      .blogParagraphs {
+        color: #253149;
+        font-family: $raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.9%;
+        margin-bottom: 20px;
       }
     }
 
@@ -108,5 +135,44 @@ $mobileWidth: 768px; // Change to your desired mobile width
         }
       }
     }
+  }
+
+  .exploreCourses {
+    padding: 32px 80px 36px 36px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    position: absolute;
+    top: 70%;
+    right: -2%;
+    width: 210px;
+  }
+
+  .exploreBox {
+    text-align: right;
+  }
+
+  .exploreTitle {
+    color: #253149;
+    font-family: $raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 141.9%;
+    margin-bottom: 24px;
+  }
+
+  .courseOptions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .courseOption {
+    color: #253149;
+    font-family: $raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 141.9%;
+    margin-bottom: 14px;
+    cursor: pointer;
   }
 }
