@@ -48,7 +48,6 @@ $quatro: "Quattrocento", sans-serif;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
   margin-top: 1.5rem;
-
 }
 
 .courseTile {
@@ -63,15 +62,22 @@ $quatro: "Quattrocento", sans-serif;
   margin-bottom: 1.5rem;
 
   .tileTitle {
-    margin-bottom: 2rem;
+    margin-bottom: 58px;
     font-size: 1.5rem;
     font-weight: 500;
     color: #253149;
     font-family: $raleway;
-  line-height: 144.9%;
-
+    line-height: 144.9%;
   }
 
+  .tileTitleWithoutCourseItems {
+    margin-bottom: 14px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #253149;
+    font-family: $raleway;
+    line-height: 144.9%;
+  }
 
   ul {
     list-style-type: none;
