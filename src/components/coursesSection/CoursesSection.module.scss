@@ -44,15 +44,15 @@ $quatro: "Quattrocento", sans-serif;
 }
 
 .tilesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
   margin-top: 1.5rem;
+
 }
 
 .courseTile {
-  width: calc(50% - 1rem);
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 1rem;
   background: #f9f4f0;
   box-sizing: border-box;
@@ -63,12 +63,15 @@ $quatro: "Quattrocento", sans-serif;
   margin-bottom: 1.5rem;
 
   .tileTitle {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #253149;
     font-family: $raleway;
+  line-height: 144.9%;
+
   }
+
 
   ul {
     list-style-type: none;
@@ -81,8 +84,11 @@ $quatro: "Quattrocento", sans-serif;
     line-height: 1.5;
     margin-bottom: 1.5rem;
     font-family: $raleway;
-    font-weight: 400;
+    font-weight: lighter;
     color: #253149;
+  }
+  &:nth-child(3) {
+    margin-bottom: 0;
   }
 
   @media (max-width: 768px) {

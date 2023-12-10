@@ -9,9 +9,9 @@ const coursesData = [
     courseType: "COMMUNICATION",
     courseItems: [
       {
-        title: "Course 1",
+        title: "Journalism",
         id: `comm_${generateUniqueId()}`,
-        description: "Description for course 1",
+        description: "This course equips aspiring journalists for roles in news channels, newspapers, corporate, and government sectors, covering reporting, editing, anchoring, and media management. It applies journalistic expertise to content creation across diverse platforms, fostering portfolio development via industry projects.",
         showArrow: true,
       },
       {
@@ -104,7 +104,9 @@ const coursesData = [
 
 const Courses = () => {
   return (
-    <CoursesPage coursesData={coursesData} />
+    <div style={{overflowX:'hidden', margin:'-8px'}}>
+      <CoursesPage coursesData={coursesData} />
+    </div>
   );
 };
 
