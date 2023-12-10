@@ -3,7 +3,10 @@ import React from "react";
 
 const AboutUsRoute = () => {
   return (
+    <div style={{ overflowX: 'hidden', margin:'-8px' }}>
       <AboutUs />
+    </div>
+
   );
 };
 

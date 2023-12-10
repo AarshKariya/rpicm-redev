@@ -34,9 +34,9 @@ const CourseCardTile: FC<CourseCardTileProps> = ({ courseConfigs }) => {
                 whileHover={{ scale: 1.0001, color: 'white' }}
 
               >
-                <div>
-                  <div >{course?.title}</div>
-                  {course?.showArrow && <div>&#8599;</div>}
+                <div className={styles.tileHeader}>
+                  <div className={styles.courseTitle}>{course?.title}</div>
+                  {course?.showArrow && <div className={styles.showArrow}>&#8599;</div>}
                 </div>
                 <div>{course?.description}</div>
                 <motion.div

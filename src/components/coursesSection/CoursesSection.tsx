@@ -9,9 +9,10 @@ const Courses: NextPage = () => {
     <div className={styles.coursesPage}>
       <div className={styles.sectionTitle}>Courses</div>
       <div className={styles.tilesContainer}>
-        {courseConfig?.map((course) => (
+        {courseConfig?.map((course, index) => (
           <CourseTile
             key={course?.id}
+            index={index}
             title={course?.courseTitle}
             courses={course?.courseItems?.map((item) => item)}
           />
