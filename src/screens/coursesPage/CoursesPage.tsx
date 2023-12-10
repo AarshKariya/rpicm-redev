@@ -2,10 +2,12 @@ import { FC } from "react";
 
 import CourseCardTile from "@/components/courseCardTile/CourseCardTile";
 import NavigationBar from "@/components/navigationBar/NavigationBar";
-import styles from "./CoursesPage.module.scss";
+import Footer from "@/components/footer/FooterPage";
+import ExploreCourses from "@/components/exploreCourses/ExploreCourses";
 
 import { CourseConfig } from "@/types/courses.types";
-import Footer from "@/components/footer/FooterPage";
+import styles from "./CoursesPage.module.scss";
+
 
 interface CoursesPageProps {
   coursesData: CourseConfig[];
