@@ -3,7 +3,6 @@ import { FC } from "react";
 import CourseCardTile from "@/components/courseCardTile/CourseCardTile";
 import NavigationBar from "@/components/navigationBar/NavigationBar";
 import Footer from "@/components/footer/FooterPage";
-import ExploreCourses from "@/components/exploreCourses/ExploreCourses";
 
 import { CourseConfig } from "@/types/courses.types";
 import styles from "./CoursesPage.module.scss";
