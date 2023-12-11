@@ -8,17 +8,14 @@ import Blogs from "@/components/blogPage/Blogs";
 import Courses from "@/components/coursesSection/CoursesSection";
 import GuestLectures from "@/components/guestLectures/GuestLectures";
 import Footer from "@/components/footer/FooterPage";
-import GallerySection from "@/components/gallerySection/GallerySection";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <Header /> */}
       <LandingPage />
       <RecruitersPage />
       <IntroPage />
       <Gallery />
-      {/* <GallerySection /> */}
       <Courses />
       <GuestLectures />
       <Blogs />
