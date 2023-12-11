@@ -1,49 +1,67 @@
-import React from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import React, { useEffect, useRef } from "react";
+import "leaflet/dist/leaflet.css";
+import NextLink from "next/link";
+import { bhavanCenters } from "./helpers/indiaMapCenters";
 
-const containerStyle = {
-  width: "400px",
-  height: "400px",
-};
+const DynamicIndiaMap: React.FC = () => {
+  const mapRef = useRef<HTMLDivElement | null>(null);
 
-const center = {
-  lat: -3.745,
-  lng: -38.523,
-};
+  useEffect(() => {
+    const loadMap = async () => {
+      if (mapRef.current && typeof window !== "undefined") {
+        const L = await import("leaflet");
 
-function IndiaMap() {
-  const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "YOUR_API_KEY",
-  });
+        const map = L.map(mapRef.current).setView([20.5937, 78.9629], 5);
 
-  const [map, setMap] = React.useState(null);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "Map data © OpenStreetMap contributors",
+        }).addTo(map);
 
-  const onLoad = React.useCallback(function callback(map: any) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
+        bhavanCenters?.forEach((capital) => {
+          const isWebsiteAvailable = capital?.website ? (
+            <NextLink href={capital?.website}>{capital?.website}</NextLink>
+          ) : (
+            "Not available"
+          );
 
-    setMap(map);
+          const popupContent = `
+          <div>
+            <h2>${capital?.name ?? "-"}</h2>
+            <p>Address: ${capital?.address ?? "-"}</p>
+            <p>Maps: <a href="${capital?.maps}">View on Map</a></p>
+            <p>Website: ${isWebsiteAvailable}</p>
+            <p>Email: ${capital?.email ?? "-"}</p>
+          </div>
+        `;
+
+          const marker = L.marker(
+            capital?.position as L.LatLngExpression
+          ).addTo(map);
+
+          marker.bindPopup(popupContent, {
+            className: "custom-popup",
+          });
+        });
+      }
+    };
+
+    loadMap();
   }, []);
 
-  const onUnmount = React.useCallback(function callback(map: any) {
-    setMap(null);
-  }, []);
-
-  return isLoaded ? (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={center}
-      zoom={10}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
-    >
-      {/* Child components, such as markers, info windows, etc. */}
-      <></>
-    </GoogleMap>
-  ) : (
-    <></>
+  return (
+    <div
+      id="india-map"
+      style={{
+        height: "520px",
+        width: "100%",
+        marginTop: "240px",
+        marginBottom: "120px",
+        display: "flex",
+        justifyContent: "center",
+      }}
+      ref={mapRef}
+    ></div>
   );
-}
+};
 
-export default React.memo(IndiaMap);
+export default DynamicIndiaMap;
