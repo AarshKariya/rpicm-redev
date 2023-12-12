@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.coursesDetails {
+  margin-top: 150px;
+  padding: 2rem 6rem;
+  font-family: $raleway;
+  color: #253149;
+
+
+  .courseDetailsTitle {
+    color: #253149;
+    font-family: $quatro !important;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .subTitle {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+
+    .duration {
+      margin-left: 20px;
+      font-size: 18px;
+      font-style: italic;
+    }
+  }
+
+  .bulletPoint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+
+    .bullet {
+      background-color: #253149;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.9%;
+  }
+
+  .applyCourseLink {
+    display: flex;
+    align-items: center;
+    margin: 12rem 0 4rem 0;
+
+    .subTitleLink {
+      font-family: $quatro !important;
+      font-size: 2rem;
+      font-weight: lighter;
+      margin-right: 5rem;
+      line-height: 44px;
+      
+    }
+    .link{
+font-size: 1rem;
+font-weight: lighter;
+text-decoration-line: underline;
+    }
+  }
+
+}
