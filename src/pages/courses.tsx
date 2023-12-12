@@ -84,7 +84,7 @@ const coursesData = [
     courseItems: [
       {
         title: "Industrial Relations & Personnel Management",
-        id: `comm_${generateUniqueId()}`,
+        id: `mgm_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
@@ -94,7 +94,7 @@ const coursesData = [
       },
       {
         title: "Materials Management",
-        id: `comm_${generateUniqueId()}`,
+        id: `mgm_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
@@ -104,7 +104,7 @@ const coursesData = [
       },
       {
         title: "International Trade (Import-Export)",
-        id: `comm_${generateUniqueId()}`,
+        id: `mgm_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
@@ -114,7 +114,7 @@ const coursesData = [
       },
       {
         title: "Hospital Management",
-        id: `comm_${generateUniqueId()}`,
+        id: `mgm_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
@@ -124,7 +124,7 @@ const coursesData = [
       },
       {
         title: "Marketing & Sales Management",
-        id: `comm_${generateUniqueId()}`,
+        id: `mgm_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
@@ -134,7 +134,7 @@ const coursesData = [
       },
       {
         title: "Business Management",
-        id: `comm_${generateUniqueId()}`,
+        id: `mgm_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
@@ -144,7 +144,7 @@ const coursesData = [
       },
       {
         title: "Financial Management",
-        id: `comm_${generateUniqueId()}`,
+        id: `mgm_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
@@ -159,7 +159,7 @@ const coursesData = [
     courseItems: [
       {
         title: "Cultural Heritage Of India",
-        id: `comm_${generateUniqueId()}`,
+        id: `chi_${generateUniqueId()}`,
         description: "Description for course 1",
         duration: 1,
         isYearly: true,
