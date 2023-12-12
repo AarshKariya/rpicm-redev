@@ -11,6 +11,7 @@ import PaymentDetails from "./components/PaymentDetails/PaymentDetails";
 import FileInputsSection from "./components/FileInputSection/FileInputSection";
 import NavigationBar from "../navigationBar/NavigationBar";
 import Footer from "../footer/FooterPage";
+import ExploreCourses from "../exploreCourses/ExploreCourses";
 
 const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
@@ -60,6 +61,7 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
           isFormValid={isFormValid}
         />
       </div>
+      <ExploreCourses/>
       <Footer />
     </>
   );

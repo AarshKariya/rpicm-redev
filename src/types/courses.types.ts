@@ -3,6 +3,10 @@ export interface Course {
     description: string;
     showArrow?: boolean | null;
     id: string;
+    duration?: number;
+    courseFor?: string [];
+    academicSchedule?: string [];
+    previouslyRecruited?: string[];
   }
   
  export interface CourseConfig {
