@@ -27,6 +27,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
         <div className={styles.text}>{details?.description}</div>
         <div className={styles.subTitle}>Who is this course for?</div>
         {details?.courseFor?.map((item) => (
+          // eslint-disable-next-line react/jsx-key
           <div className={styles.bulletPoint}>
             <span className={styles.bullet}></span>
             <div className={styles.text}>{item}</div>
@@ -34,6 +35,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
         ))}
         <div className={styles.subTitle}>Academic Schedule</div>
         {details?.academicSchedule?.map((item) => (
+          // eslint-disable-next-line react/jsx-key
           <div className={styles.bulletPoint}>
             <span className={styles.bullet}></span>
             <div className={styles.text}>{item}</div>
@@ -42,6 +44,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
         <div className={styles.subTitle}>Previously recruited by </div>
         <div>
           {details?.previouslyRecruited?.map((item) => (
+            // eslint-disable-next-line react/jsx-key
             <Image
               src={`/${item}.svg`}
               alt="company logo"
