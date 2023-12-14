@@ -6,12 +6,13 @@ import cx from "classnames";
 import { Course, CourseConfig } from "@/types/courses.types";
 import styles from "./CourseCardTile.module.scss";
 import { useRouter } from "next/router";
+import { NextPage } from "next";
 
 interface CourseCardTileProps {
   courseConfigs: CourseConfig[];
 }
 
-const CourseCardTile: FC<CourseCardTileProps> = ({ courseConfigs }) => {
+const CourseCardTile: NextPage<CourseCardTileProps> = ({ courseConfigs }) => {
   const router = useRouter();
 
   const [hoveredIndex, setHoveredIndex] = useState<string | null>(null);

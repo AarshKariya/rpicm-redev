@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import styles from "./Gallery.module.scss";
 import { NextPage } from "next";
+import { useRouter } from "next/navigation";
 
 const Gallery: NextPage = () => {
+  const router = useRouter();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -69,7 +72,11 @@ const Gallery: NextPage = () => {
           className={styles.galleryImage}
           variants={itemVariants}
         />
-        <motion.div className={styles.viewGallery} variants={itemVariants}>
+        <motion.div
+          className={styles.viewGallery}
+          variants={itemVariants}
+          onClick={() => router.push(`/gallery`)}
+        >
           View Gallery
         </motion.div>
       </motion.div>
