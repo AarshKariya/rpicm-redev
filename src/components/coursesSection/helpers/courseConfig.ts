@@ -8,11 +8,11 @@ export const courseConfig = [
         courseItemTitle: "Journalism",
         courseItemRedirect: "some URL",
       },
-      {
-        id: 2,
-        courseItemTitle: "Digital med",
-        courseItemRedirect: "some URL",
-      },
+      // {
+      //   id: 2,
+      //   courseItemTitle: "Digital med",
+      //   courseItemRedirect: "some URL",
+      // },
       {
         id: 3,
         courseItemTitle: "Public Relations",

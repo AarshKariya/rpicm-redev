@@ -57,7 +57,7 @@ const CourseCardTile: NextPage<CourseCardTileProps> = ({ courseConfigs }) => {
                     </div>
                   )}
                 </div>
-                <div>{course?.description}</div>
+                <div className={styles.shortDesc}>{course?.description}</div>
                 <motion.div
                   className={styles.hoverBackground}
                   initial={{ height: 0, top: 0 }}
