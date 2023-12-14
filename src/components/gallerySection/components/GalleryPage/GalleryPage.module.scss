@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento";
+
+.title {
+  padding: 280px 0px 66px 108px;
+}
+
+.titleHeading {
+  color: #253149;
+  font-family: $quatro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -2px;
+}
+
+.tabs {
+  display: flex;
+  padding-left: 108px;
+}
+
+.tab {
+  cursor: pointer;
+  border-bottom: none;
+  transition: background-color 0.3s ease;
+  color: #253149;
+  font-family: $raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 48px;
+  box-sizing: border-box;
+  height: 43px;
+
+  &.activeTab {
+    border-bottom: 4px solid #c1121f;
+    border-radius: 4px;
+  }
+}
+
+.windowWidthLine {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.16);
+  margin-bottom: 96px;
+}

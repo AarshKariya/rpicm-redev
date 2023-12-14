@@ -4,37 +4,39 @@ import { motion } from "framer-motion";
 import cx from "classnames";
 
 import { Course, CourseConfig } from "@/types/courses.types";
-import styles from "./CourseCardTile.module.scss"
+import styles from "./CourseCardTile.module.scss";
 import { useRouter } from "next/router";
+import { NextPage } from "next";
 
 interface CourseCardTileProps {
   courseConfigs: CourseConfig[];
 }
 
-const CourseCardTile: FC<CourseCardTileProps> = ({ courseConfigs }) => {
-  const router = useRouter(); 
-  
+const CourseCardTile: NextPage<CourseCardTileProps> = ({ courseConfigs }) => {
+  const router = useRouter();
+
   const [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
 
   const handleHover = (index: string | null) => {
     setHoveredIndex(index);
   };
   const handleClick = (course: Course) => {
-     // Store the course data in local storage
-  localStorage.setItem('selectedCourse', JSON.stringify(course));
+    // Store the course data in local storage
+    localStorage.setItem("selectedCourse", JSON.stringify(course));
 
-  // Navigate to the next page using the router
-  router.push(`/course/${encodeURIComponent(course.title)}`, undefined, {
-    shallow: true,
-  });
+    // Navigate to the next page using the router
+    router.push(`/course/${encodeURIComponent(course.title)}`, undefined, {
+      shallow: true,
+    });
   };
+
   return (
     <div>
       {courseConfigs?.map((config, index) => (
-        <div key={index} className={styles.courses} >
+        <div key={index} className={styles.courses}>
           <div className={styles.coursesType}>{config?.courseType}</div>
           <div className={styles.coursesRow}>
-            {config?.courseItems.map((course, idx) => (
+            {config?.courseItems?.map((course, idx) => (
               <motion.div
                 key={course?.id}
                 className={cx(styles.courseCard, {
@@ -42,12 +44,18 @@ const CourseCardTile: FC<CourseCardTileProps> = ({ courseConfigs }) => {
                 })}
                 onHoverStart={() => handleHover(course?.id)}
                 onHoverEnd={() => handleHover(null)}
-                whileHover={{ scale: 1.0001, color: 'white' }}
-
+                whileHover={{ scale: 1.0001, color: "white" }}
               >
                 <div className={styles.tileHeader}>
                   <div className={styles.courseTitle}>{course?.title}</div>
-                  {course?.showArrow && <div className={styles.showArrow} onClick={() => handleClick(course)}>&#8599;</div>}
+                  {course?.showArrow && (
+                    <div
+                      className={styles.showArrow}
+                      onClick={() => handleClick(course)}
+                    >
+                      &#8599;
+                    </div>
+                  )}
                 </div>
                 <div>{course?.description}</div>
                 <motion.div
