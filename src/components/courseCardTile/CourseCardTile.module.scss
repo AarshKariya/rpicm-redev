@@ -67,9 +67,12 @@ $quatro: "Quattrocento", sans-serif;
         margin-bottom: 30px;
 
         .courseTitle {
-          font-weight: 500;
-          font-size: 18px;
           margin-right: 12px;
+          font-family: $raleway;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
 
         .showArrow {
@@ -83,6 +86,14 @@ $quatro: "Quattrocento", sans-serif;
             /* Increase the size by 10% on hover */
           }
         }
+      }
+
+      .shortDesc {
+        font-family: $raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.9%; /* 23.184px */
       }
     }
 
