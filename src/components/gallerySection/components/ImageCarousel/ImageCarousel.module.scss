@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$mobileWidth: 375px;
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.carouselContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  text-align: center;
+}
+
+.imageName {
+  margin-top: 38px;
+  font-size: 14px;
+  color: #253149;
+  font-family: $raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 30%;
+  //   transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 120px;
+}
+
+.arrowLeft {
+  left: 10px;
+}
+
+.arrowRight {
+  right: 10px;
+}
