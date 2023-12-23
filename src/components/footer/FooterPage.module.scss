@@ -1,93 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
 
-$raleway: "Raleway", sans-serif;
-$quatro: "Quattrocento", sans-serif;
+$mobileWidth: 375px;
+$raleway: "Raleway";
+$quatro: "Quattrocento";
 
 .footer {
-  display: flex;
-  height: 386px;
   width: 100%;
+  height: 222px;
   background-color: #c1121f;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 20px;
+  position: relative;
 
-  @media (max-width: 1200px) {
-    padding: 0 15px;
+  .content {
+    padding: 58px 0px 0px 98px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      margin-right: 266px; /* Adjust spacing between logo and links */
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      font-family: $raleway;
+
+      .linkText {
+        color: #f9f4f0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 60px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    height: auto;
-    align-items: stretch;
-    padding: 20px;
+  .socialMedia {
+    display: flex;
+    align-items: center;
+    padding-left: 98px;
+    justify-content: center;
+    margin-top: 24px;
+
+    .socialIcon {
+      margin-right: 44px;
+      cursor: pointer;
+    }
   }
 
-  @media (max-width: 576px) {
-    padding: 15px;
-  }
+  .taglineClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60px;
+    margin-top: 20px;
 
-  @media (max-width: 480px) {
-    padding: 10px;
-  }
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  flex: 1;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    padding: 20px 10px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 15px;
-  }
-}
-
-.column-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: white;
-  font-family: $raleway;
-  font-style: normal;
-  font-weight: 600;
-
-  @media (max-width: 768px) {
-    margin-bottom: 10px;
-  }
-}
-
-.column-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.column-item {
-  font-size: 14px;
-  margin-bottom: 20px;
-  margin-top: auto;
-
-  a {
-    text-decoration: none;
-    color: white;
-    font-family: $raleway;
-    font-size: 16px;
+    color: rgba(249, 244, 240, 0.32);
+    font-family: $quatro;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
-  }
-
-  @media (max-width: 768px) {
-    margin-bottom: 5px;
+    line-height: normal;
+    letter-spacing: -1.6px;
   }
 }
