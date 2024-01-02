@@ -6,10 +6,6 @@ const FileInputSection: React.FC = () => {
     <>
       <FileInput label="UG Degree" id="fileInput" />
       <FileInput label="PG Degree" id="pgFileInput" />
-      <FileInput
-        label="UGC NET/ UGC-CSIR NET/ SLET/ UGC-RF/ GATE"
-        id="examsInput"
-      />
       <FileInput label="ID Proof" id="idProof" />
       <FileInput label="Photograph" id="photograph" />
     </>

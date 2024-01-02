@@ -8,7 +8,6 @@ import MultiSelectSection from "./components/MultiSelectSection/MultiSelectSecti
 import { rowsData } from "./helpers/multiSelectRowsData";
 import RadioButtonSection from "./components/RadioButtonSection/RadioButtonSection";
 import {
-  categoryOptions,
   employmentStatus,
   genderOptions,
 } from "./helpers/radioButtonSectionData";
@@ -54,13 +53,8 @@ const ApplicationFormContainer: React.FC = () => {
         options={genderOptions}
         onChange={handleGenderChange}
       />
-      <RadioButtonSection
-        title="Category"
-        options={categoryOptions}
-        onChange={handleCategoryChange}
-      />
 
-      <Nationality />
+      {/* <Nationality /> */}
 
       <RadioButtonSection
         title="Employment Status"

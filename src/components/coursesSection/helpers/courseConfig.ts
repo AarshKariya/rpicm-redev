@@ -6,7 +6,7 @@ export const courseConfig = [
       {
         id: 1,
         courseItemTitle: "Journalism",
-        courseItemRedirect: "some URL",
+        courseItemRedirect: "/Journalism",
       },
       // {
       //   id: 2,

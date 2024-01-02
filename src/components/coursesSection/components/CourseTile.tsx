@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../CoursesSection.module.scss";
 import { motion } from "framer-motion";
 import { NextPage } from "next";
+import { useRouter } from "next/navigation";
 
 type CourseItem = {
   id: any;
@@ -21,7 +22,8 @@ const CourseTile: NextPage<CourseTileProps> = ({
   index,
 }: any) => {
   const hasCourseItems = courses && courses?.length > 0;
-  // const isTwoRows = index === 1 || index === 2;
+  const router = useRouter();
+
   return (
     <div
       className={styles.courseTile}
@@ -47,6 +49,7 @@ const CourseTile: NextPage<CourseTileProps> = ({
             <motion.li
               key={index}
               className={styles.courseItem}
+              onClick={() => router.push(`${course?.courseItemRedirect}`)}
               whileHover={{
                 scale: 1.05,
                 color: "#c1121f",

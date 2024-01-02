@@ -52,10 +52,12 @@ const DynamicIndiaMap: React.FC = () => {
     <div
       id="india-map"
       style={{
-        height: "520px",
-        width: "100%",
+        height: "720px",
+        width: "80%",
         marginTop: "240px",
         marginBottom: "120px",
+        marginLeft: "120px",
+        marginRight: "120px",
         display: "flex",
         justifyContent: "center",
       }}

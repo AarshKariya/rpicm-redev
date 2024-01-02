@@ -76,6 +76,17 @@ const Gallery: NextPage = () => {
           className={styles.viewGallery}
           variants={itemVariants}
           onClick={() => router.push(`/gallery`)}
+          whileHover={{
+            scale: 1.05,
+            color: "#c1121f",
+            textDecoration: "underline",
+            transition: {
+              duration: 0.3,
+              ease: "easeInOut",
+            },
+          }}
+          whileTap={{ scale: 0.95 }}
+          layout
         >
           View Gallery
         </motion.div>

@@ -53,7 +53,7 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
           className={styles.paymentDetailsSubTitle}
           variants={itemVariants}
         >
-          Application fee: ₹2000/-
+          Application fee: ₹750/-
         </motion.div>
         <motion.div className={styles.row} variants={itemVariants}>
           <div className={styles.paymentDetailsInfo}>Date:</div>
