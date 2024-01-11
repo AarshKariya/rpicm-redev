@@ -30,11 +30,7 @@ const ImageComponent: React.FC = () => {
   }, [imageSource, controls]);
 
   return (
-    <motion.div
-      className={styles.imageWrapper}
-      initial={{ opacity: 0 }}
-      animate={controls}
-    >
+    <motion.div className={styles.imageWrapper} animate={controls}>
       <Image
         src={imageSource}
         alt="Background"
