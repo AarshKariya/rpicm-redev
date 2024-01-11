@@ -9,10 +9,10 @@ type PaymentDetailsProps = {
   place: string;
   handleDateChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handlePlaceChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  isChecked: boolean;
   handleCheckBoxChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleButtonClick: () => void;
   isFormValid: boolean;
+  formik: any;
 };
 
 const PaymentDetails: React.FC<PaymentDetailsProps> = ({
@@ -20,10 +20,10 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
   place,
   handleDateChange,
   handlePlaceChange,
-  isChecked,
   handleCheckBoxChange,
   handleButtonClick,
   isFormValid,
+  formik,
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -53,7 +53,7 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
           className={styles.paymentDetailsSubTitle}
           variants={itemVariants}
         >
-          Application fee: ₹2000/-
+          Application fee: ₹750/-
         </motion.div>
         <motion.div className={styles.row} variants={itemVariants}>
           <div className={styles.paymentDetailsInfo}>Date:</div>
@@ -72,8 +72,8 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
           <CheckboxInput
             value=""
             label="*I hereby declare that the information given above are true, and correct to the best of my knowledge"
-            isChecked={isChecked}
             onChange={handleCheckBoxChange}
+            id="declarationCheck"
           />
         </motion.div>
         <motion.button

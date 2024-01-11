@@ -20,6 +20,7 @@ const CourseCardTile: NextPage<CourseCardTileProps> = ({ courseConfigs }) => {
   const handleHover = (index: string | null) => {
     setHoveredIndex(index);
   };
+
   const handleClick = (course: Course) => {
     // Store the course data in local storage
     localStorage.setItem("selectedCourse", JSON.stringify(course));

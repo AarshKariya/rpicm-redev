@@ -3,14 +3,18 @@ import styles from "./RadioButtonSection.module.scss";
 
 type RadioButtonSectionProps = {
   title: string;
+  id: string;
+  name: string;
   options: { value: string; label: string }[];
-  onChange: (value: string) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 const RadioButtonSection: React.FC<RadioButtonSectionProps> = ({
   title,
   options,
   onChange,
+  id,
+  name,
 }) => {
   return (
     <div className={styles.radioButtonSection}>
@@ -20,9 +24,10 @@ const RadioButtonSection: React.FC<RadioButtonSectionProps> = ({
           <label key={index}>
             <input
               type="radio"
-              name={title.toLowerCase().replace(" ", "-")}
+              name={name}
               value={option.value}
-              onChange={() => onChange(option.value)}
+              onChange={onChange}
+              id={id}
             />
             {option.label}
           </label>

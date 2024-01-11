@@ -8,65 +8,87 @@ import MultiSelectSection from "./components/MultiSelectSection/MultiSelectSecti
 import { rowsData } from "./helpers/multiSelectRowsData";
 import RadioButtonSection from "./components/RadioButtonSection/RadioButtonSection";
 import {
-  categoryOptions,
   employmentStatus,
   genderOptions,
 } from "./helpers/radioButtonSectionData";
-import Nationality from "./components/Nationality/Nationality";
+import { NextPage } from "next";
 
-const ApplicationFormContainer: React.FC = () => {
-  const handleGenderChange = (value: string) => {
-    // Handle Gender change
-  };
+type ApplicationFormContainerProps = {
+  formik: any;
+};
 
-  const handleCategoryChange = (value: string) => {
-    // Handle Category change
-  };
-
+const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
+  formik,
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <MultiSelectSection rowsData={rowsData} />
+      <form onSubmit={formik.handleSubmit}>
+        <MultiSelectSection
+          rowsData={rowsData}
+          onChange={formik.handleChange}
+        />
 
-      <div className={styles.personalInfo}>PERSONAL INFORMATION</div>
+        <div className={styles.personalInfo}>PERSONAL INFORMATION</div>
 
-      <FormInput
-        label="Name of Candidate"
-        placeholder="Name of Candidate"
-        onChange={() => {}}
-      />
-      <FormInput
-        label="Father's Name"
-        placeholder="Father's Name"
-        onChange={() => {}}
-      />
-      <FormInput
-        label="Date of Birth"
-        placeholder="DD - MM - YYYY"
-        onChange={() => {}}
-      />
+        <FormInput
+          label="Name of Candidate"
+          placeholder="Name of Candidate"
+          id="firstName"
+          name="firstName"
+          onChange={formik.handleChange}
+          value={formik.values.firstName}
+          type="text"
+        />
+        <FormInput
+          label="Father's Name"
+          placeholder="Father's Name"
+          id="fatherName"
+          name="fatherName"
+          onChange={formik.handleChange}
+          value={formik.values.fatherName}
+          type="text"
+        />
+        <FormInput
+          label="Last Name"
+          placeholder="Last Name"
+          id="lastName"
+          name="lastName"
+          onChange={formik.handleChange}
+          value={formik.values.lastName}
+          type="text"
+        />
+        <FormInput
+          label="Date of Birth"
+          placeholder="DD - MM - YYYY"
+          id="dob"
+          name="dob"
+          onChange={formik.handleChange}
+          value={formik.values.dob}
+          type="date"
+        />
 
-      <RadioButtonSection
-        title="Gender"
-        options={genderOptions}
-        onChange={handleGenderChange}
-      />
-      <RadioButtonSection
-        title="Category"
-        options={categoryOptions}
-        onChange={handleCategoryChange}
-      />
+        <RadioButtonSection
+          title="Gender"
+          options={genderOptions}
+          id="gender"
+          name="gender"
+          onChange={formik.handleChange}
+        />
 
-      <Nationality />
+        <RadioButtonSection
+          title="Employment Status"
+          id="employmentStatus"
+          name="employmentStatus"
+          options={employmentStatus}
+          onChange={formik.handleChange}
+        />
 
-      <RadioButtonSection
-        title="Employment Status"
-        options={employmentStatus}
-        onChange={handleCategoryChange}
-      />
+        <button type="submit">Submit</button>
+      </form>
     </motion.div>
   );
 };

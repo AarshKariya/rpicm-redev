@@ -3,24 +3,24 @@ import React from "react";
 type CheckboxInputProps = {
   value: string;
   label: string;
-  isChecked: boolean;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   className?: any;
+  id: string;
 };
 
 const CheckboxInput: React.FC<CheckboxInputProps> = ({
   value,
   label,
-  isChecked,
   onChange,
   className,
+  id,
 }) => {
   return (
     <label>
       <input
         type="checkbox"
+        id={id}
         value={value}
-        checked={isChecked}
         onChange={onChange}
         className={className}
       />

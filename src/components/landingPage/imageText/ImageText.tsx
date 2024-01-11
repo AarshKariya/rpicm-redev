@@ -15,10 +15,10 @@ const ImageText: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.25 }}
         className={styles.textContainer}
       >
-        <div className={styles.instituteName}>
-          Welcome to Rajendra Prasad Institute of Communication & Management
+        <div className={styles.instituteName}>Skilling INDIA since 1961</div>
+        <div className={styles.instituteTagLine}>
+          Rajendra Prasad Institute of Communication & Management
         </div>
-        <div className={styles.instituteTagLine}>SKILLING INDIA SINCE 1961</div>
       </motion.div>
     </div>
   );

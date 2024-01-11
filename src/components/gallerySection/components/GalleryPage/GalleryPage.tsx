@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import CampusTab from "../CampusTab/CampusTab";
-import EventTab from "../EventTab/EventTab";
 import styles from "./GalleryPage.module.scss";
 import { useRouter } from "next/router";
-
-const campusTiles = [
-  { name: "Admin", image: "admin.jpg", id: 1 },
-  { name: "Office", image: "office.jpg", id: 2 },
-];
+import ImageCarousel from "../ImageCarousel/ImageCarousel";
 
 const GalleryPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Campus");
@@ -45,22 +39,22 @@ const GalleryPage: React.FC = () => {
       </div>
       <div className={styles.windowWidthLine}></div>
       {activeTab === "Campus" && (
-        <CampusTab
-          campusTiles={[
-            { name: "Admin", image: "gallery1.svg", id: 1 },
-            { name: "Office", image: "gallery2.svg", id: 2 },
-            { name: "Office", image: "gallery2.svg", id: 3 },
-            { name: "Office", image: "gallery2.svg", id: 4 },
-            { name: "Office", image: "gallery2.svg", id: 5 },
+        <ImageCarousel
+          images={[
+            { name: "Admin", src: "/gallery1.svg", id: 1 },
+            { name: "Office", src: "/gallery2.svg", id: 2 },
+            { name: "Office 2", src: "/gallery3.svg", id: 3 },
+            { name: "Office 3", src: "/gallery4.svg", id: 4 },
+            { name: "Office 4", src: "/gallery5.svg", id: 5 },
           ]}
         />
       )}
       {activeTab === "Events" && (
-        <EventTab
-          events={[
-            { name: "Event 1", image: "aboutUs1.svg", id: 1 },
-            { name: "Event 2", image: "aboutUs2.svg", id: 2 },
-            { name: "Event 3", image: "aboutUs3.svg", id: 3 },
+        <ImageCarousel
+          images={[
+            { name: "Event 1", src: "/aboutUs1.svg", id: 1 },
+            { name: "Event 2", src: "/aboutUs2.svg", id: 2 },
+            { name: "Event 3", src: "/aboutUs3.svg", id: 3 },
           ]}
         />
       )}

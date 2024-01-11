@@ -6,13 +6,13 @@ export const courseConfig = [
       {
         id: 1,
         courseItemTitle: "Journalism",
+        courseItemRedirect: "/Journalism",
+      },
+      {
+        id: 2,
+        courseItemTitle: "Digital media",
         courseItemRedirect: "some URL",
       },
-      // {
-      //   id: 2,
-      //   courseItemTitle: "Digital med",
-      //   courseItemRedirect: "some URL",
-      // },
       {
         id: 3,
         courseItemTitle: "Public Relations",
