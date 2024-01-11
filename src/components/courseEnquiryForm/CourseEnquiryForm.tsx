@@ -46,13 +46,18 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
       firstName: "",
       fatherName: "",
       lastName: "",
+      phoneNumber: "",
+      email: "",
+      address: "",
+      state: "",
+      ugUniName: "",
       dob: "",
       gender: "",
       employmentStatus: "",
-      ugDegree: {},
-      pgDegree: {},
-      idProof: {},
-      photograph: {},
+      // ugDegree: {},
+      // pgDegree: {},
+      // idProof: {},
+      // photograph: {},
       applicationDate: "",
       applicationPlace: "",
     },
@@ -74,7 +79,7 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
         <form onSubmit={formik.handleSubmit}>
           <ApplicationFormContainer formik={formik} />
           <WindowWidthLine />
-          <FileInputsSection formik={formik} />
+          {/* <FileInputsSection formik={formik} /> */}
           <WindowWidthLine />
           <PaymentDetails
             date={date}

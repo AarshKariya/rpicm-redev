@@ -41,6 +41,16 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
             <div className={styles.text}>{item}</div>
           </div>
         ))}
+        <div className={styles.subTitle}>
+          Where you may see yourself after completing course
+        </div>
+        {details?.seeYourself?.map((item) => (
+          // eslint-disable-next-line react/jsx-key
+          <div className={styles.bulletPoint}>
+            <span className={styles.bullet}></span>
+            <div className={styles.text}>{item}</div>
+          </div>
+        ))}
         <div className={styles.subTitle}>Previously recruited by </div>
         <div>
           {details?.previouslyRecruited?.map((item) => (

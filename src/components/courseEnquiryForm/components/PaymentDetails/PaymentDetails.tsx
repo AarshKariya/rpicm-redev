@@ -43,7 +43,7 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
       variants={containerVariants}
     >
       <div className={styles.column}>
-        <motion.div
+        {/* <motion.div
           className={styles.paymentDetailsTitle}
           variants={itemVariants}
         >
@@ -54,7 +54,7 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
           variants={itemVariants}
         >
           Application fee: ₹750/-
-        </motion.div>
+        </motion.div> */}
         <motion.div className={styles.row} variants={itemVariants}>
           <div className={styles.paymentDetailsInfo}>Date:</div>
           <input type="date" value={date} onChange={handleDateChange} />

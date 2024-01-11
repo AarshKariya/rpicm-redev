@@ -62,6 +62,42 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
           type="text"
         />
         <FormInput
+          label="Phone Number"
+          placeholder="Phone Number"
+          id="phoneNumber"
+          name="phoneNumber"
+          onChange={formik.handleChange}
+          value={formik.values.phoneNumber}
+          type="text"
+        />
+        <FormInput
+          label="Email"
+          placeholder="Email"
+          id="email"
+          name="email"
+          onChange={formik.handleChange}
+          value={formik.values.email}
+          type="text"
+        />
+        <FormInput
+          label="Address"
+          placeholder="Address"
+          id="address"
+          name="address"
+          onChange={formik.handleChange}
+          value={formik.values.address}
+          type="text"
+        />
+        <FormInput
+          label="State"
+          placeholder="State"
+          id="state"
+          name="state"
+          onChange={formik.handleChange}
+          value={formik.values.state}
+          type="text"
+        />
+        <FormInput
           label="Date of Birth"
           placeholder="DD - MM - YYYY"
           id="dob"
@@ -69,6 +105,15 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
           onChange={formik.handleChange}
           value={formik.values.dob}
           type="date"
+        />
+        <FormInput
+          label="UG University"
+          placeholder="UG University"
+          id="ugUniName"
+          name="ugUniName"
+          onChange={formik.handleChange}
+          value={formik.values.ugUniName}
+          type="text"
         />
 
         <RadioButtonSection
