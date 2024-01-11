@@ -29,15 +29,22 @@ const HistorySecondRow: NextPage = () => {
         </div>
         <div className={styles.todayText}>
           <p>
-            Today, the institute provides a range of professional courses
-            catering to those seeking to enhance their communication and
-            management skills. It particularly stands out for its flexibility,
-            accommodating individuals in employment or pursuing other studies
-            who wish to upskill outside regular working hours. Its certificate
-            courses have set the benchmark for many colleges and universities,
-            with some recognized as diploma courses by various institutions.
-            Many government departments recognize these courses as
-            qualifications for specific positions.
+            It emerged as the largest network providing journalism,
+            communication, and media education in India through its centres
+            spread across several states. In many states, the Institute opened a
+            Centre, and it became a pioneer in professional courses in this
+            field. It was in 1978, that its activities and scope were widened
+            with the introduction of management education into its mandate.
+            Thus, it was renamed the Rajendra Prasad Institute of Communication
+            and Management.
+          </p>
+          <p>
+            Today, it offers multiple courses to learn professional skills in
+            communication and management areas. It is also famous for making
+            professional skills available to individuals in employment or those
+            pursuing other studies. And also among those who want to upgrade
+            their skills but can’t do that in regular working hours. It has 24
+            centres and affiliates across the country.
           </p>
         </div>
       </div>

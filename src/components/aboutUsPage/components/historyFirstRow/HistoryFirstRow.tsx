@@ -12,13 +12,12 @@ const HistoryFirstRow: NextPage = () => {
           Pioneer in Professional Education and Upskilling.
         </p>
         <p>
-          Established in 1961 as Bhavan’s College of Journalism, Advertising,
-          and Printing, this flagship institute of Bharatiya Vidya Bhavan has
-          evolved into a sprawling network offering journalism, communication,
-          media education, and management courses across India. Renamed in 1965
-          to honor Dr. Rajendra Prasad, Indias first President and a BVB
-          founder, it set the standard for professional education. In 1978, it
-          expanded to include management education, leading to its present name.
+          This institute is the flagship of Bharatiya Vidya Bhavan’s
+          professional educational initiatives. It started in 1961 as Bhavan’s
+          College of Journalism, Advertising and Printing in Mumbai. It was
+          renamed as Rajendra Prasad Institute of Communication Studies in 1965,
+          in honour of Dr. Rajendra Prasad, the first President of India and
+          also one of the founders of BVB.
         </p>
       </div>
       <div className={styles.historyImage}>

@@ -67,7 +67,7 @@ const coursesData = [
         title: "Public Relations",
         id: `comm_${generateUniqueId()}`,
         description:
-          "This course is designed to provide students with a comprehensive understanding of the principles and practices of public relations (PR). Students will learn how to develop and implement strategic PR campaigns, manage organisational communication, and build and maintain positive relationships with key stakeholders. The course will blend theoretical concepts with practical applications to prepare students for the dynamic field of public relations.",
+          "This course is designed to provide students with a comprehensive understanding of the principles and practices of public relations (PR). Students will learn how to develop and implement strategic PR campaigns, manage organisational communication, and build and maintain positive relationships with key stakeholders.",
         showArrow: true,
         duration: 4,
         courseFor: [
@@ -100,7 +100,7 @@ const coursesData = [
         title: "Strategic Communication for Sustainable Impact",
         id: `comm_${generateUniqueId()}`,
         description:
-          "This course aims to provide students with the knowledge and skills required to develop and implement strategic communication campaigns that contribute to sustainable outcomes. By emphasising the intersection of communication, social responsibility, and environmental stewardship, students will learn to leverage communication strategies to address societal challenges and drive positive change.",
+          "This course aims to provide students with the knowledge and skills required to develop and implement strategic communication campaigns that contribute to sustainable outcomes.",
         showArrow: true,
         duration: 4,
         isYearly: false,
@@ -123,7 +123,7 @@ const coursesData = [
         title: "School Journalism",
         id: `comm_${generateUniqueId()}`,
         description:
-          "This course is designed to introduce students to the fundamentals of journalism within a school context, empowering them to become effective storytellers and media creators. Through a combination of theoretical knowledge and hands-on experience, students will learn the essentials of news gathering, writing, and multimedia production while also understanding the importance of ethical journalism in a school setting.",
+          "This course is designed to introduce students to the fundamentals of journalism within a school context, empowering them to become effective storytellers and media creators. Through a combination of theoretical knowledge and hands-on experience, students will learn the essentials of news gathering, writing, and multimedia production.",
         showArrow: true,
         duration: 4,
         isYearly: false,
@@ -172,7 +172,7 @@ const coursesData = [
         title: "Industrial Relations & Personnel Management",
         id: `mgm_${generateUniqueId()}`,
         description:
-          "This course aims to provide students with a comprehensive understanding of industrial relations and personnel management, focusing on the relationships between employers, employees, and the broader organisational context. The course will cover key concepts, legal frameworks, and practical strategies to effectively manage human resources in the workplace, fostering positive industrial relations and organisational success.",
+          "This course aims to provide students with a comprehensive understanding of industrial relations and personnel management, focusing on the relationships between employers, employees, and the broader organisational context.",
         duration: 1,
         isYearly: true,
         showArrow: true,
@@ -233,7 +233,7 @@ const coursesData = [
         title: "International Trade (Import-Export)",
         id: `mgm_${generateUniqueId()}`,
         description:
-          "This course is designed to provide students with a comprehensive understanding of the principles, practices, and challenges of international trade and import-export management. Students will gain insights into the complexities of global markets, trade regulations, and the strategic management of cross-border transactions. The course will equip students with the skills needed to navigate the dynamic world of international business.",
+          "This course is designed to provide students with a comprehensive understanding of the principles, practices, and challenges of international trade and import-export management. Students will gain insights into the complexities of global markets, trade regulations, and the strategic management of cross-border transactions.",
         duration: 1,
         isYearly: true,
         showArrow: true,
@@ -267,7 +267,7 @@ const coursesData = [
         title: "Hospital Management",
         id: `mgm_${generateUniqueId()}`,
         description:
-          "This course is designed to equip students with the knowledge and skills necessary to effectively manage and lead healthcare organizations, with a focus on hospital management. Students will explore the unique challenges and opportunities in the healthcare industry, understanding the principles of healthcare administration, strategic planning, and operational management required for successful hospital leadership.",
+          "This course is designed to equip students with the knowledge and skills necessary to effectively manage and lead healthcare organizations, with a focus on hospital management. Students will explore the unique challenges and opportunities in the healthcare industry, understanding the principles of healthcare administration, strategic planning, and operational management.",
         duration: 1,
         isYearly: true,
         showArrow: true,
@@ -295,7 +295,7 @@ const coursesData = [
         title: "Marketing & Sales Management",
         id: `mgm_${generateUniqueId()}`,
         description:
-          "This course is designed to provide students with a comprehensive understanding of marketing and sales management, emphasizing the integration of these functions for effective business growth. Students will explore key marketing strategies, sales techniques, and the coordination needed to drive successful customer acquisition and retention. The course will blend theoretical concepts with practical applications to prepare students for dynamic roles in marketing and sales.",
+          "This course is designed to provide students with a comprehensive understanding of marketing and sales management, emphasizing the integration of these functions for effective business growth. Students will explore key marketing strategies, sales techniques, and the coordination needed to drive successful customer acquisition and retention.",
         duration: 1,
         isYearly: true,
         showArrow: true,
@@ -325,7 +325,7 @@ const coursesData = [
         title: "Business Management",
         id: `mgm_${generateUniqueId()}`,
         description:
-          "This course aims to provide students with a comprehensive understanding of the principles and practices of business management. Covering key areas such as organizational structure, strategic planning, leadership, and operational management, students will gain the skills needed to navigate the complexities of the business world. The course will emphasize the development of critical thinking, decision-making, and leadership abilities.",
+          "This course aims to provide students with a comprehensive understanding of the principles and practices of business management. Covering key areas such as organizational structure, strategic planning, leadership, and operational management, students will gain the skills needed to navigate the complexities of the business world.",
         duration: 1,
         isYearly: true,
         showArrow: true,
@@ -355,7 +355,7 @@ const coursesData = [
         title: "Financial Management",
         id: `mgm_${generateUniqueId()}`,
         description:
-          "This course aims to provide students with a comprehensive understanding of the principles and practices of business management. Covering key areas such as organizational structure, strategic planning, leadership, and operational management, students will gain the skills needed to navigate the complexities of the business world. The course will emphasize the development of critical thinking, decision-making, and leadership abilities.",
+          "This course aims to provide students with a comprehensive understanding of the principles and practices of business management. Covering key areas such as organizational structure, strategic planning, leadership, and operational management, students will gain the skills needed to navigate the complexities of the business world.",
         duration: 1,
         isYearly: true,
         showArrow: true,
@@ -381,7 +381,7 @@ const coursesData = [
         title: "Geriatric Care cum Health Aide Course",
         id: `mgm_${generateUniqueId()}`,
         description:
-          "This course is designed to prepare individuals for a career in geriatric care and health aide services, with a focus on understanding the unique needs and challenges faced by the elderly. Students will learn essential caregiving skills, gain knowledge about common health issues in older adults, and develop a compassionate and patient-centered approach to care. The course will cover both theoretical principles and practical applications in geriatric care.",
+          "This course is designed to prepare individuals for a career in geriatric care and health aide services, with a focus on understanding the unique needs and challenges faced by the elderly. Students will learn essential caregiving skills, gain knowledge about common health issues in older adults, and develop a compassionate and patient-centered approach to care.",
         duration: 1,
         isYearly: true,
         showArrow: true,
@@ -414,7 +414,7 @@ const coursesData = [
         title: "Cultural Heritage Of India",
         id: `chi_${generateUniqueId()}`,
         description:
-          "Dr. K.M. Munshi, founder of Bharatiya Vidya Bhavan, envisaged that the content of culture is essential to creating good managers who could effectively steer the industries in the future. So, apart from the courses in Management and Communication, taught in our colleges, a subject on “Cultural Heritage of India” was added to the syllabus to give mental orientation, patriotism, and a sense of heritage to the budding Managers.",
+          "Dr. K.M. Munshi, founder of Bharatiya Vidya Bhavan, envisaged that the content of culture is essential to creating good managers who could effectively steer the industries in the future. So, apart from the courses in Management and Communication, taught in our colleges, a subject on “Cultural Heritage of India” was added to the syllabus.",
         duration: 1,
         isYearly: true,
         showArrow: true,

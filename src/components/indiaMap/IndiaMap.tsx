@@ -17,6 +17,14 @@ const DynamicIndiaMap: React.FC = () => {
           attribution: "Map data © OpenStreetMap contributors",
         }).addTo(map);
 
+        const customIcon = new L.Icon({
+          iconUrl: "/mapMarkerIcon.png",
+          iconSize: [40, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34],
+          shadowSize: [41, 41],
+        });
+
         bhavanCenters?.forEach((capital) => {
           const isWebsiteAvailable = capital?.website ? (
             <NextLink href={capital?.website}>{capital?.website}</NextLink>
@@ -34,13 +42,13 @@ const DynamicIndiaMap: React.FC = () => {
           </div>
         `;
 
-          const marker = L.marker(
-            capital?.position as L.LatLngExpression
-          ).addTo(map);
-
-          marker.bindPopup(popupContent, {
-            className: "custom-popup",
-          });
+          L.marker(capital?.position as L.LatLngExpression, {
+            icon: customIcon,
+          })
+            .addTo(map)
+            .bindPopup(popupContent, {
+              className: "custom-popup",
+            });
         });
       }
     };
