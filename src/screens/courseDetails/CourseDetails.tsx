@@ -25,15 +25,13 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
           </span>
         </div>
         <div className={styles.text}>{details?.description}</div>
+        <div className={styles.subTitle}>Who is this course for?</div>
         {details?.courseFor?.map((item) => (
-          <>
-            <div className={styles.subTitle}>Who is this course for?</div>
-            {/* eslint-disable-next-line react/jsx-key */}
-            <div className={styles.bulletPoint}>
-              <span className={styles.bullet}></span>
-              <div className={styles.text}>{item}</div>
-            </div>
-          </>
+          // eslint-disable-next-line react/jsx-key
+          <div className={styles.bulletPoint}>
+            <span className={styles.bullet}></span>
+            <div className={styles.text}>{item}</div>
+          </div>
         ))}
         {details?.customPoints?.map((item) => (
           <>
@@ -44,31 +42,27 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
             </div>
           </>
         ))}
+        <div className={styles.subTitle}>Academic Schedule</div>
         {details?.academicSchedule?.map((item) => (
-          <>
-            <div className={styles.subTitle}>Academic Schedule</div>
-            {/* eslint-disable-next-line react/jsx-key */}
-            <div className={styles.bulletPoint}>
-              <span className={styles.bullet}></span>
-              <div className={styles.text}>{item}</div>
-            </div>
-          </>
+          // eslint-disable-next-line react/jsx-key
+          <div className={styles.bulletPoint}>
+            <span className={styles.bullet}></span>
+            <div className={styles.text}>{item}</div>
+          </div>
         ))}
+        <div className={styles.subTitle}>
+          Where you may see yourself after completing course
+        </div>
         {details?.seeYourself?.map((item) => (
-          <>
-            <div className={styles.subTitle}>
-              Where you may see yourself after completing course
-            </div>
-            {/* eslint-disable-next-line react/jsx-key */}
-            <div className={styles.bulletPoint}>
-              <span className={styles.bullet}></span>
-              <div className={styles.text}>{item}</div>
-            </div>
-          </>
+          // eslint-disable-next-line react/jsx-key
+          <div className={styles.bulletPoint}>
+            <span className={styles.bullet}></span>
+            <div className={styles.text}>{item}</div>
+          </div>
         ))}
-        {details?.previouslyRecruited?.map((item) => (
+        {/* {details?.previouslyRecruited?.map((item) => (
           <>
-            {/* eslint-disable-next-line react/jsx-key */}
+            {/* eslint-disable-next-line react/jsx-key 
             <div className={styles.subTitle}>Previously recruited by </div>
             <Image
               src={`/${item}.svg`}
@@ -77,7 +71,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
               height={100}
             />
           </>
-        ))}
+        ))} */}
 
         <div className={styles.applyCourseLink}>
           <div className={styles.subTitleLink}> Apply for a course at </div>
