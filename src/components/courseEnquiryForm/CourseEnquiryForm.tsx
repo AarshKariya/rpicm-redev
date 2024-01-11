@@ -78,7 +78,6 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
         <WindowWidthLine />
         <form onSubmit={formik.handleSubmit}>
           <ApplicationFormContainer formik={formik} />
-          <WindowWidthLine />
           {/* <FileInputsSection formik={formik} /> */}
           <WindowWidthLine />
           <PaymentDetails
