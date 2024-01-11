@@ -8,6 +8,7 @@ export interface Course {
   courseFor?: string[];
   academicSchedule?: string[];
   previouslyRecruited?: string[];
+  seeYourself?: string[];
 }
 
 export interface CourseConfig {
