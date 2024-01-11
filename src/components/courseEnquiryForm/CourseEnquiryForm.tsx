@@ -12,18 +12,18 @@ import FileInputsSection from "./components/FileInputSection/FileInputSection";
 import NavigationBar from "../navigationBar/NavigationBar";
 import Footer from "../footer/FooterPage";
 import ExploreCourses from "../exploreCourses/ExploreCourses";
+import { useFormik } from "formik";
 
 const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
 }) => {
   console.log("supabase", supabase);
-  const [isChecked, setIsChecked] = useState(false);
   const [date, setDate] = useState("");
   const [place, setPlace] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
 
   const handleCheckBoxChange = (e: any) => {
-    setIsChecked(e.target.checked);
+    // setIsChecked(e.target.checked);
     setIsFormValid(e.target.checked);
   };
 
@@ -39,6 +39,31 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
     // Perform any action on button click after validation
   };
 
+  const formik = useFormik({
+    initialValues: {
+      applyingFor: [],
+      course: [],
+      firstName: "",
+      fatherName: "",
+      lastName: "",
+      dob: "",
+      gender: "",
+      employmentStatus: "",
+      ugDegree: {},
+      pgDegree: {},
+      idProof: {},
+      photograph: {},
+      applicationDate: "",
+      applicationPlace: "",
+    },
+
+    onSubmit: (values) => {
+      console.log("values", values);
+    },
+  });
+
+  console.log("formik", formik);
+
   return (
     <>
       <NavigationBar isOnLandingPage={false} />
@@ -46,22 +71,24 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
         <div className={styles.heading}>Course Enquiry Form</div>
         <StepsContainer />
         <WindowWidthLine />
-        <ApplicationFormContainer />
-        <WindowWidthLine />
-        <FileInputsSection />
-        <WindowWidthLine />
-        <PaymentDetails
-          date={date}
-          place={place}
-          handleDateChange={handleDateChange}
-          handlePlaceChange={handlePlaceChange}
-          isChecked={isChecked}
-          handleCheckBoxChange={handleCheckBoxChange}
-          handleButtonClick={handleButtonClick}
-          isFormValid={isFormValid}
-        />
+        <form onSubmit={formik.handleSubmit}>
+          <ApplicationFormContainer formik={formik} />
+          <WindowWidthLine />
+          <FileInputsSection formik={formik} />
+          <WindowWidthLine />
+          <PaymentDetails
+            date={date}
+            place={place}
+            handleDateChange={handleDateChange}
+            handlePlaceChange={handlePlaceChange}
+            handleCheckBoxChange={handleCheckBoxChange}
+            handleButtonClick={handleButtonClick}
+            isFormValid={isFormValid}
+            formik={formik}
+          />
+        </form>
       </div>
-      <ExploreCourses/>
+      <ExploreCourses />
       <Footer />
     </>
   );

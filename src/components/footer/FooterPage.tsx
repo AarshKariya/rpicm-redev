@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             className={styles.socialIcon}
           />
         </Link>
-        <Link href="https://www.linkedin.com/company/example">
+        <Link href="https://www.linkedin.com/in/bhavans-rpi-9696a9260/">
           <Image
             src="/linkedIn.svg"
             alt="LinkedIn"

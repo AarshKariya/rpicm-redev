@@ -11,6 +11,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0",
     "classnames": "^2.3.2",
+    "formik": "^2.4.5",
     "framer-motion": "^10.16.5",
     "leaflet": "^1.9.4",
     "next": "14.0.1",

@@ -6,7 +6,7 @@ const ImageComponent: React.FC = () => {
   return (
     <div className={styles.imageWrapper}>
       <Image
-        src="/unsplashImage.jpg"
+        src="/landingBgImg.jpeg"
         alt="Background"
         layout="fill"
         objectFit="cover"

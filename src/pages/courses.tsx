@@ -37,12 +37,15 @@ const coursesData = [
         ],
         previouslyRecruited: ["timesOfIndia", "tataAig"],
       },
-      // {
-      //   title: "Digital Media",
-      //   id: `comm_${generateUniqueId()}`,
-      //   description: "Description for course 1",
-      //   showArrow: false,
-      // },
+      {
+        title: "Digital Media",
+        id: `comm_${generateUniqueId()}`,
+        description: "Description for course 1",
+        showArrow: true,
+        duration: 4,
+        courseFor: [],
+        academicSchedule: [],
+      },
       {
         title: "Public Relations",
         id: `comm_${generateUniqueId()}`,
