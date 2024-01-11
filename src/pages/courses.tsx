@@ -23,7 +23,7 @@ const coursesData = [
           "Excellent value in terms of both tuition and the ability to continue working.",
         ],
         academicSchedule: [
-          "Contact Hours: Minimum 150 contact hours, may extend upto 250 hours.",
+          "Contact Hours: Minimum 150 contact hours",
           "Evening and Weekend Classes",
           "Teaching Calendar: August- March",
           "Academic Evaluation Classwork and Assignment One internal exam and one final exam; project, field,  and industry visit report",
@@ -34,7 +34,6 @@ const coursesData = [
         seeYourself: [
           "Newspapers, news channels, news portals, and content writing",
         ],
-        previouslyRecruited: ["timesOfIndia", "tataAig"],
       },
       {
         title: "Digital Media",
@@ -43,6 +42,7 @@ const coursesData = [
           "This course is designed to provide students with a comprehensive understanding of digital media, covering strategies for content creation, distribution, and engagement. Through a combination of theoretical concepts and practical skills development, students will learn to navigate the rapidly evolving digital landscape and create impactful content across various digital platforms.",
         showArrow: true,
         duration: 4,
+        isYearly: false,
         courseFor: [
           "The course is designed for individuals who have a keen interest in journalism, media, or communication and wish to acquire specialised skills for the digital age.",
           "This includes students, working professionals, and freelance journalists.",
@@ -54,7 +54,7 @@ const coursesData = [
           "curation and marketing consultant",
         ],
         academicSchedule: [
-          "Contact Hours: Minimum 150 contact hours, may extend upto 250 hours.",
+          "Contact Hours: Minimum 150 contact hours",
           "Evening and Weekend Classes",
           "Teaching Calendar: August- March",
           "Academic Evaluation Classwork and Assignment One internal exam and one final exam; project, field,  and industry visit report",
@@ -69,7 +69,8 @@ const coursesData = [
         description:
           "This course is designed to provide students with a comprehensive understanding of the principles and practices of public relations (PR). Students will learn how to develop and implement strategic PR campaigns, manage organisational communication, and build and maintain positive relationships with key stakeholders.",
         showArrow: true,
-        duration: 4,
+        duration: 1,
+        isYearly: true,
         courseFor: [
           "Fresh graduates with a flair of writing, reading, public speaking, acting, etc",
           "Those who want to learn skills and pursue a career in strategic communication planning, media relations, events planning and execution without pursuing lengthy and expensive Masters courses.",
@@ -83,9 +84,9 @@ const coursesData = [
           "Public Relations Officer",
         ],
         academicSchedule: [
-          "Contact Hours: Minimum 180 contact hours, may extend upto 250 hours.",
+          "Contact Hours: Minimum 150 contact hours",
           "Evening and Weekend Classes",
-          "Teaching Calendar: July/August to April/May",
+          "Teaching Calendar: August to March",
           "Academic Evaluation Criteria",
           "(minimum 65% attendance is compulsory) Attendance",
           "Classwork and Assignment",
@@ -104,7 +105,16 @@ const coursesData = [
         showArrow: true,
         duration: 4,
         isYearly: false,
-        courseFor: [],
+        courseFor: [
+          "Corporate Communication teams",
+          "Non Profit and Social Business Communication team ",
+          "Fundraising team ",
+          "New Non-profit leaders and Social Business Leaders",
+          "CSR Foundations Communications Team ",
+          "Individuals interested in India's Sustainable Impact",
+          "Early Career University Faculty",
+        ],
+        seeYourself: ["Various CSR projects", "Research", "Brand Building"],
         academicSchedule: [
           "Course Duration: 22 hours",
           "Case Method and situation analysis",
@@ -147,7 +157,7 @@ const coursesData = [
         showArrow: true,
         duration: 4,
         isYearly: false,
-        courseFor: [
+        customPoints: [
           "In the last decade, society's consumption of news and material has shifted tremendously. Never before in human history have we been more connected, demonstrating the benefits of a new and exciting digital age.",
           "The Internet allows us to connect with everyone around the globe in seconds with smart phones  and laptops with high-definition video capabilities. Journalists no longer need to wait until the newspaper prints to garner attention for their reporting; they may write, record, and transmit content quickly.",
           "However, this skill can also be a curse. Misinformation abounds, and genuine, fair media has never been more critical.  The future of journalism in the digital age will necessitate news organizations and journalists adapting and fundamentally changing the status quo in terms of how they report and distribute news.",
@@ -190,7 +200,7 @@ const coursesData = [
           "Recruitment Coordinators",
         ],
         academicSchedule: [
-          "Contact Hours: Minimum 150 contact hours, may extend upto 250 hours.",
+          "Contact Hours: Minimum 150 contact hours",
           "Evening and Weekend Classes",
           "Teaching Calendar: August- March",
           "Academic Evaluation Classwork and Assignment One internal exam and one final exam; project, field,  and industry visit report",
@@ -220,7 +230,7 @@ const coursesData = [
           "Malls, supermarkets, Industries, and hospitals",
         ],
         academicSchedule: [
-          "Contact Hours: Minimum 150 contact hours, may extend upto 250 hours.",
+          "Contact Hours: Minimum 150 contact hours",
           "Evening and Weekend Classes",
           "Teaching Calendar: August- March",
           "Academic Evaluation Classwork and Assignment One internal exam and one final exam; project, field,  and industry visit report",
@@ -254,7 +264,7 @@ const coursesData = [
           "MNCs Departments",
         ],
         academicSchedule: [
-          "Contact Hours: Minimum 150 contact hours, may extend upto 250 hours.",
+          "Contact Hours: Minimum 150 contact hours",
           "Evening and Weekend Classes",
           "Teaching Calendar: August- March",
           "Academic Evaluation Classwork and Assignment One internal exam and one final exam; project, field,  and industry visit report",
@@ -282,7 +292,7 @@ const coursesData = [
           "Clinical Research Manager",
         ],
         academicSchedule: [
-          "Contact Hours: Minimum 150 contact hours, may extend upto 250 hours.",
+          "Contact Hours: Minimum 150 contact hours",
           "Evening and Weekend Classes",
           "Teaching Calendar: August- March",
           "Academic Evaluation Classwork and Assignment One internal exam and one final exam; project, field,  and industry visit report",
@@ -418,8 +428,15 @@ const coursesData = [
         duration: 1,
         isYearly: true,
         showArrow: true,
-        courseFor: [],
-        academicSchedule: [],
+        customPoints: [
+          "The Concept of Indian Heritage: The Historical Framework",
+          "Aspects of our Heritage : Language and Literature Philosophy",
+          "The Bhakti Movement",
+          "The Indian Renaissance",
+          "Profiles in Greatness: The Philosophers, Saints and Singers, Leaders of the Indian Renaissance National Leaders, Scientists",
+          "Science and Religion: The Indian Viewpoint",
+          "What Foreign Scholars Have Said of India",
+        ],
       },
     ],
   },

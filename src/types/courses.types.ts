@@ -9,6 +9,7 @@ export interface Course {
   academicSchedule?: string[];
   previouslyRecruited?: string[];
   seeYourself?: string[];
+  customPoints?: string[];
 }
 
 export interface CourseConfig {

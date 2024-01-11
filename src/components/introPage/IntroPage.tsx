@@ -45,8 +45,8 @@ const IntroPage = () => {
         <div className={styles.listContainer}>
           <ul>
             <li>Skills for All</li>
-            <li>Flexible Timings</li>
-            <li>Short & Long term courses</li>
+            <li>Centres Across India</li>
+            <li>Certificate and Diploma Courses</li>
           </ul>
         </div>
       </div>
