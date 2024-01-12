@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CheckboxInput from "../../../CheckboxInput/CheckboxInput";
 import styles from "./MultiSelectSection.module.scss";
 
@@ -6,6 +6,7 @@ type RowData = {
   title: string;
   id: string;
   options: { value: string; label: string }[];
+  subOptions?: { value: string; label: string }[];
 };
 
 type MultiSelectSectionProps = {
@@ -17,6 +18,8 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
   rowsData,
   formik,
 }) => {
+  const [selectedUmbrella, setSelectedUmbrella] = useState<string | null>(null);
+
   const handleCheckboxChange = (fieldName: any, value: any) => {
     const currentValues = formik.values[fieldName];
     const newValues = currentValues?.includes(value)
@@ -24,6 +27,7 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
       : [...currentValues, value];
 
     formik.setFieldValue(fieldName, newValues);
+    setSelectedUmbrella(newValues.includes("management") ? "course" : null);
   };
 
   return (
@@ -42,10 +46,37 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
                 label={option?.label}
                 onChange={() => handleCheckboxChange(row.id, option.value)}
                 className={styles.checkboxInput}
-                // checked={formik?.values[row.id].includes(option.value)}
               />
             ))}
           </div>
+          {row.subOptions && selectedUmbrella === row.id && (
+            <div className={styles.subOptionsDropdown}>
+              <label
+                htmlFor={`subOptions_${row.id}`}
+                className={styles.subOptionsLabel}
+              >
+                Select a {row.title} course:
+              </label>
+              <select
+                id={`subOptions_${row.id}`}
+                name={`subOptions_${row.id}`}
+                onChange={(e) =>
+                  formik.setFieldValue(`subOptions_${row.id}`, e.target.value)
+                }
+                value={formik.values[`subOptions_${row.id}`]}
+                className={styles.subOptionsSelect}
+              >
+                <option value="" disabled>
+                  Choose a {row.title} course
+                </option>
+                {row.subOptions.map((subOption, subOptionIndex) => (
+                  <option key={subOptionIndex} value={subOption.value}>
+                    {subOption.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
         </div>
       ))}
     </div>
