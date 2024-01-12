@@ -85,7 +85,7 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
       <div className={styles.courseEnquiryForm}>
         <div className={styles.heading}>Course Enquiry Form</div>
         {/* <StepsContainer /> */}
-        <WindowWidthLine />
+        {/* <WindowWidthLine /> */}
         <form onSubmit={formik.handleSubmit}>
           <ApplicationFormContainer formik={formik} />
           {/* <FileInputsSection formik={formik} /> */}
