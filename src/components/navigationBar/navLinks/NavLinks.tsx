@@ -41,6 +41,16 @@ const NavLinks: FC<NavLinksProps> = ({ isOnLandingPage }): ReactElement => {
           Centers
         </span>
       </NextLink>
+      <NextLink href="/gallery">
+        <span
+          className={cx(
+            styles.tabLink,
+            !isOnLandingPage && styles.tabLinkOnOtherScreens
+          )}
+        >
+          Gallery
+        </span>
+      </NextLink>
       {/* <NextLink href="/blogs">
         <span
           className={cx(
