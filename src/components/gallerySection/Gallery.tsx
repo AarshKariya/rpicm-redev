@@ -46,13 +46,13 @@ const Gallery: NextPage = () => {
           variants={itemVariants}
         />
         <motion.img
-          src="/gallery1.svg"
+          src="/gallery2.svg"
           alt="Image 2"
           className={styles.galleryImage}
           variants={itemVariants}
         />
         <motion.img
-          src="/gallery1.svg"
+          src="/gallery3.svg"
           alt="Image 3"
           className={styles.galleryImage}
           variants={itemVariants}
@@ -61,13 +61,13 @@ const Gallery: NextPage = () => {
       {/* Second Row */}
       <motion.div className={styles.row} variants={containerVariants}>
         <motion.img
-          src="/gallery1.svg"
+          src="/gallery4.svg"
           alt="Image 4"
           className={styles.galleryImage}
           variants={itemVariants}
         />
         <motion.img
-          src="/gallery1.svg"
+          src="/gallery5.svg"
           alt="Image 5"
           className={styles.galleryImage}
           variants={itemVariants}

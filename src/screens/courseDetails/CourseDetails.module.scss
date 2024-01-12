@@ -10,7 +10,6 @@ $quatro: "Quattrocento", sans-serif;
   font-family: $raleway;
   color: #253149;
 
-
   .courseDetailsTitle {
     color: #253149;
     font-family: $quatro !important;
@@ -24,7 +23,7 @@ $quatro: "Quattrocento", sans-serif;
     margin-top: 3rem;
     font-size: 1.5rem;
     font-weight: lighter;
-    line-height: normal;
+    line-height: 1.5;
     margin-bottom: 1.25rem;
 
     .duration {
@@ -36,8 +35,8 @@ $quatro: "Quattrocento", sans-serif;
 
   .bulletPoint {
     display: flex;
-    align-items: center;
-    margin-bottom: 6px;
+    align-items: flex-start;
+    margin-bottom: 10px;
 
     .bullet {
       background-color: #253149;
@@ -46,6 +45,7 @@ $quatro: "Quattrocento", sans-serif;
       border-radius: 50%;
       display: inline-block;
       margin-right: 8px;
+      margin-top: 12px;
     }
   }
 
@@ -53,7 +53,9 @@ $quatro: "Quattrocento", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 144.9%;
+    line-height: 1.5;
+    max-width: calc(100% - 18px);
+    margin-top: 2px;
   }
 
   .applyCourseLink {
@@ -67,13 +69,11 @@ $quatro: "Quattrocento", sans-serif;
       font-weight: lighter;
       margin-right: 5rem;
       line-height: 44px;
-      
     }
-    .link{
-font-size: 1rem;
-font-weight: lighter;
-text-decoration-line: underline;
+    .link {
+      font-size: 1rem;
+      font-weight: lighter;
+      text-decoration-line: underline;
     }
   }
-
 }

@@ -25,7 +25,9 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
           </span>
         </div>
         <div className={styles.text}>{details?.description}</div>
-        <div className={styles.subTitle}>Who is this course for?</div>
+        {details?.courseFor && (
+          <div className={styles.subTitle}>Who is this course for?</div>
+        )}
         {details?.courseFor?.map((item) => (
           // eslint-disable-next-line react/jsx-key
           <div className={styles.bulletPoint}>
@@ -33,6 +35,9 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
             <div className={styles.text}>{item}</div>
           </div>
         ))}
+        {details?.customPoints && (
+          <div className={styles.subTitle}>Course Detail</div>
+        )}
         {details?.customPoints?.map((item) => (
           <>
             {/* eslint-disable-next-line react/jsx-key */}
@@ -42,7 +47,9 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
             </div>
           </>
         ))}
-        <div className={styles.subTitle}>Academic Schedule</div>
+        {details?.academicSchedule && (
+          <div className={styles.subTitle}>Academic Schedule</div>
+        )}
         {details?.academicSchedule?.map((item) => (
           // eslint-disable-next-line react/jsx-key
           <div className={styles.bulletPoint}>
@@ -50,9 +57,11 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
             <div className={styles.text}>{item}</div>
           </div>
         ))}
-        <div className={styles.subTitle}>
-          Where you may see yourself after completing course
-        </div>
+        {details?.seeYourself && (
+          <div className={styles.subTitle}>
+            Where you may see yourself after completing course
+          </div>
+        )}
         {details?.seeYourself?.map((item) => (
           // eslint-disable-next-line react/jsx-key
           <div className={styles.bulletPoint}>
@@ -74,7 +83,9 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
         ))} */}
 
         <div className={styles.applyCourseLink}>
-          <div className={styles.subTitleLink}> Apply for a course at </div>
+          <div className={styles.subTitleLink}>
+            Have more questions? Learn more via
+          </div>
           <NextLink href="/enquiry" className={styles.link}>
             websiteurl.com/course-enquiry-form
           </NextLink>

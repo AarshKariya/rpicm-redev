@@ -41,7 +41,7 @@ const NavLinks: FC<NavLinksProps> = ({ isOnLandingPage }): ReactElement => {
           Centers
         </span>
       </NextLink>
-      <NextLink href="/blogs">
+      {/* <NextLink href="/blogs">
         <span
           className={cx(
             styles.tabLink,
@@ -50,7 +50,7 @@ const NavLinks: FC<NavLinksProps> = ({ isOnLandingPage }): ReactElement => {
         >
           Blog
         </span>
-      </NextLink>
+      </NextLink> */}
       <NextLink href="/enquiry">
         <span
           className={cx(

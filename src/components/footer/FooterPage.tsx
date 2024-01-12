@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
           <Link href="/about">
             <div className={styles.linkText}>About</div>
           </Link>
-          <Link href="/blog">
+          {/* <Link href="/blog">
             <div className={styles.linkText}>Blog</div>
-          </Link>
+          </Link> */}
           <Link href="/gallery">
             <div className={styles.linkText}>Gallery</div>
           </Link>
