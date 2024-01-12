@@ -38,6 +38,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.firstName}
         type="text"
+        error={formik.touched.firstName && formik.errors.firstName}
+        touched={formik.touched.firstName}
       />
       <FormInput
         label="Father's Name"
@@ -47,6 +49,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.fatherName}
         type="text"
+        error={formik.touched.fatherName && formik.errors.fatherName}
+        touched={formik.touched.fatherName}
       />
       <FormInput
         label="Last Name"
@@ -56,6 +60,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.lastName}
         type="text"
+        error={formik.touched.lastName && formik.errors.lastName}
+        touched={formik.touched.lastName}
       />
       <FormInput
         label="Phone Number"
@@ -65,6 +71,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.phoneNumber}
         type="text"
+        error={formik.touched.phoneNumber && formik.errors.phoneNumber}
+        touched={formik.touched.phoneNumber}
       />
       <FormInput
         label="Email"
@@ -74,6 +82,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.email}
         type="text"
+        error={formik.touched.email && formik.errors.email}
+        touched={formik.touched.email}
       />
       <FormInput
         label="Address"

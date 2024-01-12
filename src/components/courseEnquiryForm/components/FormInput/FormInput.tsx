@@ -9,6 +9,8 @@ type FormInputProps = {
   id: string;
   name: string;
   type: string;
+  error?: string | undefined;
+  touched?: boolean | undefined;
 };
 
 const FormInput: React.FC<FormInputProps> = ({
@@ -19,6 +21,8 @@ const FormInput: React.FC<FormInputProps> = ({
   id,
   name,
   type,
+  error,
+  touched,
 }) => {
   return (
     <div className={styles.formInput}>
@@ -31,8 +35,11 @@ const FormInput: React.FC<FormInputProps> = ({
           name={name}
           onChange={onChange}
           placeholder={placeholder}
-          className={styles.inputField}
+          className={`${styles.inputField} ${
+            touched && error ? styles.errorBorder : ""
+          }`}
         />
+        {touched && error && <div className={styles.error}>{error}</div>}
       </div>
     </div>
   );

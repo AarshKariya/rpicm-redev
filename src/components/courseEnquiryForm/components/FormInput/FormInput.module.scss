@@ -10,6 +10,10 @@ $quatro: "Quattrocento", sans-serif;
   align-items: center;
   margin-bottom: 20px;
 
+  &.errorBorder {
+    border: 1px solid #c1121f; /* Change this to the border style you prefer for errors */
+  }
+
   .leftColumn {
     width: 100%;
     color: #253149;
@@ -32,5 +36,14 @@ $quatro: "Quattrocento", sans-serif;
     padding: 8px;
     border: 1px solid rgba(0, 0, 0, 0.39);
     box-sizing: border-box;
+
+    &.errorBorder {
+      border: 1px solid #c1121f; /* Change this to the border style you prefer for errors */
+    }
+  }
+
+  .error {
+    color: #c1121f; /* Change this to the color you prefer for error text */
+    margin-top: 5px; /* Adjust the margin as needed */
   }
 }
