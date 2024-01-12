@@ -38,6 +38,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.firstName}
         type="text"
+        error={formik.touched.firstName && formik.errors.firstName}
+        touched={formik.touched.firstName}
       />
       <FormInput
         label="Father's Name"
@@ -47,6 +49,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.fatherName}
         type="text"
+        error={formik.touched.fatherName && formik.errors.fatherName}
+        touched={formik.touched.fatherName}
       />
       <FormInput
         label="Last Name"
@@ -56,6 +60,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.lastName}
         type="text"
+        error={formik.touched.lastName && formik.errors.lastName}
+        touched={formik.touched.lastName}
       />
       <FormInput
         label="Phone Number"
@@ -65,6 +71,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.phoneNumber}
         type="text"
+        error={formik.touched.phoneNumber && formik.errors.phoneNumber}
+        touched={formik.touched.phoneNumber}
       />
       <FormInput
         label="Email"
@@ -74,6 +82,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.email}
         type="text"
+        error={formik.touched.email && formik.errors.email}
+        touched={formik.touched.email}
       />
       <FormInput
         label="Address"
@@ -83,6 +93,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.address}
         type="text"
+        error={formik.touched.address && formik.errors.address}
+        touched={formik.touched.address}
       />
       <FormInput
         label="State"
@@ -92,6 +104,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.state}
         type="text"
+        error={formik.touched.state && formik.errors.state}
+        touched={formik.touched.state}
       />
       <FormInput
         label="Date of Birth"
@@ -101,6 +115,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.dob}
         type="date"
+        error={formik.touched.dob && formik.errors.dob}
+        touched={formik.touched.dob}
       />
       <FormInput
         label="UG University"
@@ -110,6 +126,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.ugUniName}
         type="text"
+        error={formik.touched.ugUniName && formik.errors.ugUniName}
+        touched={formik.touched.ugUniName}
       />
 
       <RadioButtonSection
@@ -118,6 +136,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         id="gender"
         name="gender"
         onChange={formik.handleChange}
+        error={formik.touched.gender && formik.errors.gender}
+        touched={formik.touched.gender}
       />
 
       <RadioButtonSection
@@ -126,6 +146,10 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         name="employmentStatus"
         options={employmentStatus}
         onChange={formik.handleChange}
+        error={
+          formik.touched.employmentStatus && formik.errors.employmentStatus
+        }
+        touched={formik.touched.employmentStatus}
       />
     </motion.div>
   );

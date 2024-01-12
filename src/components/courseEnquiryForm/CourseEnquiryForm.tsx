@@ -13,6 +13,7 @@ import NavigationBar from "../navigationBar/NavigationBar";
 import Footer from "../footer/FooterPage";
 import ExploreCourses from "../exploreCourses/ExploreCourses";
 import { useFormik } from "formik";
+import validationSchema from "./helpers/validationSchema";
 
 const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
@@ -49,6 +50,8 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
     onSubmit: (values) => {
       console.log("values", values);
     },
+
+    validationSchema: validationSchema,
   });
 
   console.log("formik", formik);
@@ -58,7 +61,7 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
       <NavigationBar isOnLandingPage={false} />
       <div className={styles.courseEnquiryForm}>
         <div className={styles.heading}>Course Enquiry Form</div>
-        <StepsContainer />
+        {/* <StepsContainer /> */}
         <WindowWidthLine />
         <form onSubmit={formik.handleSubmit}>
           <ApplicationFormContainer formik={formik} />
