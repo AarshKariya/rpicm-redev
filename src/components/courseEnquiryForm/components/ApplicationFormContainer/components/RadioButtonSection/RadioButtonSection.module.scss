@@ -10,6 +10,11 @@ $quatro: "Quattrocento", sans-serif;
   align-items: center;
   margin-bottom: 20px; /* Adjust spacing between RadioButtonSections if needed */
 
+  .error {
+    color: #c1121f; /* Change this to the color you prefer for error text */
+    margin-top: 5px; /* Adjust the margin as needed */
+  }
+
   .leftColumn {
     width: 48.5%; /* Width of the titles */
     color: #253149;
@@ -24,18 +29,18 @@ $quatro: "Quattrocento", sans-serif;
     display: flex;
     margin-left: 20px; /* Adjust the space between title and radio buttons */
 
-    label {
+    .radioWrapper {
       color: #253149;
       font-family: $raleway;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-    }
 
-    input[type="radio"] {
-      margin-right: 10px; /* Adjust space between radio button and label */
-      /* Additional styling for radio buttons if needed */
+      input[type="radio"] {
+        margin-right: 10px; /* Adjust space between radio button and label */
+        /* Additional styling for radio buttons if needed */
+      }
     }
   }
 }

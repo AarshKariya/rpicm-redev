@@ -93,6 +93,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.address}
         type="text"
+        error={formik.touched.address && formik.errors.address}
+        touched={formik.touched.address}
       />
       <FormInput
         label="State"
@@ -102,6 +104,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.state}
         type="text"
+        error={formik.touched.state && formik.errors.state}
+        touched={formik.touched.state}
       />
       <FormInput
         label="Date of Birth"
@@ -111,6 +115,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.dob}
         type="date"
+        error={formik.touched.dob && formik.errors.dob}
+        touched={formik.touched.dob}
       />
       <FormInput
         label="UG University"
@@ -120,6 +126,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         onChange={formik.handleChange}
         value={formik.values.ugUniName}
         type="text"
+        error={formik.touched.ugUniName && formik.errors.ugUniName}
+        touched={formik.touched.ugUniName}
       />
 
       <RadioButtonSection
@@ -128,6 +136,8 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         id="gender"
         name="gender"
         onChange={formik.handleChange}
+        error={formik.touched.gender && formik.errors.gender}
+        touched={formik.touched.gender}
       />
 
       <RadioButtonSection
@@ -136,6 +146,10 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         name="employmentStatus"
         options={employmentStatus}
         onChange={formik.handleChange}
+        error={
+          formik.touched.employmentStatus && formik.errors.employmentStatus
+        }
+        touched={formik.touched.employmentStatus}
       />
     </motion.div>
   );
