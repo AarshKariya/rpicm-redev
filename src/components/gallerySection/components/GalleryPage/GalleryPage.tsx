@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./GalleryPage.module.scss";
 import { useRouter } from "next/router";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import { galleryCampus, galleryEvents } from "../../helpers/galleryPage";
 
 const GalleryPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Campus");
@@ -38,26 +39,8 @@ const GalleryPage: React.FC = () => {
         </div>
       </div>
       <div className={styles.windowWidthLine}></div>
-      {activeTab === "Campus" && (
-        <ImageCarousel
-          images={[
-            { name: "Admin", src: "/gallery1.svg", id: 1 },
-            { name: "Office", src: "/gallery2.svg", id: 2 },
-            { name: "Office 2", src: "/gallery3.svg", id: 3 },
-            { name: "Office 3", src: "/gallery4.svg", id: 4 },
-            { name: "Office 4", src: "/gallery5.svg", id: 5 },
-          ]}
-        />
-      )}
-      {activeTab === "Events" && (
-        <ImageCarousel
-          images={[
-            { name: "Event 1", src: "/aboutUs1.svg", id: 1 },
-            { name: "Event 2", src: "/aboutUs2.svg", id: 2 },
-            { name: "Event 3", src: "/aboutUs3.svg", id: 3 },
-          ]}
-        />
-      )}
+      {activeTab === "Campus" && <ImageCarousel images={galleryCampus} />}
+      {activeTab === "Events" && <ImageCarousel images={galleryEvents} />}
     </>
   );
 };
