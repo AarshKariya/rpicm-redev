@@ -35,7 +35,11 @@ const DynamicIndiaMap: React.FC = () => {
             } target="_blank" rel="noopener noreferrer">${
             capital?.website ? capital?.website : "-"
           }</a></p>
-            <p>Email: ${capital?.email ?? "-"}</p>
+            <p>Email: <a href=mailto:${
+              capital?.email
+            } target="_blank" rel="noopener noreferrer">${
+            capital?.email ?? "-"
+          }</a></p>
           </div>
         `;
 
