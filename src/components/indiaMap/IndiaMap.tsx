@@ -26,19 +26,20 @@ const DynamicIndiaMap: React.FC = () => {
         });
 
         bhavanCenters?.forEach((capital) => {
-          const isWebsiteAvailable = capital?.website ? (
-            <NextLink href={capital?.website}>{capital?.website}</NextLink>
-          ) : (
-            "Not available"
-          );
-
           const popupContent = `
           <div>
             <h2>${capital?.name ?? "-"}</h2>
             <p>Address: ${capital?.address ?? "-"}</p>
-            <p>Maps: <a href="${capital?.maps}">View on Map</a></p>
-            <p>Website: ${isWebsiteAvailable}</p>
-            <p>Email: ${capital?.email ?? "-"}</p>
+            <p>Website: <a href=${
+              capital?.website
+            } target="_blank" rel="noopener noreferrer">${
+            capital?.website ? capital?.website : "-"
+          }</a></p>
+            <p>Email: <a href=mailto:${
+              capital?.email
+            } target="_blank" rel="noopener noreferrer">${
+            capital?.email ?? "-"
+          }</a></p>
           </div>
         `;
 
