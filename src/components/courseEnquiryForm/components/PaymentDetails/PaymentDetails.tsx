@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "../../CourseEnquiryForm.module.scss";
 import CheckboxInput from "../CheckboxInput/CheckboxInput";
-import FormInput from "../FormInput/FormInput";
 
 type PaymentDetailsProps = {
   date: string;
@@ -10,7 +9,6 @@ type PaymentDetailsProps = {
   handleDateChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handlePlaceChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleCheckBoxChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  handleButtonClick: () => void;
   isFormValid: boolean;
   formik: any;
 };
@@ -21,9 +19,7 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
   handleDateChange,
   handlePlaceChange,
   handleCheckBoxChange,
-  handleButtonClick,
   isFormValid,
-  formik,
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -43,21 +39,15 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
       variants={containerVariants}
     >
       <div className={styles.column}>
-        {/* <motion.div
-          className={styles.paymentDetailsTitle}
-          variants={itemVariants}
-        >
-          PAYMENT DETAILS
-        </motion.div>
-        <motion.div
-          className={styles.paymentDetailsSubTitle}
-          variants={itemVariants}
-        >
-          Application fee: ₹750/-
-        </motion.div> */}
         <motion.div className={styles.row} variants={itemVariants}>
           <div className={styles.paymentDetailsInfo}>Date:</div>
-          <input type="date" value={date} onChange={handleDateChange} />
+          <input
+            type="date"
+            value={date}
+            onChange={handleDateChange}
+            id="enquiryDate"
+            name="enquiryDate"
+          />
         </motion.div>
         <motion.div className={styles.row} variants={itemVariants}>
           <div className={styles.paymentDetailsInfo}>Place:</div>
@@ -66,6 +56,8 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
             value={place}
             onChange={handlePlaceChange}
             placeholder="Enter place"
+            id="enquiryPlace"
+            name="enquiryPlace"
           />
         </motion.div>
         <motion.div className={styles.row} variants={itemVariants}>
@@ -77,10 +69,10 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
           />
         </motion.div>
         <motion.button
-          onClick={handleButtonClick}
           disabled={!isFormValid}
           className={styles.saveButton}
           variants={itemVariants}
+          type="submit"
         >
           Save and Continue
         </motion.button>

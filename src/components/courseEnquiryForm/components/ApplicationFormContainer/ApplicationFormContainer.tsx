@@ -26,7 +26,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <MultiSelectSection rowsData={rowsData} onChange={formik.handleChange} />
+      <MultiSelectSection rowsData={rowsData} formik={formik} />
 
       <div className={styles.personalInfo}>PERSONAL INFORMATION</div>
 
