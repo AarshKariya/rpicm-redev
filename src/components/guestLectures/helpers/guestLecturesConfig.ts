@@ -9,13 +9,13 @@ export const guestLecturesData = [
   {
     name: "Jumana Shah",
     description: "“Truth to power.”",
-    imageUrl: "/jumanaShah.jpeg",
+    imageUrl: "/jumanaShah.svg",
     id: 1,
   },
   {
     name: "Nirnay Kapoor",
     description: "“Shots are key for video journalism.”",
-    imageUrl: "/nirnayKapoor.jpg",
+    imageUrl: "/nirnayKapoor.svg",
     id: 2,
   },
 ];

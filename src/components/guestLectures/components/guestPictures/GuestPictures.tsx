@@ -38,9 +38,10 @@ const GuestPictures: NextPage<GuestPictures> = ({
             src={guest.imageUrl}
             alt={guest.name}
             quality={100}
-            width={240}
+            width={260}
             height={388}
-            layout="fixed"
+            // layout="fill"
+            // objectFit="cover"
             className={
               focusedIndex !== null && focusedIndex !== guest?.id
                 ? styles.blur
