@@ -55,27 +55,20 @@ $raleway: "Raleway", sans-serif;
 $quatro: "Quattrocento", sans-serif;
 
 .galleryContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 112px;
-  margin-right: 112px;
+  width: 100%;
 }
 
 .row {
   display: flex;
-  justify-content: center; /* Changed to space-around */
+  justify-content: center;
   margin-top: 104px;
-  margin-bottom: 72px;
+  margin-bottom: 40px;
 }
 
 .galleryImage {
-  margin: 0 20px; /* Increase the margin between images */
-  max-width: 100%; /* Ensure images don't exceed their container */
+  margin: 0 20px;
+  max-width: 100%;
   height: auto;
 }
 

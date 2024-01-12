@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "leaflet/dist/leaflet.css";
-import NextLink from "next/link";
 import { bhavanCenters } from "./helpers/indiaMapCenters";
 
 const DynamicIndiaMap: React.FC = () => {
