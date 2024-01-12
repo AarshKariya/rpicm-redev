@@ -19,8 +19,6 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
 }) => {
   console.log("supabase", supabase);
-  const [date, setDate] = useState("");
-  const [place, setPlace] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
 
   const handleCheckBoxChange = (e: any) => {
@@ -28,10 +26,36 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
     setIsFormValid(e.target.checked);
   };
 
+  const handleFormSubmit = async (formData: any) => {
+    try {
+      // Insert data into the 'courseEnquiryEntries' table.
+      await supabase.from("courseEnquiryEntries").upsert([
+        {
+          // Map the fields from the Formik form to the corresponding columns in the table.
+          firstName: formData?.firstName,
+          fatherName: formData?.fatherName,
+          lastName: formData?.lastName,
+          phoneNumber: formData?.phoneNumber,
+          email: formData?.email,
+          address: formData?.address,
+          state: formData?.state,
+          ugUniName: formData?.ugUniName,
+          dob: formData?.dob,
+          gender: formData?.gender,
+          employmentStatus: formData?.employmentStatus,
+          enquiryDate: formData?.enquiryDate,
+          enquiryPlace: formData?.enquiryPlace,
+        },
+      ]);
+    } catch (error: any) {
+      console.error("Error:", error?.message);
+    }
+  };
+
   const formik = useFormik({
     initialValues: {
-      enquiryFor: [],
-      course: [],
+      // enquiryFor: [],
+      // course: [],
       firstName: "",
       fatherName: "",
       lastName: "",
@@ -49,12 +73,11 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
 
     onSubmit: (values) => {
       console.log("values", values);
+      handleFormSubmit(values);
     },
 
     validationSchema: validationSchema,
   });
-
-  console.log("formik", formik);
 
   return (
     <>
