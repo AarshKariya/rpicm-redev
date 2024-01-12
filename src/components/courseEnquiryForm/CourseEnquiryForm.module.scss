@@ -67,6 +67,7 @@ $quatro: "Quattrocento", sans-serif;
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        margin-top: 10px;
         font-family: $raleway;
 
         .paymentDetailsInfo {
@@ -149,7 +150,7 @@ $quatro: "Quattrocento", sans-serif;
           left: calc(50% - 5px); /* Position it horizontally centered */
           width: 10px;
           height: 10px;
-          background-color: #C1121F;
+          background-color: #c1121f;
           border-radius: 50%;
         }
       }

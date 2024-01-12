@@ -10,13 +10,22 @@ type RowData = {
 
 type MultiSelectSectionProps = {
   rowsData: RowData[];
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  formik: any;
 };
 
 const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
   rowsData,
-  onChange,
+  formik,
 }) => {
+  const handleCheckboxChange = (fieldName: any, value: any) => {
+    const currentValues = formik.values[fieldName];
+    const newValues = currentValues?.includes(value)
+      ? currentValues.filter((item: any) => item !== value)
+      : [...currentValues, value];
+
+    formik.setFieldValue(fieldName, newValues);
+  };
+
   return (
     <div className={styles.multiSelectSection}>
       {rowsData.map((row, rowIndex) => (
@@ -28,11 +37,12 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({
             {row?.options?.map((option, optionIndex) => (
               <CheckboxInput
                 key={optionIndex}
-                value={option?.value}
+                value={formik.values[row.id]}
                 id={option?.value}
                 label={option?.label}
-                onChange={onChange}
+                onChange={() => handleCheckboxChange(row.id, option.value)}
                 className={styles.checkboxInput}
+                // checked={formik?.values[row.id].includes(option.value)}
               />
             ))}
           </div>

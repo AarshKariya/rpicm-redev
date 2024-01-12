@@ -27,21 +27,9 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
     setIsFormValid(e.target.checked);
   };
 
-  const handleDateChange = (e: any) => {
-    setDate(e.target.value);
-  };
-
-  const handlePlaceChange = (e: any) => {
-    setPlace(e.target.value);
-  };
-
-  const handleButtonClick = () => {
-    // Perform any action on button click after validation
-  };
-
   const formik = useFormik({
     initialValues: {
-      applyingFor: [],
+      enquiryFor: [],
       course: [],
       firstName: "",
       fatherName: "",
@@ -54,12 +42,8 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
       dob: "",
       gender: "",
       employmentStatus: "",
-      // ugDegree: {},
-      // pgDegree: {},
-      // idProof: {},
-      // photograph: {},
-      applicationDate: "",
-      applicationPlace: "",
+      enquiryDate: "",
+      enquiryPlace: "",
     },
 
     onSubmit: (values) => {
@@ -81,12 +65,11 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
           {/* <FileInputsSection formik={formik} /> */}
           <WindowWidthLine />
           <PaymentDetails
-            date={date}
-            place={place}
-            handleDateChange={handleDateChange}
-            handlePlaceChange={handlePlaceChange}
+            date={formik.values.enquiryDate}
+            place={formik.values.enquiryPlace}
+            handleDateChange={formik.handleChange}
+            handlePlaceChange={formik.handleChange}
             handleCheckBoxChange={handleCheckBoxChange}
-            handleButtonClick={handleButtonClick}
             isFormValid={isFormValid}
             formik={formik}
           />
