@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import cx from "classnames";
@@ -73,13 +73,13 @@ const CourseCardTile: NextPage<CourseCardTileProps> = ({ courseConfigs }) => {
               </motion.div>
             ))}
           </div>
-          <Image
+          {/* <Image
             src="/nextArrow.svg"
             alt="arrow"
             width={35}
             height={35}
             className={styles.nextArrow}
-          />
+          /> */}
         </div>
       ))}
     </div>
