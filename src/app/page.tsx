@@ -11,7 +11,7 @@ import Footer from "@/components/footer/FooterPage";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} style={{ overflowX: "hidden" }}>
       <LandingPage />
       <RecruitersPage />
       <IntroPage />
