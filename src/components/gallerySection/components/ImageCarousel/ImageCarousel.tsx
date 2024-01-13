@@ -15,7 +15,7 @@ const ImageCarousel = ({ images }: { images: ImageObject[] }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [images]);
 
@@ -49,8 +49,8 @@ const ImageCarousel = ({ images }: { images: ImageObject[] }) => {
                   <Image
                     src={image.src}
                     alt={image.name}
-                    width={629} // Adjust image width as needed
-                    height={374} // Adjust image height as needed
+                    width={629}
+                    height={374}
                     className={styles.image}
                     quality={100}
                   />
