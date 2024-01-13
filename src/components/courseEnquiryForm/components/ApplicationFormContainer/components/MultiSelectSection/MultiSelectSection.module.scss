@@ -1,51 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
 
-$raleway: "Raleway", sans-serif;
-$quatro: "Quattrocento", sans-serif;
+// $raleway: "Raleway", sans-serif;
+// $quatro: "Quattrocento", sans-serif;
 
-.multiSelectSection {
+// .multiSelectSection {
+//   display: flex;
+//   flex-direction: column;
+//   font-family: $raleway;
+
+//   > div {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 90px;
+
+//     &:first-child {
+//       margin-top: 78px;
+//       margin-bottom: 54px;
+//       color: #253149;
+//     }
+
+//     .title {
+//       min-width: 224px;
+//       font-size: 18px;
+//       font-style: normal;
+//       font-weight: 400;
+//       color: #253149;
+
+//       @media screen and (max-width: 768px) {
+//         min-width: auto;
+//         margin-right: 20px;
+//       }
+//     }
+
+//     .options {
+//       display: flex;
+//       flex-wrap: wrap;
+//       gap: 76px;
+//       font-size: 18px;
+//       font-style: normal;
+//       font-weight: 400;
+//       align-items: center;
+//       color: #253149;
+
+//       @media screen and (max-width: 768px) {
+//         flex-direction: column;
+//       }
+//     }
+//   }
+// }
+
+.rowContainer {
   display: flex;
-  flex-direction: column;
-  font-family: $raleway;
-
-  > div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 90px;
-
-    &:first-child {
-      margin-top: 78px;
-      margin-bottom: 54px;
-      color: #253149;
-    }
-
-    .title {
-      min-width: 224px;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      color: #253149;
-
-      @media screen and (max-width: 768px) {
-        min-width: auto;
-        margin-right: 20px;
-      }
-    }
-
-    .options {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 76px;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      align-items: center;
-      color: #253149;
-
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
-      }
-    }
-  }
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
+.title {
+  flex: 1;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.dropdown {
+  flex: 2;
+}
+
+.selectDropdown {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+// button {
+//   margin-top: 10px;
+//   padding: 10px;
+//   background-color: #4caf50;
+//   color: white;
+//   border: none;
+//   border-radius: 4px;
+//   cursor: pointer;
+// }
+
+// button:hover {
+//   background-color: #45a049;
+// }

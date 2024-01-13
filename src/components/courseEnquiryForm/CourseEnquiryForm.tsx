@@ -54,8 +54,8 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
 
   const formik = useFormik({
     initialValues: {
-      // enquiryFor: [],
-      // course: [],
+      enquiryFor: [],
+      course: [],
       firstName: "",
       fatherName: "",
       lastName: "",
@@ -73,7 +73,7 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
 
     onSubmit: (values) => {
       console.log("values", values);
-      handleFormSubmit(values);
+      // handleFormSubmit(values);
     },
 
     validationSchema: validationSchema,
