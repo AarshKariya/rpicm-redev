@@ -20,6 +20,7 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
   handlePlaceChange,
   handleCheckBoxChange,
   isFormValid,
+  formik,
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -74,8 +75,14 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({
           variants={itemVariants}
           type="submit"
         >
-          Save and Continue
+          {formik.isSubmitting ? "Submitting Form" : "Submit Form"}
         </motion.button>
+
+        {formik.isSubmitting && (
+          <div className={styles.formSubmittedText}>
+            We will get back to you shortly.
+          </div>
+        )}
       </div>
     </motion.div>
   );

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$mobileWidth: 375px;
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.contactContainer {
+  width: 50%;
+  height: 100vh;
+
+  padding: 240px 98px 24px 98px;
+
+  .contactUsHeading {
+    color: #253149;
+    font-family: $quatro;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2px;
+
+    margin-bottom: 44px;
+  }
+
+  .error {
+    color: #c1121f; /* Change this to the color you prefer for error text */
+    margin-top: 5px; /* Adjust the margin as needed */
+  }
+
+  .inputContainer {
+    display: flex;
+  }
+
+  .formSubmittedText {
+    color: #c1121f;
+    font-family: $raleway;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 24px;
+  }
+
+  & label {
+    display: block;
+    margin-bottom: 0.5rem;
+
+    color: #253149;
+    font-family: $raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 260px;
+  }
+
+  & input,
+  & textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+
+    color: #253149;
+    font-family: $raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  & button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    padding: 12px 52px;
+    margin-top: 24px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #c1121f;
+      color: #fff;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

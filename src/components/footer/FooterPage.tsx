@@ -11,7 +11,6 @@ const Footer: React.FC = () => {
         <Image src="/rpicmlogo.svg" alt="Logo" width={76} height={55} />
       </div>
       <div className={styles.content}>
-
         <div className={styles.links}>
           <Link href="/centres">
             <div className={styles.linkText}>Centres</div>
@@ -30,6 +29,9 @@ const Footer: React.FC = () => {
           </Link>
           <Link href="/courses">
             <div className={styles.linkText}>Courses</div>
+          </Link>
+          <Link href="/contact">
+            <div className={styles.linkText}>Contact Us</div>
           </Link>
         </div>
         <div className={styles.socialMedia}>
@@ -63,7 +65,6 @@ const Footer: React.FC = () => {
         </div>
         <div className={styles.taglineClass}>SKILLING INDIA SINCE 1961</div>
       </div>
-
     </div>
   );
 };

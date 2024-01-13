@@ -1,106 +1,6 @@
-const generateUniqueId = () => {
+export const generateUniqueId = () => {
   return Math.random().toString(36).substr(2, 9); // Generate a random unique ID
 };
-
-export const courseConfig = [
-  {
-    id: 1,
-    courseTitle: "COMMUNICATION",
-    courseItems: [
-      {
-        id: 1,
-        courseItemTitle: "Journalism",
-        courseItemRedirect: "/Journalism",
-      },
-      {
-        id: 2,
-        courseItemTitle: "Digital media",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 3,
-        courseItemTitle: "Public Relations",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 4,
-        courseItemTitle: "Strategic Communication for Sustainable Impact",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 5,
-        courseItemTitle: "School Journalism",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 6,
-        courseItemTitle: "Campus Journalism",
-        courseItemRedirect: "some URL",
-      },
-    ],
-  },
-  {
-    id: 2,
-    courseTitle: "MANAGEMENT",
-    courseItems: [
-      {
-        id: 1,
-        courseItemTitle: "Industrial Relations & Personnel Management",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 2,
-        courseItemTitle: "Materials Management",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 3,
-        courseItemTitle: "International Trade",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 4,
-        courseItemTitle: "Hospital Management",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 5,
-        courseItemTitle: "Marketing & Sales Management",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 6,
-        courseItemTitle: "Business Management",
-        courseItemRedirect: "some URL",
-      },
-      {
-        id: 7,
-        courseItemTitle: "Financial Management",
-        courseItemRedirect: "some URL",
-      },
-    ],
-  },
-  {
-    id: 3,
-    courseTitle: "CULTURAL HERITAGE OF INDIA",
-  },
-  {
-    id: 4,
-    courseTitle: "",
-    courseItems: [
-      {
-        id: 1,
-        courseItemTitle: "1 year courses",
-        courseItemRedirect: "some url",
-      },
-      {
-        id: 2,
-        courseItemTitle: "4 month courses",
-        courseItemRedirect: "some url",
-      },
-    ],
-  },
-];
 
 export const coursesData = [
   {
@@ -139,8 +39,8 @@ export const coursesData = [
         description:
           "This course is designed to provide students with a comprehensive understanding of digital media, covering strategies for content creation, distribution, and engagement. Through a combination of theoretical concepts and practical skills development, students will learn to navigate the rapidly evolving digital landscape and create impactful content across various digital platforms.",
         showArrow: true,
-        duration: 4,
-        isYearly: false,
+        duration: 1,
+        isYearly: true,
         courseFor: [
           "The course is designed for individuals who have a keen interest in journalism, media, or communication and wish to acquire specialised skills for the digital age.",
           "This includes students, working professionals, and freelance journalists.",

@@ -18,7 +18,6 @@ import validationSchema from "./helpers/validationSchema";
 const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
 }) => {
-  console.log("supabase", supabase);
   const [isFormValid, setIsFormValid] = useState(false);
 
   const handleCheckBoxChange = (e: any) => {
@@ -47,6 +46,7 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
           enquiryPlace: formData?.enquiryPlace,
         },
       ]);
+      formik.resetForm();
     } catch (error: any) {
       console.error("Error:", error?.message);
     }
@@ -54,8 +54,8 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
 
   const formik = useFormik({
     initialValues: {
-      // enquiryFor: [],
-      // course: [],
+      enquiryFor: [],
+      course: [],
       firstName: "",
       fatherName: "",
       lastName: "",
