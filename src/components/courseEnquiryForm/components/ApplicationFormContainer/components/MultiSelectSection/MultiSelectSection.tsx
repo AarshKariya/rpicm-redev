@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useFormik } from "formik";
+import { Field, useFormik } from "formik";
 import { rowsData } from "../../helpers/multiSelectRowsData";
 import styles from "./MultiSelectSection.module.scss";
 
@@ -69,7 +69,7 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({ formik }) => {
 
   return (
     <>
-      {rowsData.map((rowData) => (
+      {/* {rowsData.map((rowData) => (
         <div key={rowData.id} className={styles.rowContainer}>
           <div className={styles.title}>{rowData.title}</div>
 
@@ -83,7 +83,6 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({ formik }) => {
               onBlur={formik.handleBlur}
               value={formik.values[rowData.id] || []}
             >
-              {/* Map over the options from the current rowData */}
               {rowData.options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -92,7 +91,7 @@ const MultiSelectSection: React.FC<MultiSelectSectionProps> = ({ formik }) => {
             </select>
           </div>
         </div>
-      ))}
+      ))} */}
     </>
   );
 };

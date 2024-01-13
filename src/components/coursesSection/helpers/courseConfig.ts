@@ -39,8 +39,8 @@ export const coursesData = [
         description:
           "This course is designed to provide students with a comprehensive understanding of digital media, covering strategies for content creation, distribution, and engagement. Through a combination of theoretical concepts and practical skills development, students will learn to navigate the rapidly evolving digital landscape and create impactful content across various digital platforms.",
         showArrow: true,
-        duration: 4,
-        isYearly: false,
+        duration: 1,
+        isYearly: true,
         courseFor: [
           "The course is designed for individuals who have a keen interest in journalism, media, or communication and wish to acquire specialised skills for the digital age.",
           "This includes students, working professionals, and freelance journalists.",

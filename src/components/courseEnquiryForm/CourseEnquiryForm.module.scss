@@ -157,6 +157,17 @@ $quatro: "Quattrocento", sans-serif;
     }
   }
 
+  .formSubmittedText {
+    color: #c1121f;
+    font-family: $raleway;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 24px;
+  }
+
   .ugDegree {
     display: flex;
     justify-content: space-between;
