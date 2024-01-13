@@ -2,18 +2,17 @@ import React from "react";
 import CourseTile from "./components/CourseTile";
 import styles from "./CoursesSection.module.scss";
 import { NextPage } from "next";
-import { courseConfig } from "./helpers/courseConfig";
+import { coursesData } from "./helpers/courseConfig";
 
 const Courses: NextPage = () => {
   return (
     <div className={styles.coursesPage}>
       <div className={styles.sectionTitle}>Courses</div>
       <div className={styles.tilesContainer}>
-        {courseConfig?.map((course, index) => (
+        {coursesData?.map((course, index) => (
           <CourseTile
-            key={course?.id}
-            index={index}
-            title={course?.courseTitle}
+            key={index}
+            title={course?.courseType}
             courses={course?.courseItems?.map((item) => item)}
           />
         ))}

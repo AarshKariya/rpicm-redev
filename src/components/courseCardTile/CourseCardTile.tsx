@@ -26,7 +26,7 @@ const CourseCardTile: NextPage<CourseCardTileProps> = ({ courseConfigs }) => {
     localStorage.setItem("selectedCourse", JSON.stringify(course));
 
     // Navigate to the next page using the router
-    router.push(`/course/${encodeURIComponent(course.title)}`, undefined, {
+    router.push(`/course/${encodeURIComponent(course?.title)}`, undefined, {
       shallow: true,
     });
   };

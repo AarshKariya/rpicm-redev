@@ -63,7 +63,7 @@ $quatro: "Quattrocento", sans-serif;
 
       .tileHeader {
         display: flex;
-        align-items: end;
+        align-items: flex-end;
         margin-bottom: 30px;
 
         .courseTitle {
@@ -107,5 +107,6 @@ $quatro: "Quattrocento", sans-serif;
   .nextArrow {
     float: right;
     margin-right: 2rem;
+    cursor: pointer;
   }
 }
