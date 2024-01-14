@@ -1,10 +1,23 @@
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import styles from "./Gallery.module.scss";
 import { NextPage } from "next";
 import { useRouter } from "next/navigation";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Gallery: NextPage = () => {
   const router = useRouter();
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -35,7 +48,8 @@ const Gallery: NextPage = () => {
       className={styles.galleryContainer}
       variants={containerVariants}
       initial="hidden"
-      animate="visible"
+      animate={controls}
+      ref={ref}
     >
       {/* First Row */}
       <motion.div className={styles.row} variants={containerVariants}>
