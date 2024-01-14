@@ -1,33 +1,4 @@
-// import styles from "./IntroPage.module.scss";
-
-// const IntroPage = () => {
-//   return (
-//     <div className={styles.redBackground}>
-//       <p>
-//         Established in 1961 as Bhavan’s College of Journalism, Advertising, and
-//         Printing, this flagship institute of Bharatiya Vidya Bhavan has evolved
-//         into a sprawling network offering journalism, communication, media
-//         education, and management courses across India.
-//       </p>
-//       <div className={`${styles.flexColumn} ${styles.question}`}>
-//         <p>Why RPICM</p>
-//         <div className={styles.flexColumn}>
-//           <p className={styles.sentence}>Skills for All</p>
-//           <p className={styles.sentence}>Flexible Timings</p>
-//           <p className={styles.sentence}>Short & Long term courses</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default IntroPage;
-
-// .introText {
-//   max-width: 580px;
-//   width: 100%;
-// }
-
+import { motion } from "framer-motion";
 import styles from "./IntroPage.module.scss";
 
 const IntroPage = () => {
@@ -41,12 +12,20 @@ const IntroPage = () => {
       </div>
       <div className={styles.question}>
         <div className={styles.introQuestion}>Why RPICM</div>
-        <div className={styles.line}></div>
+        <motion.div
+          className={styles.line}
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        ></motion.div>
         <div className={styles.listContainer}>
           <ul>
-            <li>Skills for All</li>
-            <li>Centres Across India</li>
-            <li>Certificate and Diploma Courses</li>
+            <li>Professional Diploma and Certificate Courses</li>
+            <li>Convenient Timing for Professionals and Students</li>
+            <li>Convenient Locations across India</li>
+            <li>Professionals, Experts and Academics as teachers</li>
+            <li>Immediate Employability</li>
+            <li>Multiple University and Government Recognitions</li>
           </ul>
         </div>
       </div>
