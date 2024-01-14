@@ -1,7 +1,7 @@
 "use client";
 import LandingPage from "@/components/landingPage/LandingPage";
 import styles from "./page.module.scss";
-import RecruitersPage from "@/components/recruitersPage/RecruitersPage";
+import RecruitersPage from "@/components/recruitersSection/RecruitersSection";
 import RpicmIntroSection from "@/components/introPage/RpicmIntroSection";
 import Gallery from "@/components/gallerySection/Gallery";
 import Blogs from "@/components/blogPage/Blogs";
