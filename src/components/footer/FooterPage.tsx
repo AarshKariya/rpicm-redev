@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.logo}>
-        <Image src="/rpicmlogo.svg" alt="Logo" width={76} height={55} />
+        <Image src="/rpicmlogo.svg" alt="Logo" width={96} height={70} />
       </div>
       <div className={styles.content}>
         <div className={styles.links}>
