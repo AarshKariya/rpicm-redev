@@ -2,7 +2,7 @@
 import LandingPage from "@/components/landingPage/LandingPage";
 import styles from "./page.module.scss";
 import RecruitersPage from "@/components/recruitersPage/RecruitersPage";
-import IntroPage from "@/components/introPage/IntroPage";
+import RpicmIntroSection from "@/components/introPage/RpicmIntroSection";
 import Gallery from "@/components/gallerySection/Gallery";
 import Blogs from "@/components/blogPage/Blogs";
 import Courses from "@/components/coursesSection/CoursesSection";
@@ -14,7 +14,7 @@ export default function Home() {
     <main className={styles.main} style={{ overflowX: "hidden" }}>
       <LandingPage />
       <RecruitersPage />
-      <IntroPage />
+      <RpicmIntroSection />
       <Gallery />
       <Courses />
       <GuestLectures />
