@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../../CourseEnquiryForm.module.scss";
-import Step from "../StepContainer/StepComponent/StepComponent";
 import FormInput from "../FormInput/FormInput";
-import FileInput from "../FileInputSection/components/FileInput/FileInput";
-import MultiSelectSection from "./components/MultiSelectSection/MultiSelectSection";
 import { rowsData } from "./helpers/multiSelectRowsData";
 import RadioButtonSection from "./components/RadioButtonSection/RadioButtonSection";
 import {
@@ -12,6 +9,8 @@ import {
   genderOptions,
 } from "./helpers/radioButtonSectionData";
 import { NextPage } from "next";
+import CustomDropdown from "./components/CustomDropdown/CustomDropdown";
+import WindowWidthLine from "../WindowWidthLine/WindowWidthLine";
 
 type ApplicationFormContainerProps = {
   formik: any;
@@ -20,13 +19,71 @@ type ApplicationFormContainerProps = {
 const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
   formik,
 }) => {
+  const handleCoursesSelect = (
+    fieldName:
+      | "managementCourses"
+      | "communicationCourses"
+      | "preferredLocation",
+    selectedOptions: any
+  ) => {
+    if (Array.isArray(selectedOptions)) {
+      // Handle when it's an array
+      formik.setFieldValue(
+        fieldName,
+        selectedOptions?.map((el) => el?.label)
+      );
+    } else if (selectedOptions && typeof selectedOptions === "object") {
+      // Handle when it's an object (e.g., from react-select)
+      const optionsArray = Array.isArray(selectedOptions)
+        ? selectedOptions
+        : [selectedOptions];
+      formik.setFieldValue(fieldName, optionsArray);
+    } else {
+      // Handle other cases (e.g., when it's a string or other unexpected type)
+      formik.setFieldValue(fieldName, []);
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <MultiSelectSection formik={formik} />
+      <CustomDropdown
+        label="Management Courses"
+        options={
+          rowsData.find((row) => row.value === "management")
+            ?.mgmtCoursesOptions || []
+        }
+        onSelect={(selectedOptions) =>
+          handleCoursesSelect("managementCourses", selectedOptions)
+        }
+      />
+
+      <CustomDropdown
+        label="Communication Courses"
+        options={
+          rowsData.find((row) => row.value === "communication")
+            ?.commCoursesOptions || []
+        }
+        onSelect={(selectedOptions) =>
+          handleCoursesSelect("communicationCourses", selectedOptions)
+        }
+      />
+
+      <CustomDropdown
+        label="Preferred Location"
+        options={
+          rowsData.find((row) => row.value === "preferredLocation")
+            ?.prefLocOptions || []
+        }
+        onSelect={(selectedOptions) =>
+          handleCoursesSelect("preferredLocation", selectedOptions)
+        }
+      />
+
+      <WindowWidthLine />
 
       <div className={styles.personalInfo}>PERSONAL INFORMATION</div>
 

@@ -14,6 +14,7 @@ import Footer from "../footer/FooterPage";
 import ExploreCourses from "../exploreCourses/ExploreCourses";
 import { useFormik } from "formik";
 import validationSchema from "./helpers/validationSchema";
+import { CourseOption } from "./components/ApplicationFormContainer/components/CustomDropdown/helpers/customDropdown";
 
 const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
   currentStep = 1,
@@ -44,6 +45,9 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
           employmentStatus: formData?.employmentStatus,
           enquiryDate: formData?.enquiryDate,
           enquiryPlace: formData?.enquiryPlace,
+          managementCourses: formData?.managementCourses,
+          communicationCourses: formData?.communicationCourses,
+          preferredLocation: formData?.preferredLocation,
         },
       ]);
       formik.resetForm();
@@ -54,8 +58,9 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
 
   const formik = useFormik({
     initialValues: {
-      enquiryFor: [],
-      course: [],
+      managementCourses: [] as CourseOption[],
+      communicationCourses: [] as CourseOption[],
+      preferredLocation: [] as CourseOption[],
       firstName: "",
       fatherName: "",
       lastName: "",
@@ -72,7 +77,7 @@ const CourseEnquiryForm: React.FC<{ currentStep?: number }> = ({
     },
 
     onSubmit: (values) => {
-      console.log("values", values);
+      // console.log("values", values);
       handleFormSubmit(values);
     },
 
