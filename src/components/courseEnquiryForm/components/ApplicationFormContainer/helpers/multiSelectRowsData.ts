@@ -2,80 +2,107 @@ import { generateUniqueId } from "@/components/coursesSection/helpers/courseConf
 
 export const rowsData = [
   {
-    title: "Enquiring For",
-    id: "enquiringFor",
-    options: [
-      { value: "management", label: "Management" },
-      { value: "communication", label: "Communication" },
-    ],
-    subOptions: [
+    value: "management",
+    id: `mgm_${generateUniqueId()}`,
+    label: "Management Courses",
+    mgmtCoursesOptions: [
       {
-        title: "Management Courses",
-        id: `mgm_${generateUniqueId()}`,
-        mgmtCourses: [
-          {
-            value: "industrialRelations",
-            courseName: "Industrial Relations & Personnel Management",
-          },
-          {
-            value: "materialsManagement",
-            courseName: "Material Management",
-          },
-          {
-            value: "internationalTrade",
-            courseName: "International Trade (Import - Export)",
-          },
-          {
-            value: "hospitalManagement",
-            courseName: "Hospital Management",
-          },
-          {
-            value: "marketingAndSalesManagement",
-            courseName: "Mareketing And Sales Management",
-          },
-          {
-            value: "businessManagement",
-            courseName: "Business Management",
-          },
-          {
-            value: "financialManagement",
-            courseName: "Financial Management",
-          },
-          {
-            value: "geriatricCare",
-            courseName: "Geriatric Care cum Health Aide Course",
-          },
-        ],
+        value: "industrialRelations",
+        label: "Industrial Relations & Personnel Management",
       },
       {
-        title: "Communication Courses",
-        id: `comm_${generateUniqueId()}`,
-        commCourses: [
-          {
-            value: "journalism",
-            courseName: "Journalism",
-          },
-          {
-            value: "digitalMedia",
-            courseName: "Digital Media",
-          },
-          {
-            value: "publicRelations",
-            courseName: "Public Relations",
-          },
-          {
-            value: "strategicCommunication",
-            courseName: "Strategic Communication for Sustainable Impact",
-          },
-          {
-            value: "schoolJournalism",
-            courseName: "School Journalism",
-          },
-          {
-            value: "campusJournalism",
-            courseName: "Campus Journalism",
-          },
-        ],
+        value: "materialsManagement",
+        label: "Material Management",
+      },
+      {
+        value: "internationalTrade",
+        label: "International Trade (Import - Export)",
+      },
+      {
+        value: "hospitalManagement",
+        label: "Hospital Management",
+      },
+      {
+        value: "marketingAndSalesManagement",
+        label: "Mareketing And Sales Management",
+      },
+      {
+        value: "businessManagement",
+        label: "Business Management",
+      },
+      {
+        value: "financialManagement",
+        label: "Financial Management",
+      },
+      {
+        value: "geriatricCare",
+        label: "Geriatric Care cum Health Aide Course",
+      },
+    ],
+  },
+  {
+    value: "communication",
+    label: "Communication Courses",
+    id: `comm_${generateUniqueId()}`,
+    commCoursesOptions: [
+      {
+        value: "journalism",
+        label: "Journalism",
+      },
+      {
+        value: "digitalMedia",
+        label: "Digital Media",
+      },
+      {
+        value: "publicRelations",
+        label: "Public Relations",
+      },
+      {
+        value: "strategicCommunication",
+        label: "Strategic Communication for Sustainable Impact",
+      },
+      {
+        value: "schoolJournalism",
+        label: "School Journalism",
+      },
+      {
+        value: "campusJournalism",
+        label: "Campus Journalism",
+      },
+    ],
+  },
+  {
+    value: "preferredLocation",
+    label: "Preferred location for",
+    id: `loc_${generateUniqueId()}`,
+    prefLocOptions: [
+      {
+        value: "ahmedabad",
+        label: "Ahmedabad",
+      },
+      {
+        value: "bharuch",
+        label: "Bharuch",
+      },
+      {
+        value: "kottayam",
+        label: "Kottayam",
+      },
+      {
+        value: "thiruvananthapuram",
+        label: "Thiruvananthapuram",
+      },
+      {
+        value: "kolkata",
+        label: "Kolkata",
+      },
+      {
+        value: "faridabad",
+        label: "Faridabad",
+      },
+      {
+        value: "solan",
+        label: "Solan",
       },
     ],
   },
