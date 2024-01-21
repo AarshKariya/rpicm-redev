@@ -62,12 +62,11 @@ $quatro: "Quattrocento", sans-serif;
   margin-bottom: 1.5rem;
 
   .tileTitle {
-    margin-bottom: 58px;
     font-size: 1.5rem;
     font-weight: 500;
+    height: 70px;
     color: #253149;
     font-family: $raleway;
-    line-height: 144.9%;
   }
 
   .tileTitleWithoutCourseItems {
@@ -76,7 +75,6 @@ $quatro: "Quattrocento", sans-serif;
     font-weight: 500;
     color: #253149;
     font-family: $raleway;
-    line-height: 144.9%;
   }
 
   ul {
@@ -93,6 +91,7 @@ $quatro: "Quattrocento", sans-serif;
     font-weight: lighter;
     color: #253149;
   }
+
   &:nth-child(3) {
     margin-bottom: 0;
   }

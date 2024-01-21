@@ -439,3 +439,5 @@ export const coursesData = [
     ],
   },
 ];
+
+export const FirstTwoCourseTiles = ["COMMUNICATION", "MANAGEMENT"];

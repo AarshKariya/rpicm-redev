@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { NextPage } from "next";
 import { Course } from "@/types/courses.types";
 import { useRouter } from "next/navigation";
+import { FirstTwoCourseTiles } from "../helpers/courseConfig";
 
 type CourseItem = {
   id: any;
@@ -44,8 +45,7 @@ const CourseTile: NextPage<CourseTileProps> = ({
     <div
       className={styles.courseTile}
       style={{
-        height: hasCourseItems ? "auto" : "fit-content",
-        gridRow: index === 2 || index === 3 ? "span 1" : "span 3",
+        height: FirstTwoCourseTiles.includes(title) ? "auto" : "fit-content",
       }}
     >
       {title && (
