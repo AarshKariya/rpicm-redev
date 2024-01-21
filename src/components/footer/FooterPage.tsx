@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <div className={styles.socialMedia}>
-          <Link href="https://www.facebook.com/Bhavans.RPICM">
+          <Link href="https://www.facebook.com/profile.php?id=61555623336006&sk=about">
             <Image
               src="/facebook.svg"
               alt="Facebook"

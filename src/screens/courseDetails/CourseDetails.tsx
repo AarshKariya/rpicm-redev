@@ -83,9 +83,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
         ))} */}
 
         <div className={styles.applyCourseLink}>
-          <div className={styles.subTitleLink}>
-            Have more questions? Learn more via
-          </div>
+          <div className={styles.subTitleLink}>For any queries</div>
           <NextLink href="/enquiry" className={styles.link}>
             websiteurl.com/course-enquiry-form
           </NextLink>
