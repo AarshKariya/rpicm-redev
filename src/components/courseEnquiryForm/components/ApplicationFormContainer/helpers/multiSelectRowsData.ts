@@ -104,6 +104,10 @@ export const rowsData = [
         value: "solan",
         label: "Solan",
       },
+      {
+        value: "thrissur",
+        label: "Thrissur",
+      },
     ],
   },
 ];
