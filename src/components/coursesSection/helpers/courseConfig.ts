@@ -177,7 +177,7 @@ export const coursesData = [
     courseType: "MANAGEMENT",
     courseItems: [
       {
-        title: "Industrial Relations & Personnel Management",
+        title: "Industrial Relations & Personnel Management (IRPM-HR)",
         id: `mgm_${generateUniqueId()}`,
         description:
           "This course aims to provide students with a comprehensive understanding of industrial relations and personnel management, focusing on the relationships between employers, employees, and the broader organisational context.",
