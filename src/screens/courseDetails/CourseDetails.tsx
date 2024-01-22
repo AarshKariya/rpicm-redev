@@ -25,9 +25,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
           </span>
         </div>
         <div className={styles.text}>{details?.description}</div>
-        {details?.courseFor && (
-          <div className={styles.subTitle}>Who is this course for?</div>
-        )}
+        {details?.courseFor && <div className={styles.subTitle}>For whom?</div>}
         {details?.courseFor?.map((item) => (
           // eslint-disable-next-line react/jsx-key
           <div className={styles.bulletPoint}>

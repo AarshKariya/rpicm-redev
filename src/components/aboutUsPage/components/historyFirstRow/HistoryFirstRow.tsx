@@ -7,10 +7,10 @@ const HistoryFirstRow: NextPage = () => {
   return (
     <div className={styles.historyContent}>
       <div className={styles.historyText}>
-        <p>
+        {/* <p>
           The Rajendra Prasad Institute of Communication and Management: A
           Pioneer in Professional Education and Upskilling.
-        </p>
+        </p> */}
         <p>
           This institute is the flagship of Bharatiya Vidya Bhavan’s
           professional educational initiatives. It started in 1961 as Bhavan’s
