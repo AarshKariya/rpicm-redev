@@ -23,7 +23,7 @@ export const bhavanCenters = [
     key: "kottayam",
     address:
       "Kottayam Kendra, First Floor, Gargi Bldgs., No. XII/1289D, Nr. Manorama Jn., Erayilkadavu Road, Kottayam 686001",
-    website: "",
+    website: "https://bhavanskottayamkendra.org/index",
     email: "bhavanskottayam@gmail.com",
   },
   {
@@ -32,7 +32,7 @@ export const bhavanCenters = [
     key: "thiruvananthapuram",
     address:
       "Bhavan’s Tower, Kattu Road, Poojappura, Thiruvananthapuram 695012",
-    website: "",
+    website: "https://bvbtvmkendra.com/",
     email: "bvbtvmkendra@gmail.com",
   },
   {
@@ -40,7 +40,7 @@ export const bhavanCenters = [
     position: [10.51667, 76.21667],
     key: "thrissur",
     address: "Thiruvambady Buildings, Round West, Thrissur 680001",
-    website: "",
+    website: "https://bvbthrissur.com/",
     email: "bvbthrissur@gmail.com",
   },
   {
@@ -56,7 +56,7 @@ export const bhavanCenters = [
     position: [28.41124, 77.31316],
     key: "fardiabad",
     address: "Institutional Area, Central Green, NH-3, Faridabad 121 001",
-    website: "",
+    website: "http://www.sbscmt.in/",
     email: "yadvindersandhu@yahoo.co.in",
   },
   {
@@ -64,7 +64,7 @@ export const bhavanCenters = [
     position: [30.904486, 77.096736],
     key: "solan",
     address: "Petrol Pump, Kundhidhar, Rajgarh Road, Shamti, Solan 173212",
-    website: "",
+    website: "https://www.panwarinstitutions.org/",
     email: "brijenderpanwar@gmail.com",
   },
   {

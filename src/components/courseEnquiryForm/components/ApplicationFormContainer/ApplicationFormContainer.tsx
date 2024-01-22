@@ -99,17 +99,6 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         touched={formik.touched.firstName}
       />
       <FormInput
-        label="Father's Name"
-        placeholder="Father's Name"
-        id="fatherName"
-        name="fatherName"
-        onChange={formik.handleChange}
-        value={formik.values.fatherName}
-        type="text"
-        error={formik.touched.fatherName && formik.errors.fatherName}
-        touched={formik.touched.fatherName}
-      />
-      <FormInput
         label="Last Name"
         placeholder="Last Name"
         id="lastName"
@@ -119,6 +108,17 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         type="text"
         error={formik.touched.lastName && formik.errors.lastName}
         touched={formik.touched.lastName}
+      />
+      <FormInput
+        label="Father's Name"
+        placeholder="Father's Name"
+        id="fatherName"
+        name="fatherName"
+        onChange={formik.handleChange}
+        value={formik.values.fatherName}
+        type="text"
+        error={formik.touched.fatherName && formik.errors.fatherName}
+        touched={formik.touched.fatherName}
       />
       <FormInput
         label="Phone Number"
