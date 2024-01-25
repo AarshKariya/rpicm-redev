@@ -29,7 +29,9 @@ const ImageText: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.25 }}
         className={styles.textContainer}
       >
-        <div className={styles.instituteName}>Skilling INDIA since 1961</div>
+        <div className={styles.institutePrefixTitle}>
+          Bhartiya Vidya Bhavan{"'"}s
+        </div>
         <div className={styles.instituteTagLine}>
           {Array.from(
             "Rajendra Prasad Institute of Communication & Management"
@@ -47,6 +49,7 @@ const ImageText: React.FC = () => {
             </motion.span>
           ))}
         </div>
+        <div className={styles.instituteName}>Skilling INDIA since 1961</div>
       </motion.div>
     </div>
   );
