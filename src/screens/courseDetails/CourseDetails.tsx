@@ -57,7 +57,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
         ))}
         {details?.seeYourself && (
           <div className={styles.subTitle}>
-            Where you may see yourself after completing course
+            Where do you see yourself after completing the course?
           </div>
         )}
         {details?.seeYourself?.map((item) => (
