@@ -149,7 +149,7 @@ export const coursesData = [
           "Through a combination of theoretical knowledge and hands-on experience, students will learn the essentials of news gathering, writing, and multimedia production.",
         ],
         showArrow: true,
-        duration: 4,
+        duration: 3,
         isYearly: false,
         courseFor: [
           "It is the first such course in India that has been designed to meet the communication and media skills requirements for high school students.",
@@ -172,8 +172,6 @@ export const coursesData = [
           "This course enables the students to learn the hands-on basics of writing-editing-publishing.",
         ],
         showArrow: true,
-        duration: 4,
-        isYearly: false,
         customPoints: [
           "In the last decade, society's consumption of news and material has shifted tremendously. Never before in human history have we been more connected, demonstrating the benefits of a new and exciting digital age.",
           "The Internet allows us to connect with everyone around the globe in seconds with smart phones  and laptops with high-definition video capabilities. Journalists no longer need to wait until the newspaper prints to garner attention for their reporting; they may write, record, and transmit content quickly.",
