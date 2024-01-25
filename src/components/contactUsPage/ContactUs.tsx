@@ -8,6 +8,7 @@ import ContactUsLastName from "./components/ContactUsLastName";
 import ContactUsEmailField from "./components/ContactUsEmailField";
 import ContactUsQuery from "./components/ContactUsQuery";
 import ContactUsSubmit from "./components/ContactUsSubmit";
+import ContactUsInfo from "./components/ContactUsInfo";
 
 const ContactPage: React.FC = () => {
   const handleContactFormSubmit = async (contactFormData: any) => {
@@ -62,6 +63,8 @@ const ContactPage: React.FC = () => {
           We will get back to you shortly.
         </div>
       )}
+
+      <ContactUsInfo />
     </motion.div>
   );
 };
