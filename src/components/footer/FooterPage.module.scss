@@ -26,7 +26,6 @@ $quatro: "Quattrocento";
     align-items: center;
     width: 60%;
 
-    // margin-left: 240px;
     margin: 0 0 0 auto;
 
     .links {
@@ -84,12 +83,12 @@ $quatro: "Quattrocento";
       margin-top: 12px;
 
       .emailLink {
-        color: inherit; /* Inherit the color from the parent */
-        text-decoration: underline; /* Underline the link */
-        cursor: pointer; /* Show pointer cursor on hover */
+        color: inherit;
+        text-decoration: underline;
+        cursor: pointer;
 
         &:hover {
-          color: #253149; /* Change color on hover if needed */
+          color: #253149;
         }
       }
     }
