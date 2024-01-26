@@ -23,7 +23,7 @@ const ContactUsInfo: NextPage = () => {
       </div>
 
       <div className={styles.section}>
-        <div className={styles.heading}>Mobile:</div>
+        <div className={styles.heading}>WhatsApp and Mobile:</div>
         <div className={styles.mobile}>
           <a
             href="https://wa.me/917435012121?text=Hi"
