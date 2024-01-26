@@ -16,16 +16,31 @@ const RecognitionPage: React.FC<RecognitionAccordionData> = ({
 
   return (
     <div className={styles.accordion} key={key}>
-      <div className={styles.accordionHeader} onClick={toggleAccordion}>
+      <motion.div
+        className={styles.accordionHeader}
+        onClick={toggleAccordion}
+        initial={false}
+        animate={{ backgroundColor: isOpen ? "#e6e6e6" : "#f4f4f4" }}
+        whileHover={{ backgroundColor: isOpen ? "#d9d9d9" : "#f0f0f0" }}
+        whileTap={{ scale: 0.98 }}
+      >
         <h3>{title}</h3>
-      </div>
+        {/* <motion.div
+          initial={false}
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <FiChevronDown />
+        </motion.div> */}
+      </motion.div>
       <AnimatePresence>
         {isOpen && (
           <motion.div
             className={styles.accordionContent}
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            exit={{ height: 0 }}
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
           >
             <ul>
               {description.map((item, index) => (
