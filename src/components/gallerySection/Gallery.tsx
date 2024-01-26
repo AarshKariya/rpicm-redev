@@ -55,19 +55,19 @@ const Gallery: NextPage = () => {
       {/* First Row */}
       <motion.div className={styles.row} variants={containerVariants}>
         <motion.img
-          src="/gallery1.svg"
+          src="/radioLecHB.svg"
           alt="Image 1"
           className={styles.galleryImage}
           variants={itemVariants}
         />
         <motion.img
-          src="/gallery2.svg"
+          src="/radioStatSolan.svg"
           alt="Image 2"
           className={styles.galleryImage}
           variants={itemVariants}
         />
         <motion.img
-          src="/gallery3.svg"
+          src="/courseTopBharuch.svg"
           alt="Image 3"
           className={styles.galleryImage}
           variants={itemVariants}
@@ -76,13 +76,13 @@ const Gallery: NextPage = () => {
       {/* Second Row */}
       <motion.div className={styles.row} variants={containerVariants}>
         <motion.img
-          src="/gallery4.svg"
+          src="/inductionCeremonyBharuch.svg"
           alt="Image 4"
           className={styles.galleryImage}
           variants={itemVariants}
         />
         <motion.img
-          src="/gallery5.svg"
+          src="/studHb.svg"
           alt="Image 5"
           className={styles.galleryImage}
           variants={itemVariants}
