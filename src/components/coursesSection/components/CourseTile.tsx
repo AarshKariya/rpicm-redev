@@ -6,22 +6,9 @@ import { Course } from "@/types/courses.types";
 import { useRouter } from "next/navigation";
 import { FirstTwoCourseTiles } from "../helpers/courseConfig";
 
-type CourseItem = {
-  id: any;
-  title: string;
-  description: string;
-  showArrow: boolean;
-  duration: number;
-  isYearly: boolean;
-  courseFor?: string[];
-  academicSchedule?: string[];
-  seeYourself?: string[];
-  customPoints?: string[];
-};
-
 type CourseTileProps = {
   title?: string;
-  courses?: CourseItem[];
+  courses?: Course[];
   index?: number;
 };
 
@@ -61,7 +48,7 @@ const CourseTile: NextPage<CourseTileProps> = ({
       )}
       {hasCourseItems && (
         <ul className={styles.courseList}>
-          {courses?.map((course: CourseItem, index: number) => (
+          {courses?.map((course: Course, index: number) => (
             <motion.li
               key={index}
               className={styles.courseItem}
