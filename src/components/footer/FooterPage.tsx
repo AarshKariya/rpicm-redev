@@ -1,5 +1,3 @@
-// Footer.tsx
-import { motion } from "framer-motion";
 import styles from "./FooterPage.module.scss";
 import Image from "next/image";
 import Link from "next/link";
