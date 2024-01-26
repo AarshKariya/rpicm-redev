@@ -30,7 +30,7 @@ const ImageText: React.FC = () => {
         className={styles.textContainer}
       >
         <div className={styles.institutePrefixTitle}>
-          Bhartiya Vidya Bhavan{"'"}s
+          Bharatiya Vidya Bhavan{"'"}s
         </div>
         <div className={styles.instituteTagLine}>
           {Array.from(
