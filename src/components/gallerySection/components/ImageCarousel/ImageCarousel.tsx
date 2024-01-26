@@ -38,24 +38,23 @@ const ImageCarousel = ({ images }: { images: ImageObject[] }) => {
           {images.map(
             (image, index) =>
               index === currentIndex && (
-                <motion.div
-                  key={image.id}
-                  className={styles.imageContainer}
-                  initial={{ opacity: 0, x: "100%" }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: "-100%" }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.name}
-                    width={629}
-                    height={374}
-                    className={styles.image}
-                    quality={100}
-                  />
+                <>
+                  <motion.div
+                    key={image.id}
+                    className={styles.imageContainer}
+                    initial={{ opacity: 0, x: "100%" }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: "-100%" }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.name}
+                      className={styles.image}
+                    />
+                  </motion.div>
                   <div className={styles.imageName}>{image.name}</div>
-                </motion.div>
+                </>
               )
           )}
         </AnimatePresence>
