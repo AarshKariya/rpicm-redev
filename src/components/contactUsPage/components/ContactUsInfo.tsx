@@ -6,7 +6,7 @@ const ContactUsInfo: NextPage = () => {
     <>
       <div>Address:</div>
       <div>
-        4th Floor, Bhavan's College Campus, Vidyagauri Nilkanth Marg, Khanpur,
+        4th Floor, Bhavan{"'"}s College Campus, Vidyagauri Nilkanth Marg, Khanpur,
         Ahmedabad – 380001, Gujarat
       </div>
       <div>
