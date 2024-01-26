@@ -71,6 +71,16 @@ const NavLinks: FC<NavLinksProps> = ({ isOnLandingPage }): ReactElement => {
           Enquiry
         </span>
       </NextLink>
+      <NextLink href="/recognition">
+        <span
+          className={cx(
+            styles.tabLink,
+            !isOnLandingPage && styles.tabLinkOnOtherScreens
+          )}
+        >
+          Recognition
+        </span>
+      </NextLink>
     </div>
   );
 };

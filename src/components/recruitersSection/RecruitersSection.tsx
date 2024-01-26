@@ -52,6 +52,38 @@ const RecruitersSection: NextPage = () => {
           />
         ))}
       </div>
+      <div className={styles.row}>
+        {RecruiterSectionLogos.slice(12, 18).map((logo, index) => (
+          <motion.img
+            key={index + 6}
+            src={logo}
+            alt={`Logo ${index + 7}`}
+            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
+            initial={{ opacity: 0, y: -50 }}
+            animate={controls}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          />
+        ))}
+      </div>
+      <div className={styles.row}>
+        {RecruiterSectionLogos.slice(18, 24).map((logo, index) => (
+          <motion.img
+            key={index + 6}
+            src={logo}
+            alt={`Logo ${index + 7}`}
+            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
+            initial={{ opacity: 0, y: -50 }}
+            animate={controls}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          />
+        ))}
+      </div>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={controls}
