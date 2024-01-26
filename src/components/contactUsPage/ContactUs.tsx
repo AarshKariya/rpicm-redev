@@ -50,6 +50,9 @@ const ContactPage: React.FC = () => {
       className={styles.contactContainer}
     >
       <div className={styles.contactUsHeading}>Contact Us</div>
+
+      <ContactUsInfo />
+
       <form onSubmit={formik.handleSubmit}>
         <ContactUsFirstName formik={formik} />
         <ContactUsLastName formik={formik} />
@@ -63,8 +66,6 @@ const ContactPage: React.FC = () => {
           We will get back to you shortly.
         </div>
       )}
-
-      <ContactUsInfo />
     </motion.div>
   );
 };
