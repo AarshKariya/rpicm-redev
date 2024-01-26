@@ -12,12 +12,22 @@ const HistoryFirstRow: NextPage = () => {
           Pioneer in Professional Education and Upskilling.
         </p> */}
         <p>
-          This institute is the flagship of Bharatiya Vidya Bhavan’s
-          professional educational initiatives. It started in 1961 as Bhavan’s
-          College of Journalism, Advertising and Printing in Mumbai. It was
-          renamed as Rajendra Prasad Institute of Communication Studies in 1965,
-          in honour of Dr. Rajendra Prasad, the first President of India and
-          also one of the founders of BVB.
+          Kulapati Kanhaiyalal Maneklal Munshi founded the Bharatiya Vidya
+          Bhavan a full decade before the advent of Independence, on November 7,
+          1938, as an ‘Adventure in Faith’. A faith in India’s Past, Present and
+          Future. The founding father was known for being the most popular
+          Gujarati writer, statesman, politician, freedom fighter and an
+          educationalist.
+        </p>
+        <p>
+          The founding of Bhavan’s was based on the idea of preservation and
+          propagation of Bharatiya Sanskriti (Indian culture) and Sanskrit, the
+          mother of languages, the akshaya patra – the inexhaustible reservoir.
+          Over the years from being a modest Indological research institution,
+          it has steadily grown into a comprehensive, co-operative, apolitical,
+          national movement with an international outlook. It seeks to inculcate
+          a value-based life. The promotion of ethical and spiritual values in
+          everything that it does.
         </p>
       </div>
       <div className={styles.historyImage}>

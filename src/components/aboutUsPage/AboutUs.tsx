@@ -6,6 +6,8 @@ import HistoryThirdRow from "./components/historyThirdRow/HistoryThirdRow";
 import AboutUsTiles from "./components/aboutUsTiles/AboutUsTiles";
 import HeadingAndFirstRow from "./components/headingAndFirstRow/HeadingAndFirstRow";
 import Footer from "../footer/FooterPage";
+import DirectorMessage from "./components/aboutUsDirectorMessage/DirectorMessage";
+import AboutUsAlumni from "./components/aboutUsAlumni/AboutUsAlumni";
 
 const AboutUs: NextPage = () => {
   return (
@@ -17,6 +19,8 @@ const AboutUs: NextPage = () => {
           <HistorySecondRow />
           <HistoryThirdRow />
           <AboutUsTiles />
+          <DirectorMessage />
+          <AboutUsAlumni />
         </div>
       </div>
       <Footer />
