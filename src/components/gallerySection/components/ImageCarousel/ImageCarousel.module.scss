@@ -32,6 +32,12 @@ $quatro: "Quattrocento", sans-serif;
   align-items: center;
   opacity: 0;
   text-align: center;
+
+  .image {
+    object-fit: cover;
+    width: 629px;
+    height: 360px;
+  }
 }
 
 .imageName {
