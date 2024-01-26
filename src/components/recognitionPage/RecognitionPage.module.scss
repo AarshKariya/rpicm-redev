@@ -1,0 +1,28 @@
+.accordion {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  //   padding: 240px 98px 24px 98px;
+
+  &Header {
+    padding: 12px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    user-select: none;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &Content {
+    padding: 12px;
+
+    ul {
+      list-style-type: disc;
+      margin: 0;
+      padding-left: 20px;
+    }
+  }
+}
