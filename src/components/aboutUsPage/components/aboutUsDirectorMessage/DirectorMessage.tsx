@@ -53,6 +53,7 @@ const DirectorMessage: NextPage = () => {
         blended and hybrid mode courses for students who can’t attend classes
         regularly or want to join us online
       </div>
+      <div className={styles.directorMessageName}>- Shyam Parekh</div>
     </>
   );
 };

@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import React from "react";
+import styles from "./AboutUsAlumni.module.scss";
 
 const AboutUsAlumni: NextPage = () => {
   return (
     <>
-      <div>Alumni</div>
-      <div>
+      <div className={styles.aboutUsAlumniHeading}>Alumni</div>
+      <div className={styles.aboutUsAlumniContent}>
         Bhavan’s HBICM has its own social networking through Alumni Association
         of the past students who have been inspired, trained and placed in
         organisations and industries across the country. The students of
@@ -15,8 +16,8 @@ const AboutUsAlumni: NextPage = () => {
         different centres arrange several cultural functions that members get
         access to.
       </div>
-      <div>Fill out the form here:</div>
-      <div>
+      <div className={styles.aboutUsAlumniPrompt}>
+        Fill out the form here:{" "}
         <a
           href="https://forms.gle/XQKnBi4YHwvTjiKD9"
           target="_blank"
