@@ -29,6 +29,9 @@ const FooterContent: NextPage = () => {
         <Link href="/contact">
           <div className={styles.linkText}>Contact Us</div>
         </Link>
+        <Link href="/recognition">
+          <div className={styles.linkText}>Recognition</div>
+        </Link>
       </div>
       <div className={styles.socialMedia}>
         <Link href="https://www.facebook.com/profile.php?id=61555623336006&sk=about">
