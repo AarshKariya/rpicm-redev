@@ -146,7 +146,8 @@ export const coursesData = [
         description:
           "This course is designed to introduce students to the fundamentals of journalism within a school context, empowering them to become effective storytellers and media creators. Through a combination of theoretical knowledge and hands-on experience, students will learn the essentials of news gathering, writing, and multimedia production.",
         briefBullet: [
-          "Through a combination of theoretical knowledge and hands-on experience, students will learn the essentials of news gathering, writing, and multimedia production.",
+          "To gain a broader understanding of the world around",
+          "Develop good writing skills, including communication skills and storytelling.",
         ],
         showArrow: true,
         duration: 3,
@@ -169,7 +170,8 @@ export const coursesData = [
         description:
           "Campus journalism is a  course for college students to understand the importance of oral and written communication skills, reading, and media consumption skills.  This course enables the students to learn the hands-on basics of writing-editing-publishing. This is while they get introduced to digital self-defense by identifying fake news and learning to fact-check.",
         briefBullet: [
-          "This course enables the students to learn the hands-on basics of writing-editing-publishing.",
+          "Providing voice to learners and means for them to express their thoughts and opinions.",
+          "Informs about events, issues, and people that impact society or affect daily life.",
         ],
         showArrow: true,
         customPoints: [
@@ -339,7 +341,8 @@ export const coursesData = [
         description:
           "This course is designed to provide students with a comprehensive understanding of marketing and sales management, emphasizing the integration of these functions for effective business growth. Students will explore key marketing strategies, sales techniques, and the coordination needed to drive successful customer acquisition and retention.",
         briefBullet: [
-          "This course is designed to provide students with a comprehensive understanding of marketing and sales management, emphasizing the integration of these functions for effective business growth.",
+          "Greater communication and adaptability skills",
+          "Understanding how to influence decisions",
         ],
         duration: 1,
         isYearly: true,
@@ -372,7 +375,9 @@ export const coursesData = [
         description:
           "This course aims to provide students with a comprehensive understanding of the principles and practices of business management. Covering key areas such as organizational structure, strategic planning, leadership, and operational management, students will gain the skills needed to navigate the complexities of the business world.",
         briefBullet: [
-          "This course aims to provide students with a comprehensive understanding of the principles and practices of business management.",
+          "Learning key management skills",
+          "A chance to expand networking through peers",
+          "Case studies based learning",
         ],
         duration: 1,
         isYearly: true,
@@ -405,7 +410,8 @@ export const coursesData = [
         description:
           "This course aims to provide students with a comprehensive understanding of the principles and practices of business management. Covering key areas such as organizational structure, strategic planning, leadership, and operational management, students will gain the skills needed to navigate the complexities of the business world.",
         briefBullet: [
-          "This course aims to provide students with a comprehensive understanding of the principles and practices of business management.",
+          "Prepare students to take responsibility for the financial health of an organization",
+          "Deals with managing the financial aspects of a business and",
         ],
         duration: 1,
         isYearly: true,
@@ -434,7 +440,8 @@ export const coursesData = [
         description:
           "This course is designed to prepare individuals for a career in geriatric care and health aide services, with a focus on understanding the unique needs and challenges faced by the elderly. Students will learn essential caregiving skills, gain knowledge about common health issues in older adults, and develop a compassionate and patient-centered approach to care.",
         briefBullet: [
-          "This course is designed to prepare individuals for a career in geriatric care and health aide services, with a focus on understanding the unique needs and challenges faced by the elderly.",
+          "Capacity of the care-givers for providing health care to the elderly.",
+          "Teaches how to assess a client's needs and develop a care plan using clinical service.",
         ],
         duration: 1,
         isYearly: true,
