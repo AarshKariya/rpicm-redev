@@ -49,7 +49,10 @@ const ContactPage: React.FC = () => {
       exit={{ opacity: 0 }}
       className={styles.contactContainer}
     >
-      <div className={styles.contactUsHeading}>Contact Us</div>
+      <div className={styles.contactUsHeading}>Get in touch!</div>
+      <div className={styles.contactUsSubHeading}>
+        We{"'"}d love to hear from you. Please fill out this form.
+      </div>
 
       <ContactUsInfo />
 

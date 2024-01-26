@@ -8,22 +8,19 @@ const HistoryThirdRow: NextPage = () => {
       <div className={styles.professionalsContent}>
         <div className={styles.professionalsText}>
           <p>
-            Bharatiya Vidya Bhavan’s diploma and certificate courses have
-            emerged as a benchmark for many other colleges, institutes, and
-            universities to replicate their success. Some of the courses enjoy
-            the privilege of being recognised as diploma courses by several
-            universities. Many of the courses have been officially notified by
-            the central and state governments as qualifications for recruitment
-            for several positions in government departments.
+            The students possessing the first degree of any recognized
+            University or Institution recognized by the University Grants
+            Commission are eligible for admission to the various programmes
+            organised by RPI.
           </p>
           <p>
-            Several generations of successful journalists, editors, public
-            relations professionals, corporate communication experts, HR
-            managers, foreign trade experts, government officials, and
-            professionals from many other fields owe their success to the skills
-            learned at Bhavan’s Rajendra Prasad Institute of Communication and
-            Management. The number of students who benefited from these courses
-            in over six decades runs into several lakhs.
+            Some of the Postgraduate Programmes have been recognized by the
+            Central Government, many State Governments and a few Universities.
+            Students passing the Post-Graduate Programmes in Mass Communication
+            from Bharatiya Vidya Bhavan’s Rajendra Prasad Institute of
+            Communication & Management are treated as equivalent to
+            Post-Graduate Diploma in Mass Communication of Guru Jambheshwar
+            University, Hissar.
           </p>
         </div>
       </div>
