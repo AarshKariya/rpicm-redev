@@ -26,6 +26,9 @@ $quatro: "Quattrocento";
     align-items: center;
     width: 60%;
 
+    // margin-left: 240px;
+    margin: 0 0 0 auto;
+
     .links {
       width: 70%;
       display: flex;
@@ -47,7 +50,6 @@ $quatro: "Quattrocento";
           color: #253149;
         }
       }
-
     }
 
     .socialMedia {
@@ -71,6 +73,25 @@ $quatro: "Quattrocento";
     }
   }
 
+  .instituteAddress {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
 
+    color: white;
 
+    .instituteEmail {
+      margin-top: 12px;
+
+      .emailLink {
+        color: inherit; /* Inherit the color from the parent */
+        text-decoration: underline; /* Underline the link */
+        cursor: pointer; /* Show pointer cursor on hover */
+
+        &:hover {
+          color: #253149; /* Change color on hover if needed */
+        }
+      }
+    }
+  }
 }
