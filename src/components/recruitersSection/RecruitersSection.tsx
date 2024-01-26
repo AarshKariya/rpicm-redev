@@ -57,7 +57,7 @@ const RecruitersSection: NextPage = () => {
           <motion.img
             key={index + 6}
             src={logo}
-            alt={`Logo ${index + 7}`}
+            alt={`Logo ${index + 13}`}
             className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
             initial={{ opacity: 0, y: -50 }}
             animate={controls}
@@ -73,7 +73,7 @@ const RecruitersSection: NextPage = () => {
           <motion.img
             key={index + 6}
             src={logo}
-            alt={`Logo ${index + 7}`}
+            alt={`Logo ${index + 19}`}
             className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
             initial={{ opacity: 0, y: -50 }}
             animate={controls}
