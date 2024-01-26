@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$mobileWidth: 375px;
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.contactInfo {
+  max-width: 600px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: $quatro;
+}
+
+.address,
+.mobile,
+.email {
+  margin-bottom: 10px;
+  font-family: $raleway;
+}
+
+.email a,
+.mobile a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
