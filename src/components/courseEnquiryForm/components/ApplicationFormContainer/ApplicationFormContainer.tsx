@@ -89,7 +89,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
 
       <FormInput
         label="First Name"
-        placeholder="First Name"
+        placeholder="Enter First Name"
         id="firstName"
         name="firstName"
         onChange={formik.handleChange}
@@ -100,7 +100,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       />
       <FormInput
         label="Last Name"
-        placeholder="Last Name"
+        placeholder="Enter Last Name"
         id="lastName"
         name="lastName"
         onChange={formik.handleChange}
@@ -111,7 +111,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       />
       <FormInput
         label="Father's Name"
-        placeholder="Father's Name"
+        placeholder="Enter Father's Name"
         id="fatherName"
         name="fatherName"
         onChange={formik.handleChange}
@@ -122,7 +122,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       />
       <FormInput
         label="Phone Number"
-        placeholder="Phone Number"
+        placeholder="Enter Phone Number"
         id="phoneNumber"
         name="phoneNumber"
         onChange={formik.handleChange}
@@ -133,7 +133,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       />
       <FormInput
         label="Email"
-        placeholder="Email"
+        placeholder="Enter Email"
         id="email"
         name="email"
         onChange={formik.handleChange}
@@ -144,7 +144,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       />
       <FormInput
         label="Address"
-        placeholder="Address"
+        placeholder="Enter Address"
         id="address"
         name="address"
         onChange={formik.handleChange}
@@ -155,7 +155,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       />
       <FormInput
         label="State"
-        placeholder="State"
+        placeholder="Enter State"
         id="state"
         name="state"
         onChange={formik.handleChange}
@@ -177,7 +177,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
       />
       <FormInput
         label="UG University"
-        placeholder="UG University"
+        placeholder="Enter UG University"
         id="ugUniName"
         name="ugUniName"
         onChange={formik.handleChange}

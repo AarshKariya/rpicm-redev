@@ -3,6 +3,12 @@ import styles from "./ContactUs.module.scss";
 import { useFormik } from "formik";
 import contactUsValidationSchema from "./helpers/contactUsValidation";
 import supabase from "@/config/supabaseClient";
+import ContactUsFirstName from "./components/ContactUsFirstName";
+import ContactUsLastName from "./components/ContactUsLastName";
+import ContactUsEmailField from "./components/ContactUsEmailField";
+import ContactUsQuery from "./components/ContactUsQuery";
+import ContactUsSubmit from "./components/ContactUsSubmit";
+import ContactUsInfo from "./components/ContactUsInfo";
 
 const ContactPage: React.FC = () => {
   const handleContactFormSubmit = async (contactFormData: any) => {
@@ -10,6 +16,7 @@ const ContactPage: React.FC = () => {
       await supabase.from("contactUsEntries").upsert([
         {
           firstName: contactFormData?.firstName,
+          lastName: contactFormData?.lastName,
           email: contactFormData?.email,
           query: contactFormData?.query,
         },
@@ -23,6 +30,7 @@ const ContactPage: React.FC = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
+      lastName: "",
       email: "",
       query: "",
     },
@@ -43,65 +51,11 @@ const ContactPage: React.FC = () => {
     >
       <div className={styles.contactUsHeading}>Contact Us</div>
       <form onSubmit={formik.handleSubmit}>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <label htmlFor="firstName">First Name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            onChange={formik.handleChange}
-            value={formik.values.firstName}
-          />
-          {formik.touched.firstName && formik.errors.firstName && (
-            <div className={styles.error}>
-              {formik.touched.firstName && formik.errors.firstName}
-            </div>
-          )}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            onChange={formik.handleChange}
-            value={formik.values.email}
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <label htmlFor="query">Query</label>
-          <textarea
-            id="query"
-            name="query"
-            onChange={formik.handleChange}
-            value={formik.values.query}
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <motion.button
-            type="submit"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            disabled={!formik.dirty}
-          >
-            {formik.isSubmitting ? "Submitting..." : "Submit"}
-          </motion.button>
-        </motion.div>
+        <ContactUsFirstName formik={formik} />
+        <ContactUsLastName formik={formik} />
+        <ContactUsEmailField formik={formik} />
+        <ContactUsQuery formik={formik} />
+        <ContactUsSubmit formik={formik} />
       </form>
 
       {formik.isSubmitting && (
@@ -109,6 +63,8 @@ const ContactPage: React.FC = () => {
           We will get back to you shortly.
         </div>
       )}
+
+      <ContactUsInfo />
     </motion.div>
   );
 };

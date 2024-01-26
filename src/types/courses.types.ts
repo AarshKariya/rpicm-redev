@@ -3,6 +3,7 @@ export interface Course {
   description: string;
   showArrow?: boolean | null;
   id: string;
+  briefBullet?: string[];
   duration?: number;
   isYearly?: boolean | null;
   courseFor?: string[];
