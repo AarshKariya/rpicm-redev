@@ -16,7 +16,7 @@ const FooterInstituteInfo: NextPage = () => {
         </a>
       </div>
       <div className={styles.instituteEmail}>
-        Mobile:{" "}
+        WhatsApp and Mobile:{" "}
         <a
           href="https://wa.me/917435012121?text=Hi"
           target="_blank"
