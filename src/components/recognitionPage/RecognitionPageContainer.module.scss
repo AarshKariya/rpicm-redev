@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$mobileWidth: 375px;
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
+.recognitionPageContainer {
+  padding: 240px 98px 98px 98px;
+
+  .recognitionPageHeading {
+    font-family: $quatro;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .recognitionPageDesc {
+    font-family: $raleway;
+    margin-bottom: 44px;
+  }
+}

@@ -20,9 +20,12 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
         <div className={styles.courseDetailsTitle}>Courses</div>
         <div className={styles.subTitle}>
           {details?.title}
-          <span className={styles.duration}>
-            {details?.duration} {details?.isYearly ? "year" : "month(s)"} course
-          </span>
+          {details?.duration && (
+            <span className={styles.duration}>
+              {details?.duration} {details?.isYearly ? "year" : "month(s)"}{" "}
+              course
+            </span>
+          )}
         </div>
         <div className={styles.text}>{details?.description}</div>
         {details?.courseFor && <div className={styles.subTitle}>For whom?</div>}

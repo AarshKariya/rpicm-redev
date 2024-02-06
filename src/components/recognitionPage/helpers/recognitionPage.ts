@@ -18,8 +18,13 @@ export const RecognitionPageData = [
       "Education Department, Punjab",
       "University of Mysore",
       "Annamalai University",
-      "Guru Jambeshwar University",
+      "Gujarat University",
     ],
+  },
+  {
+    title: "Digital Media",
+    id: generateUniqueId(),
+    recognitionItemDesc: ["Gujarat University"],
   },
   {
     title: "Industrial Relations and Personnel Management (IRPM – HR)",
@@ -32,6 +37,7 @@ export const RecognitionPageData = [
       "Department of Labour, Government of Punjab",
       "University of Mysore",
       "Annamalai University",
+      "Gujarat University",
     ],
   },
   {
@@ -59,16 +65,28 @@ export const RecognitionPageData = [
       "Govt. of Kerala",
       "Guru Jambeshwar University, Hissar",
       "Annamalai University",
+      "Industrial Tie-up with Public Relations Society of India",
     ],
   },
   {
-    title: "Mass Communication",
+    title: "International Trade (Import-Export)",
     id: generateUniqueId(),
-    recognitionItemDesc: ["Guru Jambeshwar University, Hissar"],
+    recognitionItemDesc: ["Gujarat University"],
+  },
+  {
+    title: "Hospital Management",
+    id: generateUniqueId(),
+    recognitionItemDesc: ["Gujarat University"],
   },
   {
     title: "Business Management",
     id: generateUniqueId(),
     recognitionItemDesc: ["Govt of Gujarat, Education Department"],
+  },
+  {
+    title:
+      "Strategic Communication for Sustainable Impact in association with MICA-CDMC",
+    id: generateUniqueId(),
+    recognitionItemDesc: [],
   },
 ];
