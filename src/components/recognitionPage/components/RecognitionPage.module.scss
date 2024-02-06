@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+
+$mobileWidth: 375px;
+$raleway: "Raleway", sans-serif;
+$quatro: "Quattrocento", sans-serif;
+
 .accordion {
   margin-bottom: 16px;
   border: 1px solid #ddd;
@@ -18,6 +25,7 @@
       margin: 0;
       font-size: 1.2rem;
       font-weight: 600;
+      font-family: $quatro;
       color: #333;
     }
 
@@ -43,6 +51,7 @@
       margin: 0;
       padding-left: 20px;
       color: #555;
+      font-family: $raleway;
     }
   }
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./RecognitionPage.module.scss";
-import { RecognitionAccordionData } from "./helpers/recognitionPage";
+import { RecognitionAccordionData } from "../helpers/recognitionPage";
 
 const RecognitionPage: React.FC<RecognitionAccordionData> = ({
   title,
