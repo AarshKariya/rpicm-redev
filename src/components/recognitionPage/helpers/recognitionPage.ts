@@ -18,7 +18,6 @@ export const RecognitionPageData = [
       "Education Department, Punjab",
       "University of Mysore",
       "Annamalai University",
-      "Gujarat University",
     ],
   },
   {
@@ -46,7 +45,7 @@ export const RecognitionPageData = [
     recognitionItemDesc: ["Govt. of Gujarat, Ministry of Education"],
   },
   {
-    title: "Marketing and Sales Management (Specialisation in Pharma)",
+    title: "Marketing and Sales Management",
     id: generateUniqueId(),
     recognitionItemDesc: [
       "Govt. of India, Ministry of Education and Social Welfare",
