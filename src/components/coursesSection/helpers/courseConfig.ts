@@ -22,6 +22,7 @@ export const coursesData = [
           "It is best suited for graduates, with a flair for writing, reading, public-speaking, acting, etc.",
           "Those who want to have a career in journalism.",
           "Those who want to start writing blogs, content writing for websites, publish books, etc.",
+          "Open to graduates from any recognized universities or studying in the final year of graduation.",
         ],
         academicSchedule: [
           "Total Sessions - 150 hours",
@@ -50,6 +51,7 @@ export const coursesData = [
         courseFor: [
           "The course is designed for individuals who have a keen interest in journalism, media, or communication and wish to acquire specialised skills for the digital age.",
           "This includes students, working professionals, and freelance journalists.",
+          "Open to graduates from any recognised universities or studying in the final year of graduation.",
         ],
         seeYourself: [
           "Entrepreneur - Generate content and market it for your own start-up",
@@ -199,6 +201,7 @@ export const coursesData = [
         showArrow: true,
         courseFor: [
           "Fresh graduates seeking a career in the area of Human Resources Management.",
+          "Studying in the final year of graduation.",
           "Professionals interested in exploring opportunities in directorial and senior-level management.",
           "Officers/Executives in government departments/ Public Sector Enterprises.",
           "Retired officers from armed forces who want to join the corporate sector.",
@@ -207,7 +210,7 @@ export const coursesData = [
         ],
         briefBullet: [
           "Provides an understanding of Industrial Relations, Personnel Management",
-          "Focus on organisational harmony, conflict avoidance and management",
+          "Focus on organizational harmony, conflict avoidance and management",
         ],
         seeYourself: [
           "Administrative Heads",
@@ -236,6 +239,7 @@ export const coursesData = [
           "Learn the principles, techniques, and tools to optimize entire materials management process",
         ],
         courseFor: [
+          "Open to graduates from any recognized universities or studying in the final year of graduation.",
           "Those who want to learn Materials Management skills without pursuing lengthy and expensive BBA/MBA courses.",
           "Officers/Executives in government departments/ Public Sector Enterprises.",
           "Retired officers from armed forces who want to join the corporate sector.",
@@ -270,6 +274,7 @@ export const coursesData = [
         isYearly: true,
         showArrow: true,
         courseFor: [
+          "Open to graduates from any recognized universities or studying in the final year of graduation.",
           "It is best suited for those who want to focus only on export-import.",
           "Industrialists and/or entrepreneurs who want to manage/establish international business.",
           "Executives with experience in Export-Import / International Marketing / Foreign Exchange / Shipping and Logistics related work in any sector.",
@@ -309,6 +314,7 @@ export const coursesData = [
         isYearly: true,
         showArrow: true,
         courseFor: [
+          "Open to graduates from any recognised universities or studying in the final year of graduation.",
           "Students, who want to learn about the healthcare world.",
           "Working professionals looking to switch to managerial roles or venture into entrepreneurship.",
         ],
@@ -340,7 +346,7 @@ export const coursesData = [
         isYearly: true,
         showArrow: true,
         courseFor: [
-          "Fresh graduates.",
+          "Open to graduates from any recognised universities or studying in the final year of graduation.",
           "Professionals looking to enhance their skills in Marketing and Sales Management.",
           "Aspirants aspiring to explore a plethora of career opportunities in both private and public companies as Marketing Managers, Marketing Executive, in Retail Sectors, Financial Services, e-Commerce Sector and much more.",
         ],
@@ -374,7 +380,7 @@ export const coursesData = [
         isYearly: true,
         showArrow: true,
         courseFor: [
-          "Fresh Graduates.",
+          "Open to graduates from any recognised universities or studying in the final year of graduation.",
           "For individuals who are interested in starting or managing small and medium-sized businesses.",
           "Suitable for entrepreneurs, business owners, and professionals who want to acquire the knowledge and skills required to manage and grow small and medium-sized enterprises.",
         ],
@@ -408,6 +414,7 @@ export const coursesData = [
         showArrow: true,
         courseFor: [
           "Ideal for graduates, working professionals, chartered accountants and similar other professionals working in related areas.",
+          "Students  in the final year of graduation.",
         ],
         seeYourself: [
           "Finance Analysts",
