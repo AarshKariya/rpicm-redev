@@ -47,15 +47,13 @@ const CourseCardTile: NextPage<CourseCardTileProps> = ({ courseConfigs }) => {
                 onHoverEnd={() => handleHover(null)}
                 whileHover={{ scale: 1.0001, color: "white" }}
               >
-                <div className={styles.tileHeader}>
+                <div
+                  className={styles.tileHeader}
+                  onClick={() => handleClick(course)}
+                >
                   <div className={styles.courseTitle}>{course?.title}</div>
                   {course?.showArrow && (
-                    <div
-                      className={styles.showArrow}
-                      onClick={() => handleClick(course)}
-                    >
-                      &#8599;
-                    </div>
+                    <div className={styles.showArrow}>&#8599;</div>
                   )}
                 </div>
                 {course?.briefBullet?.map((bulletItems, index) => (
