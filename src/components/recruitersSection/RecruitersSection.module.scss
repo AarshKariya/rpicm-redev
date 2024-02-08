@@ -17,7 +17,7 @@
   height: auto;
 }
 
-.withMargin {
+.logo:not(:last-child) {
   margin-right: 120px;
 }
 

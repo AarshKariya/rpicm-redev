@@ -26,7 +26,7 @@ const RecruitersSection: NextPage = () => {
             key={index}
             src={logo}
             alt={`Logo ${index + 1}`}
-            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
+            className={styles.logo}
             initial={{ opacity: 0, y: -50 }}
             animate={controls}
             variants={{
@@ -42,7 +42,7 @@ const RecruitersSection: NextPage = () => {
             key={index + 6}
             src={logo}
             alt={`Logo ${index + 7}`}
-            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
+            className={styles.logo}
             initial={{ opacity: 0, y: -50 }}
             animate={controls}
             variants={{
@@ -58,7 +58,7 @@ const RecruitersSection: NextPage = () => {
             key={index + 6}
             src={logo}
             alt={`Logo ${index + 13}`}
-            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
+            className={styles.logo}
             initial={{ opacity: 0, y: -50 }}
             animate={controls}
             variants={{
@@ -74,7 +74,7 @@ const RecruitersSection: NextPage = () => {
             key={index + 6}
             src={logo}
             alt={`Logo ${index + 19}`}
-            className={`${styles.logo} ${index < 5 ? styles.withMargin : ""}`}
+            className={styles.logo}
             initial={{ opacity: 0, y: -50 }}
             animate={controls}
             variants={{
