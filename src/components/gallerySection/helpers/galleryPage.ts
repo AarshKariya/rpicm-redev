@@ -23,7 +23,7 @@ export const galleryCampus = [
 
 export const galleryEvents = [
   {
-    name: "Ram Kathakar Morari Bapu tributing veteran journalist Gujarati journalist Kanti Bhatt",
+    name: "Ram Kathakar Morari Bapu pays tribute to the veteran Gujarati journalist Kanti Bhatt",
     src: "/morariBapu.svg",
     id: 1,
   },
