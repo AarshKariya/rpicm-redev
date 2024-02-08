@@ -83,7 +83,7 @@ const ApplicationFormContainer: NextPage<ApplicationFormContainerProps> = ({
         }
       />
 
-      <WindowWidthLine />
+      {/* <WindowWidthLine /> */}
 
       <div className={styles.personalInfo}>PERSONAL INFORMATION</div>
 
