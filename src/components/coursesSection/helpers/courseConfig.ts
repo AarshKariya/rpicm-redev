@@ -105,8 +105,9 @@ export const coursesData = [
         title: "Strategic Communication for Sustainable Impact",
         id: `comm_${generateUniqueId()}`,
         description:
-          "This course aims to provide students with the knowledge and skills required to develop and implement strategic communication campaigns that contribute to sustainable outcomes.",
+          "This course is taught in association with MICA-CDMC and aims to provide students with the knowledge and skills required to develop and implement strategic communication campaigns that contribute to sustainable outcomes.",
         briefBullet: [
+          "In association with MICA-CDMC",
           "Provides knowledge and skills to develop and implement strategic communication campaigns that contribute to sustainable outcomes",
         ],
         showArrow: true,
