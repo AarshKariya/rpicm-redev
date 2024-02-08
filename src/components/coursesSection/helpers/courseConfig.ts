@@ -105,8 +105,9 @@ export const coursesData = [
         title: "Strategic Communication for Sustainable Impact",
         id: `comm_${generateUniqueId()}`,
         description:
-          "This course aims to provide students with the knowledge and skills required to develop and implement strategic communication campaigns that contribute to sustainable outcomes.",
+          "This course is taught in association with MICA-CDMC and aims to provide students with the knowledge and skills required to develop and implement strategic communication campaigns that contribute to sustainable outcomes.",
         briefBullet: [
+          "In association with MICA-CDMC",
           "Provides knowledge and skills to develop and implement strategic communication campaigns that contribute to sustainable outcomes",
         ],
         showArrow: true,
@@ -197,7 +198,7 @@ export const coursesData = [
         isYearly: true,
         showArrow: true,
         courseFor: [
-          "Fresh graduates seeking a career in the area of Human Resources.",
+          "Fresh graduates seeking a career in the area of Human Resources Management.",
           "Professionals interested in exploring opportunities in directorial and senior-level management.",
           "Officers/Executives in government departments/ Public Sector Enterprises.",
           "Retired officers from armed forces who want to join the corporate sector.",
@@ -243,7 +244,8 @@ export const coursesData = [
         ],
         seeYourself: [
           "Retail Chains",
-          "Malls, supermarkets, Industries, and hospitals",
+          "Malls, supermarkets, industries, and hospitals",
+          "Industries with manufacturing process",
         ],
         academicSchedule: [
           "Total Sessions - 150 hours",
@@ -277,11 +279,13 @@ export const coursesData = [
           "Others who are desirous of learning how international trade is conducted.",
         ],
         seeYourself: [
-          "Export Manage",
+          "Import-Export Manager/Management",
           "Foreign Trade Analyst",
           "Foreign Trade and Purchasing",
           "Shipping Companies",
           "MNCs Departments",
+          "Offices of Customs House Agents",
+          "Office of Freight Forwarders",
         ],
         academicSchedule: [
           "Total Sessions - 150 hours",
@@ -310,9 +314,9 @@ export const coursesData = [
         ],
         seeYourself: [
           "Hospital Administrator",
-          "Hospital Financial Manager",
-          "Health Care HR Manager",
-          "Clinical Research Manager",
+          "Entry to middle level management",
+          "Floor Manager",
+          "In corporate, large, medium-scale and small hospitals",
         ],
         academicSchedule: [
           "Total Sessions - 150 hours",

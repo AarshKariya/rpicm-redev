@@ -22,8 +22,7 @@ const CourseDetails: FC<CourseDetailsProps> = ({ details }) => {
           {details?.title}
           {details?.duration && (
             <span className={styles.duration}>
-              {details?.duration} {details?.isYearly ? "year" : "month(s)"}{" "}
-              course
+              {details?.duration} {details?.isYearly ? "year" : "months"} course
             </span>
           )}
         </div>

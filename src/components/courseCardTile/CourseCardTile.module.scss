@@ -41,7 +41,7 @@ $quatro: "Quattrocento", sans-serif;
       width: 360px;
       height: 360px;
       margin-right: 20px;
-      padding: 44px 36px 30px 28px;
+      padding: 32px 36px 30px 28px;
       border-radius: 16px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       flex-shrink: 0;
@@ -63,20 +63,21 @@ $quatro: "Quattrocento", sans-serif;
 
       .tileHeader {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         margin-bottom: 30px;
+        height: 41px;
+        cursor: pointer;
 
         .courseTitle {
           margin-right: 12px;
           font-family: $raleway;
           font-size: 18px;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 500;
           line-height: normal;
         }
 
         .showArrow {
-          cursor: pointer;
           font-size: 12px;
           transition: transform 0.3s ease;
 
@@ -93,7 +94,6 @@ $quatro: "Quattrocento", sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 144.9%; /* 23.184px */
       }
     }
 
