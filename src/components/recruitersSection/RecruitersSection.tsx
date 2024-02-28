@@ -52,7 +52,7 @@ const RecruitersSection: NextPage = () => {
           />
         ))}
       </div>
-      <div className={styles.row}>
+      {/* <div className={styles.row}>
         {RecruiterSectionLogos.slice(12, 18).map((logo, index) => (
           <motion.img
             key={index + 6}
@@ -83,7 +83,7 @@ const RecruitersSection: NextPage = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           />
         ))}
-      </div>
+      </div> */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={controls}
