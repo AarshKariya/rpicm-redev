@@ -18,6 +18,9 @@ const GuestDetails: NextPage<GuestDetailsProps> = ({ focusedIndex }) => {
           <div className={styles.detailsTitle}>
             {guestLecturesData[focusedIndex].name}
           </div>
+          <div className={styles.positionStyle}>
+            {guestLecturesData[focusedIndex].position}
+          </div>
         </>
       )}
     </div>
