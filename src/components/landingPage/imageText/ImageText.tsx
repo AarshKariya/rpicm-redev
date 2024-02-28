@@ -51,6 +51,24 @@ const ImageText: React.FC = () => {
         </div>
         <div className={styles.instituteName}>Skilling INDIA since 1961</div>
       </motion.div>
+      <div className={styles.bulletPointsSection}>
+        <div className={styles.bulletPointsText}>
+          • Professional Diploma and Certificate Courses
+        </div>
+        <div className={styles.bulletPointsText}>
+          • Convenient Timing for Professionals and Students
+        </div>
+        <div className={styles.bulletPointsText}>
+          • Convenient Locations across India
+        </div>
+        <div className={styles.bulletPointsText}>
+          • Professionals, Experts and Academics as teachers
+        </div>
+        <div className={styles.bulletPointsText}>• Immediate Employability</div>
+        <div className={styles.bulletPointsText}>
+          • Multiple University and Government Recognitions
+        </div>
+      </div>
     </div>
   );
 };
